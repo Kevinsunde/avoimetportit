@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajankohtaset – Avoimet portit</title>
+  <meta id="meta-description" name="description" content="Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/avoimetportit/assets/styles-BWHD1PxP.css">
+</head>
+<body data-page="ajankohtaset">
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">
+          <span class="logo-title" id="logo-title">Avoimet portit</span>
+          <span class="logo-sub" id="logo-sub">Kristiinankaupunki</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Valikko</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+        <ul class="nav-list">
+          <li><a href="index.html#tapahtuma" data-i18n="nav.event">Tapahtuma</a></li>
+          <li><a href="index.html#kokemus" data-i18n="nav.exp">Kokemus</a></li>
+          <li><a href="ajankohtaset.html" class="nav-link-current" aria-current="page" data-i18n="nav.ajankohtaset">Ajankohtaset</a></li>
+          <li><a href="index.html#kuvat" data-i18n="nav.gallery">Kuvat</a></li>
+          <li><a href="index.html#kartta" data-i18n="nav.map">Kartta</a></li>
+          <li><a href="index.html#kaytanollinen" data-i18n="nav.practical">Käytännöt</a></li>
+          <li><a href="index.html#yhteys" data-i18n="nav.contact">Yhteys</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Kieli">
+          <button type="button" class="lang-btn is-active" data-lang="fi" aria-pressed="true">Suomi</button>
+          <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">Svenska</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="subpage-main">
+    <div class="subpage-hero">
+      <div class="section-inner">
+        <p class="subpage-kicker" data-i18n="ajankohtaset.kicker">Tiedotteet</p>
+        <h1 class="subpage-title" data-i18n="ajankohtaset.h2">Ajankohtaset</h1>
+        <p class="subpage-back">
+          <a href="index.html" data-i18n="ajankohtaset.backHome">← Etusivulle</a>
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="prose prose-narrow">
+          <p data-i18n="ajankohtaset.p1">
+            Lisätietoja tapahtuman ajankohdasta, lipuista ja kohteista julkaistaan keväällä Visit Kristinestadilla ja tapahtuman Facebook-sivulla.
+          </p>
+        </div>
+        <div id="ajankohtaset-years-root" class="ajankohtaset-years" aria-label="Vuosittaiset kuvat"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
