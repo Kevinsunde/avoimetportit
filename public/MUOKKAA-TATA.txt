@@ -1,0 +1,41 @@
+AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
+==========================================
+
+1) TEKSTIT JA LINKIT
+   Avaa tiedosto: site-content.json
+   - "languages" → suomi (fi), ruotsi (sv), englanti (en). Muokkaa otsikoita ja kappaleita.
+   - "site" → sivun otsikko ja kuvaus (hakukoneet).
+   - "logo" → yläpalkin ja alatunnisteen nimi.
+   - "contact" → yhteyshenkilö, puhelin, sähköposti, osoite.
+   - "links" → painikkeiden ja alalaidan linkkien osoitteet.
+   - "prices" → hintarivien eurot (esim. "15 €").
+
+   Tiedoston pitää olla kelvollista JSON:ia (pilkuilla ja lainausmerkeillä). Voit tarkistaa
+   esim. osoitteessa jsonlint.com.
+
+2) KUVAT
+   - Lisää uudet kuvat kansioon: public/images/
+   - Päivitä site-content.json → "images":
+     - "hero": tiedostonimi, esim. "oma-kuva.jpg"
+     - "gallery": lista; "wide": true tekee kuvasta leveän (ensimmäinen rivi).
+
+   Käytä kevyitä .jpg tai .webp -kuvia, jotta sivu pysyy nopeana.
+
+3) AJANKOHTASET-SIVU
+   Tiedosto: ajankohtaset.html (valikon linkki). Tekstit: site-content.json → languages →
+   avaimet ajankohtaset.* (fi, sv, en).
+   Vuosikuvat: sama tiedosto → ajankohtasetByYear: lista vuosista, jokaisella "year"
+   (esim. "2024") ja "images"-lista. Valinnainen "yearBanner": leveä tapahtumakuva
+   (esim. vuoden logo/päivämäärä) näytetään kyseisen vuoden otsikon yläpuolella.
+   Kuva voi olla pelkkä tiedostonimi tai objekti:
+   { "file": "kuva.jpg", "caption": { "fi": "...", "sv": "...", "en": "..." } }.
+   Etusivun yläbanner: site-content.json → images → "heroBanner".
+   Kuvatiedostot kansioon public/images/.
+
+4) JULKAISU
+   Muutosten jälkeen: npm run build ja lähetä "dist"-kansion sisältö palvelimelle,
+   TAI jos käytät Netlifya tms., työnnä muutokset Git-repositorioon.
+
+5) OLETUKSET UUDELLEEN
+   Kehittäjä voi luoda site-content.json:n uudelleen koodista komennolla:
+   npm run content:export

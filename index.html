@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avoimet portit – Kristiinankaupunki</title>
+  <meta id="meta-description" name="description" content="Vuosittainen kulttuuritapahtuma, jossa vanhan puutalokaupungin pihat ja puutarhat avautuvat vierailijoille Kristiinankaupungissa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">
+          <span class="logo-title" id="logo-title">Avoimet portit</span>
+          <span class="logo-sub" id="logo-sub">Kristiinankaupunki</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Valikko</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+        <ul class="nav-list">
+          <li><a href="#tapahtuma" data-i18n="nav.event">Tapahtuma</a></li>
+          <li><a href="#kokemus" data-i18n="nav.exp">Kokemus</a></li>
+          <li><a href="ajankohtaset.html" data-i18n="nav.ajankohtaset">Ajankohtaset</a></li>
+          <li><a href="#kuvat" data-i18n="nav.gallery">Kuvat</a></li>
+          <li><a href="#kartta" data-i18n="nav.map">Kartta</a></li>
+          <li><a href="#kaytanollinen" data-i18n="nav.practical">Käytännöt</a></li>
+          <li><a href="#yhteys" data-i18n="nav.contact">Yhteys</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Kieli">
+          <button type="button" class="lang-btn is-active" data-lang="fi" aria-pressed="true">Suomi</button>
+          <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">Svenska</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner hero-inner-stack">
+        <div class="hero-banner-wrap">
+          <img id="hero-banner-image" class="hero-event-banner" src="images/avoimet-portit-2026-banner.png" alt="" width="1200" height="400" fetchpriority="high" data-i18n-alt="hero.bannerAlt">
+        </div>
+        <div class="hero-split">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Kesäkuussa · Kristiinankaupungin keskusta</p>
+          <h1 class="hero-title" data-i18n="hero.title">Porttien takana avautuu puutarhamaailma</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Avoimet portit on kulttuuritapahtuma pihoissa ja puutarhoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin elämään ja kesäkuun kukkaloistoon.
+          </p>
+          <div class="hero-meta">
+            <div class="meta-card">
+              <span class="meta-label" data-i18n="meta.when">Ajankohta</span>
+              <span class="meta-value" data-i18n="meta.dates">12.–13.6.2026 klo 10–18</span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label" data-i18n="meta.where">Paikka</span>
+              <span class="meta-value" data-i18n="meta.place">Kristiinankaupungin keskustan puutalovyöhyke</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="link-official-event" href="https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/" target="_blank" rel="noopener noreferrer" data-i18n="cta.official">Viralliset tiedot Visit Kristinestad</a>
+            <a class="btn btn-ghost" id="link-facebook" href="https://www.facebook.com/oppnaportar.avoimetportit" target="_blank" rel="noopener noreferrer" data-i18n="cta.facebook">Facebook</a>
+          </div>
+          <p class="hero-note" data-i18n="hero.note">Päivämäärät ja ohjelma vahvistetaan keväällä — seuraa virallisia kanavia.</p>
+        </div>
+        <figure class="hero-photo">
+          <img id="hero-image" src="images/kristinestad-street-2.jpg" alt="" width="1280" height="628" fetchpriority="high" data-i18n-alt="gallery.alt2">
+          <figcaption class="photo-cap" data-i18n="hero.photoCap">Puutalokatu Kristiinankaupungissa — tapahtuman tunnelmaa.</figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tapahtuma">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="about.h2">Mikä on Avoimet portit?</h2>
+          <p class="section-deck" data-i18n="about.deck">
+            Tapahtuman järjestää Avoimet Portit -työryhmä yhteistyössä pihanomistajien, yhdistysten, yrittäjien ja taiteilijoiden sekä kaupungin palvelualueiden kanssa.
+          </p>
+        </header>
+        <div class="grid-2">
+          <div class="prose">
+            <p data-i18n="about.p1">
+              Kesäkuussa osa keskustan talon omistajista avaa porttinsa: pääset ihailemaan idyllisiä pihoja ja puutarhoja, joita muuten ihaillaan vain aidan yli. Jotkut isännät ja emännät tarjoavat myös kurkistuksen sisätiloihin.
+            </p>
+            <p data-i18n="about.p2">
+              Kristiinankaupunki on yksi Suomen parhaiten säilyneistä puukaupungeista ja Cittaslow-yhteisön jäsen — täydellinen näyttämö hitaalle, aistilliselle kaupunkilomalle.
+            </p>
+          </div>
+          <ul class="highlight-list">
+            <li data-i18n="about.li1">35–50 pihaa on viime vuosina ollut mukana tapahtumassa</li>
+            <li data-i18n="about.li2">Erilaisia puutarhoja: modernit, japanilaisvaikutteiset, villiintyneet ja historialliset pihat</li>
+            <li data-i18n="about.li3">Ohjelmaa lapsille ja aikuisille: musiikkia, teatteria, näyttelyitä, kahviloita ja luentoja</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="kokemus">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="exp.h2">Mitä näet ja koet?</h2>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <h3 data-i18n="exp.c1h">Puutarhat ja pihat</h3>
+            <p data-i18n="exp.c1p">Kiveytyksiä, kukkaloistoa, yksityiskohtia ja tarinoita — jokainen kohde on omanlaisensa.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="exp.c2h">Kulttuuri ja taide</h3>
+            <p data-i18n="exp.c2p">Näyttelyitä, yhteisöllistä ohjelmaa ja elämyksiä, jotka tuovat esiin sekä puutarhaa että rakennusperintöä.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="exp.c3h">Yhdistä museoon</h3>
+            <p data-i18n="exp.c3p">Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — kysy päivitettyjä vinkkejä infosta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kuvat">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="gallery.h2">Kristiinankaupunki kuvina</h2>
+          <p class="section-deck" data-i18n="gallery.lead">Aitoja näkymiä vanhasta puutalokaupungista — sama miljö, jossa Avoimet portit -tapahtuma järjestetään.</p>
+        </header>
+        <div class="gallery-grid" id="gallery-root">
+          <figure class="gallery-item gallery-item-wide">
+            <img src="images/kristiinankaupunki-ruutukaava.jpg" alt="" width="1280" height="853" loading="lazy" data-i18n-alt="gallery.alt1">
+            <figcaption class="photo-cap" data-i18n="gallery.cap1">Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/kristinestad-street-1.jpg" alt="" width="1280" height="960" loading="lazy" data-i18n-alt="gallery.alt3">
+            <figcaption class="photo-cap" data-i18n="gallery.cap3">Kapea katu ja värikkäät puutalot keskustassa.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/kristinestad-street-2.jpg" alt="" width="1280" height="628" loading="lazy" data-i18n-alt="gallery.alt2">
+            <figcaption class="photo-cap" data-i18n="gallery.cap2">Idyllinen puutalokatu — porttien takana avautuu kesällä lisää nähtävää.</figcaption>
+          </figure>
+        </div>
+        <p class="gallery-legal" data-i18n="gallery.legal">Kuvat: Wikimedia Commons (lisenssit alla). Korvaa tarvittaessa asiakkaan omilla valokuvilla.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="kartta">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 id="kartta-otsikko" data-i18n="map.h2">Saapuminen ja tapahtuma-alue</h2>
+          <p class="section-deck" data-i18n="map.lead">Tapahtuma levittäytyy kävelymatkan päähän matkailuinfosta ja vanhan kaupungin ruutukaava-alueesta. Tarkat kohteet julkaistaan virallisilla sivuilla lähempänä tapahtumaa.</p>
+        </header>
+        <div class="map-wrap">
+          <div id="map" class="map-root" role="region" aria-labelledby="kartta-otsikko"></div>
+        </div>
+        <p class="map-foot">
+          <a class="map-osm-link" href="https://www.openstreetmap.org/?mlat=62.2733&amp;mlon=21.3785#map=16/62.2733/21.3785" target="_blank" rel="noopener noreferrer" data-i18n="map.osmLink">Avaa suurempi kartta (OpenStreetMap)</a>
+          <span class="map-foot-sep" aria-hidden="true">·</span>
+          <span data-i18n="map.attribNote">Kartta © OpenStreetMapin tekijät</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="kaytanollinen">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="prac.h2">Liput ja käytännöt</h2>
+        </header>
+        <div class="grid-2 prac-grid">
+          <div class="price-panel">
+            <h3 data-i18n="prac.priceh">Hinnat (viitteenä)</h3>
+            <ul class="price-list">
+              <li><span data-i18n="prac.p1">1 päivä</span> <strong id="price-day1">15 €</strong></li>
+              <li><span data-i18n="prac.p2">2 päivää</span> <strong id="price-day2">20 €</strong></li>
+              <li><span data-i18n="prac.p3">Lapset alle 12 v</span> <strong data-i18n="prac.free">ilmaiseksi</strong></li>
+            </ul>
+            <p class="small" data-i18n="prac.disclaimer">Hinnat ja rannekkeet vahvistetaan tapahtuman virallisilla sivuilla.</p>
+          </div>
+          <div class="prose">
+            <p data-i18n="prac.p4">
+              Tarkista vierailukohteet, kartta ja mahdolliset uudet kohteet Visit Kristinestadin ja tapahtuman Facebook-sivuilta ennen matkaa.
+            </p>
+            <p data-i18n="prac.p5">
+              Kristiinankaupungin tapahtumakalenterissa on ajantasaiset kellonajat ja yhteystiedot matkailuun.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="yhteys">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="contact.h2">Yhteystiedot</h2>
+          <p class="section-deck" data-i18n="contact.deck">Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 data-i18n="contact.chair">Puheenjohtaja</h3>
+            <p id="contact-chair-name">Helena Patoranta</p>
+            <p><a id="contact-phone-link" href="tel:+358407402311"><span id="contact-phone-text">+358 40 740 2311</span></a></p>
+            <p><a id="contact-email-link" href="mailto:visit@krs.fi">visit@krs.fi</a></p>
+          </div>
+          <div class="contact-card">
+            <h3 data-i18n="contact.tourism">Matkailu</h3>
+            <p id="contact-tourism-name">Kristiinankaupungin matkailu</p>
+            <p id="contact-address-lines">Sjögatan 49 / Merikatu 49<br>64100 Kristiinankaupunki</p>
+            <p><a id="link-visit-website" href="https://visitkristinestad.fi" target="_blank" rel="noopener noreferrer">visitkristinestad.fi</a></p>
+          </div>
+          <div class="contact-card contact-card-wide">
+            <h3 data-i18n="contact.links">Hyödylliset linkit</h3>
+            <ul class="link-list">
+              <li><a id="link-footer-1" href="https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/" target="_blank" rel="noopener noreferrer" data-i18n="contact.link1">Avoimet portit — Visit Kristinestad (FI)</a></li>
+              <li><a id="link-footer-2" href="https://visitkristinestad.fi/en/experience/events/open-gates/" target="_blank" rel="noopener noreferrer" data-i18n="contact.link2">Open Gates — Visit Kristinestad (EN)</a></li>
+              <li><a id="link-footer-3" href="https://www.kristinestadoppnaportar.fi/fi" target="_blank" rel="noopener noreferrer" data-i18n="contact.link3">kristinestadoppnaportar.fi</a></li>
+              <li><a id="link-footer-4" href="https://www.kristinestad.fi/vapaa-aika/tapahtumia" target="_blank" rel="noopener noreferrer" data-i18n="contact.link4">Kristiinankaupungin tapahtumakalenteri</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

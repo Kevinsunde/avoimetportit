@@ -1,0 +1,14 @@
+{
+  "name": "avoimet-portit-kristiinankaupunki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "content:export": "node scripts/export-site-content.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
