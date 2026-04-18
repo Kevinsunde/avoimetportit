@@ -1,5 +1,5 @@
 /**
- * Regenerates public/site-content.json from js/main.js DEFAULT_STRINGS.
+ * Regenerates public/site-content.json from public/js/main.js DEFAULT_STRINGS.
  * Run: node scripts/export-site-content.mjs
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -7,7 +7,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const mainPath = join(__dirname, "..", "js", "main.js");
+const mainPath = join(__dirname, "..", "public", "js", "main.js");
 const src = readFileSync(mainPath, "utf8");
 
 const needle = "const DEFAULT_STRINGS = ";
