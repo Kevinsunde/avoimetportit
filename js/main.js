@@ -534,11 +534,25 @@ function renderAjankohtasetYearBlocks() {
   }
 }
 
+/** Resolves site-content.json and other same-folder assets on GitHub Pages (/repo vs /repo/). */
+function baseHrefForSiteFiles() {
+  const u = new URL(window.location.href);
+  let p = u.pathname;
+  if (!p.endsWith("/")) {
+    const last = p.split("/").pop() || "";
+    p = /\.[a-z0-9]+$/i.test(last) ? p.replace(/\/[^/]+$/, "/") : `${p}/`;
+  }
+  u.pathname = p;
+  u.hash = "";
+  u.search = "";
+  return u.href;
+}
+
 async function loadSiteContent() {
   mergeDefaultStrings();
   let data = null;
   try {
-    const res = await fetch(new URL("site-content.json", window.location.href));
+    const res = await fetch(new URL("site-content.json", baseHrefForSiteFiles()));
     if (res.ok) data = await res.json();
   } catch {
     /* use defaults only */
@@ -600,10 +614,12 @@ function initMap() {
   if (!el || typeof L === "undefined") return;
 
   mapInstance = L.map(el, { scrollWheelZoom: false });
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
+  // Carto OSM tiles: reliable on static hosts; direct OSM tiles often 403 hotlink blocks.
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+    maxZoom: 20,
+    subdomains: "abcd",
     attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
   }).addTo(mapInstance);
 
   tourismMarker = L.marker(MAP_POINTS.tourism).addTo(mapInstance);
