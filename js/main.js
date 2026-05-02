@@ -3,26 +3,27 @@ const DEFAULT_STRINGS = {
     "nav.event": "Tapahtuma",
     "nav.exp": "Kokemus",
     "nav.ajankohtaset": "Ajankohtaset",
-    "nav.gallery": "Kuvat",
-    "nav.map": "Kartta",
-    "nav.practical": "Käytännöt",
+    "nav.joulukodit": "Merikaupungin joulukodit",
+    "nav.gallery": "Kristiinankaupunki",
+    "nav.map": "Saapuminen",
+    "nav.register": "Ilmoittautuminen",
     "nav.contact": "Yhteys",
     "hero.eyebrow": "Kesäkuussa · Kristiinankaupungin keskusta",
     "hero.bannerAlt":
       "Öppna portar / Avoimet portit 2026, Kristiinankaupunki, 13.–14.6.2026 klo 10–18.",
-    "hero.title": "Porttien takana avautuu puutarhamaailma",
+    "hero.title": "Porttien takana avautuu salainen maailma",
     "hero.lead":
-      "Avoimet portit on kulttuuritapahtuma pihoissa ja puutarhoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin elämään ja kesäkuun kukkaloistoon.",
+      "Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.",
     "hero.photoCap": "Puutalokatu Kristiinankaupungissa — tapahtuman tunnelmaa.",
     "meta.when": "Ajankohta",
     "meta.dates": "12.–13.6.2026 klo 10–18",
     "meta.where": "Paikka",
     "meta.place": "Kristiinankaupungin keskustan puutalovyöhyke",
-    "cta.official": "Viralliset tiedot Visit Kristinestad",
+    "cta.official": "Visit Kristiinankaupunki",
     "cta.facebook": "Facebook",
-    "hero.note":
-      "Päivämäärät ja ohjelma vahvistetaan keväällä — seuraa virallisia kanavia.",
-    "gallery.h2": "Kristiinankaupunki kuvina",
+    "gallery.h2": "Kristiinankaupunki",
+    "gallery.linkVisit": "Tervetuloa Kristinestadiin",
+    "gallery.linkDigiMap": "Digitaalinen kartta",
     "gallery.lead":
       "Aitoja näkymiä vanhasta puutalokaupungista — sama miljö, jossa Avoimet portit -tapahtuma järjestetään.",
     "gallery.cap1": "Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.",
@@ -44,7 +45,8 @@ const DEFAULT_STRINGS = {
     "map.popup.historic.title": "Vanhan kaupungin ruutukaava",
     "map.popup.historic.body":
       "Historiallinen puutaloalue — useimmat Avoimet portit -kohteet ovat kävelymatkan päässä.",
-    "about.h2": "Mikä on Avoimet portit?",
+    "map.popup.kiosk": "Info ja lippukioski",
+    "about.h2": "Avoimet Portit",
     "about.deck":
       "Tapahtuman järjestää Avoimet Portit -työryhmä yhteistyössä pihanomistajien, yhdistysten, yrittäjien ja taiteilijoiden sekä kaupungin palvelualueiden kanssa.",
     "about.p1":
@@ -64,8 +66,10 @@ const DEFAULT_STRINGS = {
     "exp.c2p":
       "Näyttelyitä, yhteisöllistä ohjelmaa ja elämyksiä, jotka tuovat esiin sekä puutarhaa että rakennusperintöä.",
     "exp.c3h": "Yhdistä museoon",
-    "exp.c3p":
-      "Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — kysy päivitettyjä vinkkejä infosta.",
+    "exp.c3p.before":
+      "Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — katso päivitetyt vinkit ",
+    "exp.c3p.link": "Tervetuloa Kristinestadiin",
+    "exp.c3p.after": ".",
     "ajankohtaset.h2": "Ajankohtaset",
     "ajankohtaset.kicker": "Tiedotteet",
     "ajankohtaset.p1":
@@ -76,51 +80,93 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "Ajankohtaset – Avoimet portit | Kristiinankaupunki",
     "ajankohtaset.metaDescription":
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
-    "prac.h2": "Liput ja käytännöt",
+    "joulukodit.h2": "Merikaupungin joulukodit",
+    "joulukodit.backHome": "← Etusivulle",
+    "joulukodit.documentTitle": "Merikaupungin joulukodit – Avoimet portit | Kristiinankaupunki",
+    "joulukodit.metaDescription": "Merikaupungin joulukodit Kristiinankaupungissa.",
+    "prac.h2": "Liput",
     "prac.priceh": "Hinnat (viitteenä)",
     "prac.p1": "1 päivä",
     "prac.p2": "2 päivää",
     "prac.p3": "Lapset alle 12 v",
     "prac.free": "ilmaiseksi",
-    "prac.disclaimer": "Hinnat ja rannekkeet vahvistetaan tapahtuman virallisilla sivuilla.",
+    "prac.ticketIncludes":
+      "Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.",
     "prac.p4":
       "Tarkista vierailukohteet, kartta ja mahdolliset uudet kohteet Visit Kristinestadin ja tapahtuman Facebook-sivuilta ennen matkaa.",
     "prac.p5":
       "Kristiinankaupungin tapahtumakalenterissa on ajantasaiset kellonajat ja yhteystiedot matkailuun.",
+    "reg.h2": "Ilmoittautuminen",
+    "reg.lead": "Täytä ilmoittautumislomake. Tiedot lähetetään järjestäjälle sähköpostiin.",
+    "reg.field.name": "Nimi / Namn",
+    "reg.field.address": "Osoite / Adress",
+    "reg.field.phone": "Puh.nro / Tel.nr",
+    "reg.field.email": "S-posti / E-post",
+    "reg.field.consent":
+      "Pihaani ja taloani saa kuvata ja käyttää esim. markkinoinnissa, sosiaalisissa medioissa, julkaisuissa yms.",
+    "reg.submit": "Lähetä ilmoittautuminen",
+    "reg.status.missingEmail":
+      "Sähköpostiosoite puuttuu vielä. Lisää vastaanottaja tiedostoon site-content.json.",
+    "reg.status.mailto":
+      "Lähetys avaa sähköpostiohjelman valmiilla viestillä. Tarkista vastaanottaja ennen lähettämistä.",
+    "reg.status.remote":
+      "Lomake lähetetään suoraan valittuun lomakepalveluun.",
+    "reg.feedback.success": "Ilmoittautuminen lähetetty.",
+    "reg.feedback.error": "Lähetys epäonnistui. Yritä uudelleen.",
+    "reg.consent.yes": "Kyllä",
+    "reg.consent.no": "Ei",
     "contact.h2": "Yhteystiedot",
     "contact.deck": "Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu",
     "contact.chair": "Puheenjohtaja",
     "contact.tourism": "Matkailu",
-    "contact.links": "Hyödylliset linkit",
+    "contact.links": "Muut linkit",
     "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",
     "contact.link2": "Open Gates — Visit Kristinestad (EN)",
-    "contact.link3": "kristinestadoppnaportar.fi",
+    "contact.link3": "Avoimet portit – Visit Kristinestad",
     "contact.link4": "Kristiinankaupungin tapahtumakalenteri",
+    "contact.team.h2": "Työryhmä",
+    "contact.team.p1":
+      "Kymmenen vapaaehtoisen jäsenen joukko on kulkenut pitkän matkan yhdessä — suurin osa heistä on ollut mukana aivan alusta saakka. Heitä yhdistää halu tehdä jotain, mikä näkyy ja tuntuu koko yhteisössä.",
+    "contact.team.p2":
+      "Tämän porukan käsissä syntyvät sekä Avoimet Portit että Merikaupungin joulukodit, kaksi tapahtumaa, jotka keräävät vuosittain yhteen niin paikalliset kuin kauempaakin tulevat vieraat. Kaikki toteutetaan talkoovoimin: ideointi, suunnittelu, järjestelyt ja viimeisetkin yksityiskohdat. Jokainen jäsen tuo mukanaan oman osaamisensa, energiansa ja intohimonsa — ja juuri siksi nämä tapahtumat ovat niin ainutlaatuisia.",
+    "contact.team.p3":
+      "Työryhmä ei ole vain joukko vapaaehtoisia. Se on yhteisö, joka rakentaa elämyksiä, vaalii paikallista kulttuuria ja luo hetkiä, jotka jäävät jokaisen mieleen pitkäksi aikaa.",
+    "contact.team.m1.line": "Helena Patoranta, puheenjohtaja",
+    "contact.team.m2.line": "Maarit Juhala, sihteeri",
+    "contact.team.m3.line": "Reija Ådjers",
+    "contact.team.m4.line": "Kristina Itälaakso",
+    "contact.team.m5.line": "Maarit Rosengård",
+    "contact.team.m6.line": "Margaretha Reinlund",
+    "contact.team.m7.line": "Hilkka Wilhelms",
+    "contact.team.m8.line": "Karin Rusk",
+    "contact.team.m9.line": "Marit Hämäläinen",
+    "contact.team.m10.line": "Helena Kari",
   },
   sv: {
     "nav.event": "Evenemanget",
     "nav.exp": "Upplevelse",
     "nav.ajankohtaset": "Aktuellt",
-    "nav.gallery": "Bilder",
-    "nav.map": "Karta",
-    "nav.practical": "Praktiskt",
+    "nav.joulukodit": "Sjöstadens julhem",
+    "nav.gallery": "Kristiinankaupunki",
+    "nav.map": "Ankomst",
+    "nav.register": "Anmälan",
     "nav.contact": "Kontakt",
     "hero.eyebrow": "I juni · Kristinestads centrum",
     "hero.bannerAlt":
       "Öppna portar / Avoimet portit 2026, Kristinestad, 13.–14.6.2026 kl. 10–18.",
-    "hero.title": "En värld av trädgårdar bakom grindarna",
+    "hero.title": "En hemlig värld öppnar sig bakom grindarna",
     "hero.lead":
-      "Öppna portar är ett kulturarrangemang i gårdar och trädgårdar: välkomnande miljöer som vanligtvis dolts bakom stängda portar bjuder in till livet i den gamla trästadsbebyggelsen och juni månads blomsterprakt.",
+      "Öppna portar är ett kulturarrangemang i hembygdsgårdarna: välkomnande gårdar som du vanligtvis inte ser i vardagen bjuder in till kulturlivet i den gamla trästaden och juni månads blomsterprakt.",
     "hero.photoCap": "Trähusgata i Kristinestad — stämningen kring arrangemanget.",
     "meta.when": "Tid",
     "meta.dates": "12.–13.6.2026 kl. 10–18",
     "meta.where": "Plats",
     "meta.place": "Trähusstadsdelen i Kristinestads centrum",
-    "cta.official": "Officiell info hos Visit Kristinestad",
+    "cta.official": "Besök Kristinestad",
     "cta.facebook": "Facebook",
-    "hero.note":
-      "Datum och program bekräftas under våren — följ de officiella kanalerna.",
-    "gallery.h2": "Kristinestad i bilder",
+    "gallery.h2": "Kristinestad",
+    "gallery.linkVisit": "Välkommen till Kristinestad",
+    "gallery.linkDigiMap": "Digital karta",
     "gallery.lead":
       "Äkta vyer från den gamla trästaden — samma miljö där Öppna portar ordnas.",
     "gallery.cap1": "Vy mot rutnätsplanens område och trähusens taklandskap.",
@@ -142,7 +188,8 @@ const DEFAULT_STRINGS = {
     "map.popup.historic.title": "Gamla stadens rutnätsplan",
     "map.popup.historic.body":
       "Historisk trähusstadsdel — de flesta besöksmålen inom Öppna portar ligger inom gångavstånd.",
-    "about.h2": "Vad är Öppna portar?",
+    "map.popup.kiosk": "Info och biljettkiosk",
+    "about.h2": "Öppna portar",
     "about.deck":
       "Arrangemanget leds av arbetsgruppen Öppna portar i samarbete med gårdsägare, föreningar, företagare och konstnärer samt stadens förvaltningar.",
     "about.p1":
@@ -162,8 +209,10 @@ const DEFAULT_STRINGS = {
     "exp.c2p":
       "Utställningar, gemensamma upplevelser som lyfter både trädgård och byggnadskultur.",
     "exp.c3h": "Kombinera med museum",
-    "exp.c3p":
-      "Passa på att besöka museum och gallerier — fråga infon om aktuella tips.",
+    "exp.c3p.before":
+      "Passa på att besöka museum och gallerier i samband med arrangemanget — se uppdaterade tips på ",
+    "exp.c3p.link": "Välkommen till Kristinestad",
+    "exp.c3p.after": ".",
     "ajankohtaset.h2": "Aktuellt",
     "ajankohtaset.kicker": "Nyheter",
     "ajankohtaset.p1":
@@ -174,51 +223,93 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "Aktuellt – Öppna portar | Kristinestad",
     "ajankohtaset.metaDescription":
       "Aktuella meddelanden om Öppna portar i Kristinestad.",
-    "prac.h2": "Biljetter och praktiskt",
+    "joulukodit.h2": "Sjöstadens julhem",
+    "joulukodit.backHome": "← Till startsidan",
+    "joulukodit.documentTitle": "Sjöstadens julhem – Öppna portar | Kristinestad",
+    "joulukodit.metaDescription": "Sjöstadens julhem i Kristinestad.",
+    "prac.h2": "Biljetter",
     "prac.priceh": "Priser (vägledande)",
     "prac.p1": "1 dag",
     "prac.p2": "2 dagar",
     "prac.p3": "Barn under 12 år",
     "prac.free": "gratis",
-    "prac.disclaimer": "Priser och armband bekräftas på arrangemangets officiella sidor.",
+    "prac.ticketIncludes":
+      "I biljettpriset (armband) ingår information om besöksmål, karta över målen och evenemangsprogrammet.",
     "prac.p4":
       "Kontrollera besöksmål, karta och nya objekt hos Visit Kristinestad och på Facebook innan resan.",
     "prac.p5":
       "Kristinestads evenemangskalender har uppdaterade tider och kontakt till turismen.",
+    "reg.h2": "Anmälan",
+    "reg.lead": "Fyll i anmälningsformuläret. Uppgifterna skickas till arrangören via e-post.",
+    "reg.field.name": "Namn",
+    "reg.field.address": "Adress",
+    "reg.field.phone": "Tel.nr",
+    "reg.field.email": "E-post",
+    "reg.field.consent":
+      "Min gård och mitt hus får fotograferas och användas till till exempel marknadsföring, sociala medier och publikationer.",
+    "reg.submit": "Skicka anmälan",
+    "reg.status.missingEmail":
+      "Mottagarens e-post saknas ännu. Lägg till adressen i site-content.json.",
+    "reg.status.mailto":
+      "Skickandet öppnar ditt e-postprogram med ett färdigt meddelande. Kontrollera mottagaren före sändning.",
+    "reg.status.remote":
+      "Formuläret skickas direkt till den valda formulärtjänsten.",
+    "reg.feedback.success": "Anmälan skickades.",
+    "reg.feedback.error": "Skickandet misslyckades. Försök igen.",
+    "reg.consent.yes": "Ja",
+    "reg.consent.no": "Nej",
     "contact.h2": "Kontakt",
     "contact.deck": "Arbetsgruppen Öppna portar och Kristinestads turism",
     "contact.chair": "Ordförande",
     "contact.tourism": "Turism",
-    "contact.links": "Nyttiga länkar",
+    "contact.links": "Övriga länkar",
     "contact.link1": "Öppna portar — Visit Kristinestad (FI)",
     "contact.link2": "Open Gates — Visit Kristinestad (EN)",
-    "contact.link3": "kristinestadoppnaportar.fi",
+    "contact.link3": "Öppna portar – Visit Kristinestad",
     "contact.link4": "Kristinestads evenemangskalender",
+    "contact.team.h2": "Arbetsgruppen",
+    "contact.team.p1":
+      "Tio frivilliga medlemmar har gått långt tillsammans — de flesta har varit med från allra första början. Det som förenar dem är viljan att göra något som syns och känns i hela samhället.",
+    "contact.team.p2":
+      "Den här gruppen skapar både Öppna portar och Sjöstadens julhem – två arrangemang som årligen samlar gäster från nära och fjärran. Allt görs med talkoglädje: idéskisser, planering, praktiska förberedelser och de sista detaljerna. Var och en bidrar med sin kompetens, energi och passion – och just därför blir dessa evenemang så unika.",
+    "contact.team.p3":
+      "Arbetsgruppen är inte bara en skara frivilliga. Det är en gemenskap som skapar upplevelser, vårdar det lokala kulturarvet och skapar ögonblick som minns länge.",
+    "contact.team.m1.line": "Helena Patoranta, ordförande",
+    "contact.team.m2.line": "Maarit Juhala, sekreterare",
+    "contact.team.m3.line": "Reija Ådjers",
+    "contact.team.m4.line": "Kristina Itälaakso",
+    "contact.team.m5.line": "Maarit Rosengård",
+    "contact.team.m6.line": "Margaretha Reinlund",
+    "contact.team.m7.line": "Hilkka Wilhelms",
+    "contact.team.m8.line": "Karin Rusk",
+    "contact.team.m9.line": "Marit Hämäläinen",
+    "contact.team.m10.line": "Helena Kari",
   },
   en: {
     "nav.event": "The event",
     "nav.exp": "Experience",
     "nav.ajankohtaset": "News",
-    "nav.gallery": "Gallery",
-    "nav.map": "Map",
-    "nav.practical": "Practical",
+    "nav.joulukodit": "Christmas homes",
+    "nav.gallery": "Kristiinankaupunki",
+    "nav.map": "Getting here",
+    "nav.register": "Registration",
     "nav.contact": "Contact",
     "hero.eyebrow": "In June · Kristinestad city centre",
     "hero.bannerAlt":
       "Öppna portar / Avoimet portit 2026, Kristinestad, 13–14 June 2026, 10:00–18:00.",
-    "hero.title": "A world of gardens behind the gates",
+    "hero.title": "A secret world opens behind the gates",
     "hero.lead":
-      "Open Gates is a cultural event in yards and gardens: welcoming spaces usually hidden behind closed gates invite you to discover life in the old wooden town and the bloom of June.",
+      "Open Gates is a cultural event in home yards: welcoming yards you rarely see in everyday life invite you to explore the cultural life of the old wooden town and June in full bloom.",
     "hero.photoCap": "A wooden-house street in Kristinestad — the spirit of the event.",
     "meta.when": "When",
     "meta.dates": "12–13 June 2026, 10:00–18:00",
     "meta.where": "Where",
     "meta.place": "The wooden-house quarter in central Kristinestad",
-    "cta.official": "Official details at Visit Kristinestad",
+    "cta.official": "Visit Kristinestad",
     "cta.facebook": "Facebook",
-    "hero.note":
-      "Dates and programme are confirmed in spring — follow the official channels.",
-    "gallery.h2": "Kristinestad in photos",
+    "gallery.h2": "Kristinestad",
+    "gallery.linkVisit": "Visit Kristinestad",
+    "gallery.linkDigiMap": "Digital map",
     "gallery.lead":
       "Real views from the old wooden town — the same setting where Open Gates takes place.",
     "gallery.cap1": "A view towards the grid plan area and the sea of wooden rooftops.",
@@ -240,7 +331,8 @@ const DEFAULT_STRINGS = {
     "map.popup.historic.title": "Old town grid plan",
     "map.popup.historic.body":
       "Historic wooden town quarter — most Open Gates stops are within walking distance.",
-    "about.h2": "What is Open Gates?",
+    "map.popup.kiosk": "Info and ticket kiosk",
+    "about.h2": "Open Gates",
     "about.deck":
       "The event is organised by the Open Gates working group together with yard owners, associations, entrepreneurs and artists, and the city’s services.",
     "about.p1":
@@ -260,8 +352,10 @@ const DEFAULT_STRINGS = {
     "exp.c2p":
       "Exhibitions and community events highlighting both greenery and built heritage.",
     "exp.c3h": "Add a museum visit",
-    "exp.c3p":
-      "Combine the event with local museums and galleries — ask at info for up-to-date tips.",
+    "exp.c3p.before":
+      "Combine the event with museum and gallery visits — see up-to-date tips on ",
+    "exp.c3p.link": "Visit Kristinestad",
+    "exp.c3p.after": ".",
     "ajankohtaset.h2": "News",
     "ajankohtaset.kicker": "Updates",
     "ajankohtaset.p1":
@@ -272,26 +366,67 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "News – Open Gates | Kristinestad",
     "ajankohtaset.metaDescription":
       "Latest news and reminders about the Open Gates event in Kristinestad.",
-    "prac.h2": "Tickets and practicalities",
+    "joulukodit.h2": "Christmas homes",
+    "joulukodit.backHome": "← Home",
+    "joulukodit.documentTitle": "Christmas homes – Open Gates | Kristinestad",
+    "joulukodit.metaDescription": "Christmas homes event in Kristinestad.",
+    "prac.h2": "Tickets",
     "prac.priceh": "Prices (indicative)",
     "prac.p1": "1 day",
     "prac.p2": "2 days",
     "prac.p3": "Children under 12",
     "prac.free": "free",
-    "prac.disclaimer": "Prices and wristbands are confirmed on the official event pages.",
+    "prac.ticketIncludes":
+      "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
     "prac.p4":
       "Check sites on the map and any new venues on Visit Kristinestad and the Facebook page before you travel.",
     "prac.p5":
       "The City of Kristinestad event calendar has current times and tourism contacts.",
+    "reg.h2": "Registration",
+    "reg.lead": "Fill in the registration form. The details are sent to the organizer by email.",
+    "reg.field.name": "Name",
+    "reg.field.address": "Address",
+    "reg.field.phone": "Phone",
+    "reg.field.email": "Email",
+    "reg.field.consent":
+      "My yard and house may be photographed and used in marketing, social media, publications, etc.",
+    "reg.submit": "Send registration",
+    "reg.status.missingEmail":
+      "Receiver email is not configured yet. Add it to site-content.json.",
+    "reg.status.mailto":
+      "Submitting opens your mail app with a prefilled message. Confirm the receiver before sending.",
+    "reg.status.remote":
+      "This form submits directly to the configured form service.",
+    "reg.feedback.success": "Registration sent.",
+    "reg.feedback.error": "Sending failed. Please try again.",
+    "reg.consent.yes": "Yes",
+    "reg.consent.no": "No",
     "contact.h2": "Contact",
     "contact.deck": "Open Gates working group and Kristinestad tourism",
     "contact.chair": "Chair",
     "contact.tourism": "Tourism",
-    "contact.links": "Useful links",
+    "contact.links": "Other links",
     "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",
     "contact.link2": "Open Gates — Visit Kristinestad (EN)",
-    "contact.link3": "kristinestadoppnaportar.fi",
+    "contact.link3": "Open Gates – Visit Kristinestad",
     "contact.link4": "Kristinestad event calendar",
+    "contact.team.h2": "Working group",
+    "contact.team.p1":
+      "This group of ten volunteers has come a long way together — most have been involved from the very beginning. What unites them is the wish to create something that can be seen and felt across the whole community.",
+    "contact.team.p2":
+      "Together they bring you both Open Gates and Merikaupungin joulukodit (Christmas homes of the maritime town) — two events that each year welcome visitors from near and far. Everything is done as volunteer work: ideas, planning, arrangements and the final details. Each member brings their own skills, energy and passion — which is why these events are so special.",
+    "contact.team.p3":
+      "The working group is not only volunteers. It is a community that builds experiences, cherishes local culture and creates moments that stay with you.",
+    "contact.team.m1.line": "Helena Patoranta, chair",
+    "contact.team.m2.line": "Maarit Juhala, secretary",
+    "contact.team.m3.line": "Reija Ådjers",
+    "contact.team.m4.line": "Kristina Itälaakso",
+    "contact.team.m5.line": "Maarit Rosengård",
+    "contact.team.m6.line": "Margaretha Reinlund",
+    "contact.team.m7.line": "Hilkka Wilhelms",
+    "contact.team.m8.line": "Karin Rusk",
+    "contact.team.m9.line": "Marit Hämäläinen",
+    "contact.team.m10.line": "Helena Kari",
   },
 };
 
@@ -300,6 +435,8 @@ let STRINGS = {};
 const MAP_POINTS = {
   tourism: [62.2728432, 21.3790031],
   historicGrid: [62.273783, 21.376305],
+  /** Salutorget (Östra Långgatan), Kristiinankaupunki — OSM node */
+  infoKiosk: [62.2739823, 21.3783479],
 };
 
 /** Fallback when site-content.json has no ajankohtasetByYear; images in public/images/ */
@@ -324,6 +461,12 @@ let lastSiteContentData = null;
 let mapInstance;
 let tourismMarker;
 let historicMarker;
+let infoKioskMarker;
+let registrationConfig = {
+  formAction: "",
+  receiverEmail: "",
+  subject: "Avoimet portit - ilmoittautuminen",
+};
 
 function mergeDefaultStrings() {
   STRINGS = {
@@ -350,14 +493,47 @@ function imgPath(filename) {
   return `images/${clean}`;
 }
 
+function registrationStatusText(bundle, mode, hasEmail) {
+  if (mode === "remote") return bundle["reg.status.remote"] || "";
+  if (hasEmail) return bundle["reg.status.mailto"] || "";
+  return bundle["reg.status.missingEmail"] || "";
+}
+
+function updateRegistrationUi() {
+  const form = document.getElementById("registration-form");
+  if (!form) return;
+  const bundle = STRINGS[currentLangKey()] || STRINGS.fi;
+  const status = document.getElementById("registration-status");
+  const submit = document.getElementById("registration-submit");
+  const mode = form.dataset.submitMode || "remote";
+  const hasEmail = Boolean(registrationConfig.receiverEmail);
+
+  if (status) status.textContent = registrationStatusText(bundle, mode, hasEmail);
+  if (submit) submit.disabled = !hasEmail;
+}
+
+function setRegistrationFeedback(type, key) {
+  const el = document.getElementById("registration-feedback");
+  if (!el) return;
+  const bundle = STRINGS[currentLangKey()] || STRINGS.fi;
+  el.classList.remove("is-success", "is-error");
+  if (!type || !key) {
+    el.textContent = "";
+    return;
+  }
+  el.classList.add(type === "success" ? "is-success" : "is-error");
+  el.textContent = bundle[key] || "";
+}
+
 function applyStructuredContent(data) {
   if (!data || typeof data !== "object") return;
 
   const site = data.site;
-  const isAjankohtasetPage = document.body?.getAttribute("data-page") === "ajankohtaset";
-  if (site && site.title && !isAjankohtasetPage) document.title = site.title;
+  const pageId = document.body?.getAttribute("data-page");
+  const isContentSubpage = pageId === "ajankohtaset" || pageId === "joulukodit";
+  if (site && site.title && !isContentSubpage) document.title = site.title;
   const meta = document.getElementById("meta-description");
-  if (meta && site && site.description && !isAjankohtasetPage) {
+  if (meta && site && site.description && !isContentSubpage) {
     meta.setAttribute("content", site.description);
   }
 
@@ -403,6 +579,12 @@ function applyStructuredContent(data) {
     if (fb && links.facebook) fb.href = links.facebook;
     const visit = document.getElementById("link-visit-website");
     if (visit && links.visitWebsite) visit.href = links.visitWebsite;
+    const expC3Visit = document.getElementById("link-exp-c3-visit");
+    if (expC3Visit && links.visitWebsite) expC3Visit.href = links.visitWebsite;
+    const galleryVisit = document.getElementById("link-gallery-visit");
+    if (galleryVisit && links.visitWebsite) galleryVisit.href = links.visitWebsite;
+    const galleryDigi = document.getElementById("link-gallery-digi");
+    if (galleryDigi && links.krsDigiArcMap) galleryDigi.href = links.krsDigiArcMap;
     const f1 = document.getElementById("link-footer-1");
     const f2 = document.getElementById("link-footer-2");
     const f3 = document.getElementById("link-footer-3");
@@ -411,6 +593,10 @@ function applyStructuredContent(data) {
     if (f2 && links.visitOpenGatesEn) f2.href = links.visitOpenGatesEn;
     if (f3 && links.programSite) f3.href = links.programSite;
     if (f4 && links.cityCalendar) f4.href = links.cityCalendar;
+    const joulukoditNav = document.getElementById("link-nav-joulukodit");
+    if (joulukoditNav && links.merikaupunginJoulukodit) {
+      joulukoditNav.href = links.merikaupunginJoulukodit;
+    }
   }
 
   const prices = data.prices;
@@ -440,6 +626,30 @@ function applyStructuredContent(data) {
         if (img && file) img.src = imgPath(file);
       });
     }
+  }
+
+  const reg = data.registration;
+  if (reg && typeof reg === "object") {
+    registrationConfig = {
+      formAction: typeof reg.formAction === "string" ? reg.formAction.trim() : "",
+      receiverEmail:
+        typeof reg.receiverEmail === "string" ? reg.receiverEmail.trim() : "",
+      subject:
+        typeof reg.subject === "string" && reg.subject.trim()
+          ? reg.subject.trim()
+          : registrationConfig.subject,
+    };
+  }
+
+  const form = document.getElementById("registration-form");
+  if (form) {
+    const hiddenSubject = document.getElementById("registration-hidden-subject");
+    if (hiddenSubject) hiddenSubject.value = registrationConfig.subject;
+
+    form.removeAttribute("action");
+    form.removeAttribute("target");
+    form.dataset.submitMode = "remote";
+    updateRegistrationUi();
   }
 }
 
@@ -576,9 +786,11 @@ function popupHtml(bundle) {
   const tBody = escapeHtml(bundle["map.popup.tourism.body"]);
   const hTitle = escapeHtml(bundle["map.popup.historic.title"]);
   const hBody = escapeHtml(bundle["map.popup.historic.body"]);
+  const kKiosk = escapeHtml(bundle["map.popup.kiosk"] || "");
   return {
     tourism: `<strong>${tTitle}</strong><br>${tBody}`,
     historic: `<strong>${hTitle}</strong><br>${hBody}`,
+    kiosk: kKiosk ? `<strong>${kKiosk}</strong>` : "",
   };
 }
 
@@ -589,15 +801,25 @@ function currentLangKey() {
 }
 
 function applySubpageChrome() {
-  if (document.body?.getAttribute("data-page") !== "ajankohtaset") return;
+  const pageId = document.body?.getAttribute("data-page");
+  if (pageId !== "ajankohtaset" && pageId !== "joulukodit") return;
   const lang = currentLangKey();
   const b = STRINGS[lang] || STRINGS.fi;
-  if (b["ajankohtaset.documentTitle"]) {
-    document.title = b["ajankohtaset.documentTitle"];
-  }
   const meta = document.getElementById("meta-description");
-  if (meta && b["ajankohtaset.metaDescription"]) {
-    meta.setAttribute("content", b["ajankohtaset.metaDescription"]);
+  if (pageId === "ajankohtaset") {
+    if (b["ajankohtaset.documentTitle"]) {
+      document.title = b["ajankohtaset.documentTitle"];
+    }
+    if (meta && b["ajankohtaset.metaDescription"]) {
+      meta.setAttribute("content", b["ajankohtaset.metaDescription"]);
+    }
+  } else if (pageId === "joulukodit") {
+    if (b["joulukodit.documentTitle"]) {
+      document.title = b["joulukodit.documentTitle"];
+    }
+    if (meta && b["joulukodit.metaDescription"]) {
+      meta.setAttribute("content", b["joulukodit.metaDescription"]);
+    }
   }
 }
 
@@ -607,6 +829,9 @@ function updateMapPopups() {
   const html = popupHtml(bundle);
   tourismMarker.bindPopup(html.tourism);
   historicMarker.bindPopup(html.historic);
+  if (infoKioskMarker && html.kiosk) {
+    infoKioskMarker.bindPopup(html.kiosk);
+  }
 }
 
 function initMap() {
@@ -624,8 +849,13 @@ function initMap() {
 
   tourismMarker = L.marker(MAP_POINTS.tourism).addTo(mapInstance);
   historicMarker = L.marker(MAP_POINTS.historicGrid).addTo(mapInstance);
+  infoKioskMarker = L.marker(MAP_POINTS.infoKiosk).addTo(mapInstance);
 
-  const bounds = L.latLngBounds([MAP_POINTS.tourism, MAP_POINTS.historicGrid]);
+  const bounds = L.latLngBounds([
+    MAP_POINTS.tourism,
+    MAP_POINTS.historicGrid,
+    MAP_POINTS.infoKiosk,
+  ]);
   mapInstance.fitBounds(bounds, { padding: [48, 48], maxZoom: 16 });
 
   updateMapPopups();
@@ -664,6 +894,7 @@ function setLanguage(lang) {
   });
 
   updateMapPopups();
+  updateRegistrationUi();
   applySubpageChrome();
   renderAjankohtasetYearBlocks();
 
@@ -672,6 +903,71 @@ function setLanguage(lang) {
   } catch {
     /* ignore */
   }
+}
+
+function initRegistrationForm() {
+  const form = document.getElementById("registration-form");
+  if (!form) return;
+
+  form.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    setRegistrationFeedback("", "");
+    if (!registrationConfig.receiverEmail) {
+      updateRegistrationUi();
+      return;
+    }
+
+    const b = STRINGS[currentLangKey()] || STRINGS.fi;
+    const formData = new FormData(form);
+    const consent = formData.get("photoConsent")
+      ? b["reg.consent.yes"] || "Yes"
+      : b["reg.consent.no"] || "No";
+    const sendData = new FormData();
+    sendData.append(
+      b["reg.field.name"] || "Name",
+      String(formData.get("participantName") || "")
+    );
+    sendData.append(
+      b["reg.field.address"] || "Address",
+      String(formData.get("participantAddress") || "")
+    );
+    sendData.append(
+      b["reg.field.phone"] || "Phone",
+      String(formData.get("participantPhone") || "")
+    );
+    sendData.append(
+      b["reg.field.email"] || "Email",
+      String(formData.get("participantEmail") || "")
+    );
+    sendData.append(b["reg.field.consent"] || "Photo consent", consent);
+    sendData.append("_subject", registrationConfig.subject);
+    sendData.append("_captcha", "false");
+
+    const endpoint =
+      registrationConfig.formAction ||
+      `https://formsubmit.co/ajax/${encodeURIComponent(
+        registrationConfig.receiverEmail
+      )}`;
+
+    const submitBtn = document.getElementById("registration-submit");
+    if (submitBtn) submitBtn.disabled = true;
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: sendData,
+      });
+      if (!res.ok) throw new Error("submit failed");
+      form.reset();
+      setRegistrationFeedback("success", "reg.feedback.success");
+    } catch {
+      setRegistrationFeedback("error", "reg.feedback.error");
+    } finally {
+      updateRegistrationUi();
+    }
+  });
+
+  updateRegistrationUi();
 }
 
 function initNav() {
@@ -732,6 +1028,7 @@ async function boot() {
   initLang();
   applySubpageChrome();
   initMap();
+  initRegistrationForm();
 }
 
 function initYear() {
