@@ -9,6 +9,10 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
    - "contact" → yhteyshenkilö, puhelin, sähköposti, osoite.
    - "links" → painikkeiden ja alalaidan linkkien osoitteet.
    - "prices" → hintarivien eurot (esim. "15 €").
+   - "registration" → ilmoittautumislomakkeen vastaanottaja:
+     - "receiverEmail": sähköposti, johon ilmoittautuminen lähetetään.
+     - "formAction": valinnainen lomakepalvelun osoite (esim. Formspree/FormSubmit).
+       Jos formAction on tyhjä, lomake avaa sähköpostiohjelman.
 
    Tiedoston pitää olla kelvollista JSON:ia (pilkuilla ja lainausmerkeillä). Voit tarkistaa
    esim. osoitteessa jsonlint.com.

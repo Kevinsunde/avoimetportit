@@ -24,6 +24,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         ajankohtaset: resolve(__dirname, "ajankohtaset.html"),
+        joulukodit: resolve(__dirname, "merikaupungin-joulukodit.html"),
       },
     },
   },

@@ -60,13 +60,14 @@ for (let j = i + needle.length; j < src.length; j++) {
           postalCity: "64100 Kristiinankaupunki",
         },
         links: {
-          officialEvent: "https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/",
+          officialEvent: "https://visitkristinestad.fi/",
           facebook: "https://www.facebook.com/oppnaportar.avoimetportit",
-          visitWebsite: "https://visitkristinestad.fi",
-          programSite: "https://www.kristinestadoppnaportar.fi/fi",
+          visitWebsite: "https://visitkristinestad.fi/",
+          programSite: "https://visitkristinestad.fi/upplev/evenemang/oppna-portar/",
           cityCalendar: "https://www.kristinestad.fi/vapaa-aika/tapahtumia",
           visitOpenGatesFi: "https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/",
           visitOpenGatesEn: "https://visitkristinestad.fi/en/experience/events/open-gates/",
+          krsDigiArcMap: "https://krsdigiarc.com/fi/map/",
         },
         prices: {
           day1: "15 €",

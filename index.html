@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Avoimet portit – Kristiinankaupunki</title>
   <meta id="meta-description" name="description" content="Vuosittainen kulttuuritapahtuma, jossa vanhan puutalokaupungin pihat ja puutarhat avautuvat vierailijoille Kristiinankaupungissa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,6 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="index.html">
-        <span class="logo-mark" aria-hidden="true"></span>
         <span class="logo-text">
           <span class="logo-title" id="logo-title">Avoimet portit</span>
           <span class="logo-sub" id="logo-sub">Kristiinankaupunki</span>
@@ -28,15 +27,20 @@
         <span class="visually-hidden">Valikko</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
-        <ul class="nav-list">
-          <li><a href="#tapahtuma" data-i18n="nav.event">Tapahtuma</a></li>
-          <li><a href="#kokemus" data-i18n="nav.exp">Kokemus</a></li>
-          <li><a href="ajankohtaset.html" data-i18n="nav.ajankohtaset">Ajankohtaset</a></li>
-          <li><a href="#kuvat" data-i18n="nav.gallery">Kuvat</a></li>
-          <li><a href="#kartta" data-i18n="nav.map">Kartta</a></li>
-          <li><a href="#kaytanollinen" data-i18n="nav.practical">Käytännöt</a></li>
-          <li><a href="#yhteys" data-i18n="nav.contact">Yhteys</a></li>
-        </ul>
+        <div class="nav-links-stack">
+          <ul class="nav-list nav-list--primary">
+            <li><a href="#tapahtuma" data-i18n="nav.event">Tapahtuma</a></li>
+            <li><a href="#kokemus" data-i18n="nav.exp">Kokemus</a></li>
+            <li><a href="ajankohtaset.html" data-i18n="nav.ajankohtaset">Ajankohtaset</a></li>
+            <li><a id="link-nav-joulukodit" href="merikaupungin-joulukodit.html" data-i18n="nav.joulukodit">Merikaupungin joulukodit</a></li>
+            <li><a href="#kuvat" data-i18n="nav.gallery">Kristiinankaupunki</a></li>
+          </ul>
+          <ul class="nav-list nav-list--secondary">
+            <li><a href="#kartta" data-i18n="nav.map">Saapuminen</a></li>
+            <li><a href="#ilmoittautuminen" data-i18n="nav.register">Ilmoittautuminen</a></li>
+            <li><a href="#yhteys" data-i18n="nav.contact">Yhteys</a></li>
+          </ul>
+        </div>
         <div class="lang-switch" role="group" aria-label="Kieli">
           <button type="button" class="lang-btn is-active" data-lang="fi" aria-pressed="true">Suomi</button>
           <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">Svenska</button>
@@ -56,9 +60,9 @@
         <div class="hero-split">
         <div class="hero-copy">
           <p class="hero-eyebrow" data-i18n="hero.eyebrow">Kesäkuussa · Kristiinankaupungin keskusta</p>
-          <h1 class="hero-title" data-i18n="hero.title">Porttien takana avautuu puutarhamaailma</h1>
+          <h1 class="hero-title" data-i18n="hero.title">Porttien takana avautuu salainen maailma</h1>
           <p class="hero-lead" data-i18n="hero.lead">
-            Avoimet portit on kulttuuritapahtuma pihoissa ja puutarhoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin elämään ja kesäkuun kukkaloistoon.
+            Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.
           </p>
           <div class="hero-meta">
             <div class="meta-card">
@@ -71,10 +75,9 @@
             </div>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" id="link-official-event" href="https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/" target="_blank" rel="noopener noreferrer" data-i18n="cta.official">Viralliset tiedot Visit Kristinestad</a>
+            <a class="btn btn-primary" id="link-official-event" href="https://visitkristinestad.fi/" target="_blank" rel="noopener noreferrer" data-i18n="cta.official">Visit Kristiinankaupunki</a>
             <a class="btn btn-ghost" id="link-facebook" href="https://www.facebook.com/oppnaportar.avoimetportit" target="_blank" rel="noopener noreferrer" data-i18n="cta.facebook">Facebook</a>
           </div>
-          <p class="hero-note" data-i18n="hero.note">Päivämäärät ja ohjelma vahvistetaan keväällä — seuraa virallisia kanavia.</p>
         </div>
         <figure class="hero-photo">
           <img id="hero-image" src="images/kristinestad-street-2.jpg" alt="" width="1280" height="628" fetchpriority="high" data-i18n-alt="gallery.alt2">
@@ -87,7 +90,7 @@
     <section class="section" id="tapahtuma">
       <div class="section-inner">
         <header class="section-head">
-          <h2 data-i18n="about.h2">Mikä on Avoimet portit?</h2>
+          <h2 data-i18n="about.h2">Avoimet Portit</h2>
           <p class="section-deck" data-i18n="about.deck">
             Tapahtuman järjestää Avoimet Portit -työryhmä yhteistyössä pihanomistajien, yhdistysten, yrittäjien ja taiteilijoiden sekä kaupungin palvelualueiden kanssa.
           </p>
@@ -117,16 +120,18 @@
         </header>
         <div class="cards">
           <article class="card">
-            <h3 data-i18n="exp.c1h">Puutarhat ja pihat</h3>
-            <p data-i18n="exp.c1p">Kiveytyksiä, kukkaloistoa, yksityiskohtia ja tarinoita — jokainen kohde on omanlaisensa.</p>
-          </article>
-          <article class="card">
             <h3 data-i18n="exp.c2h">Kulttuuri ja taide</h3>
             <p data-i18n="exp.c2p">Näyttelyitä, yhteisöllistä ohjelmaa ja elämyksiä, jotka tuovat esiin sekä puutarhaa että rakennusperintöä.</p>
           </article>
           <article class="card">
+            <h3 data-i18n="exp.c1h">Puutarhat ja pihat</h3>
+            <p data-i18n="exp.c1p">Kiveytyksiä, kukkaloistoa, yksityiskohtia ja tarinoita — jokainen kohde on omanlaisensa.</p>
+          </article>
+          <article class="card">
             <h3 data-i18n="exp.c3h">Yhdistä museoon</h3>
-            <p data-i18n="exp.c3p">Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — kysy päivitettyjä vinkkejä infosta.</p>
+            <p class="card-text">
+              <span data-i18n="exp.c3p.before">Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — katso päivitetyt vinkit </span><a class="card-inline-link" id="link-exp-c3-visit" href="https://visitkristinestad.fi/" target="_blank" rel="noopener noreferrer"><span data-i18n="exp.c3p.link">Tervetuloa Kristinestadiin</span></a><span data-i18n="exp.c3p.after">.</span>
+            </p>
           </article>
         </div>
       </div>
@@ -135,7 +140,12 @@
     <section class="section" id="kuvat">
       <div class="section-inner">
         <header class="section-head">
-          <h2 data-i18n="gallery.h2">Kristiinankaupunki kuvina</h2>
+          <h2 data-i18n="gallery.h2">Kristiinankaupunki</h2>
+          <p class="gallery-quick-links">
+            <a id="link-gallery-visit" class="gallery-quick-link" href="https://visitkristinestad.fi/" target="_blank" rel="noopener noreferrer"><span data-i18n="gallery.linkVisit">Tervetuloa Kristinestadiin</span></a>
+            <span class="gallery-quick-links-sep" aria-hidden="true">·</span>
+            <a id="link-gallery-digi" class="gallery-quick-link" href="https://krsdigiarc.com/fi/map/" target="_blank" rel="noopener noreferrer"><span data-i18n="gallery.linkDigiMap">Digitaalinen kartta</span></a>
+          </p>
           <p class="section-deck" data-i18n="gallery.lead">Aitoja näkymiä vanhasta puutalokaupungista — sama miljö, jossa Avoimet portit -tapahtuma järjestetään.</p>
         </header>
         <div class="gallery-grid" id="gallery-root">
@@ -176,7 +186,7 @@
     <section class="section" id="kaytanollinen">
       <div class="section-inner">
         <header class="section-head">
-          <h2 data-i18n="prac.h2">Liput ja käytännöt</h2>
+          <h2 data-i18n="prac.h2">Liput</h2>
         </header>
         <div class="grid-2 prac-grid">
           <div class="price-panel">
@@ -186,9 +196,11 @@
               <li><span data-i18n="prac.p2">2 päivää</span> <strong id="price-day2">20 €</strong></li>
               <li><span data-i18n="prac.p3">Lapset alle 12 v</span> <strong data-i18n="prac.free">ilmaiseksi</strong></li>
             </ul>
-            <p class="small" data-i18n="prac.disclaimer">Hinnat ja rannekkeet vahvistetaan tapahtuman virallisilla sivuilla.</p>
           </div>
           <div class="prose">
+            <p data-i18n="prac.ticketIncludes">
+              Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.
+            </p>
             <p data-i18n="prac.p4">
               Tarkista vierailukohteet, kartta ja mahdolliset uudet kohteet Visit Kristinestadin ja tapahtuman Facebook-sivuilta ennen matkaa.
             </p>
@@ -197,6 +209,51 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="ilmoittautuminen">
+      <div class="section-inner">
+        <header class="section-head">
+          <h2 data-i18n="reg.h2">Ilmoittautuminen</h2>
+          <p class="section-deck" data-i18n="reg.lead">
+            Täytä ilmoittautumislomake. Tiedot lähetetään järjestäjälle sähköpostiin.
+          </p>
+        </header>
+        <form id="registration-form" class="registration-form" novalidate>
+          <div class="registration-grid">
+            <label class="form-field" for="reg-name">
+              <span data-i18n="reg.field.name">Nimi / Namn</span>
+              <input id="reg-name" name="participantName" type="text" required autocomplete="name">
+            </label>
+            <label class="form-field" for="reg-address">
+              <span data-i18n="reg.field.address">Osoite / Adress</span>
+              <input id="reg-address" name="participantAddress" type="text" required autocomplete="street-address">
+            </label>
+            <label class="form-field" for="reg-phone">
+              <span data-i18n="reg.field.phone">Puh.nro / Tel.nr</span>
+              <input id="reg-phone" name="participantPhone" type="tel" required autocomplete="tel">
+            </label>
+            <label class="form-field" for="reg-email">
+              <span data-i18n="reg.field.email">S-posti / E-post</span>
+              <input id="reg-email" name="participantEmail" type="email" required autocomplete="email">
+            </label>
+          </div>
+
+          <label class="form-checkbox" for="reg-photo-consent">
+            <input id="reg-photo-consent" name="photoConsent" type="checkbox" value="yes">
+            <span data-i18n="reg.field.consent">
+              Pihaani ja taloani saa kuvata ja käyttää esim. markkinoinnissa, sosiaalisissa medioissa, julkaisuissa yms.
+            </span>
+          </label>
+
+          <input id="registration-hidden-subject" type="hidden" name="_subject" value="Avoimet portit - ilmoittautuminen">
+          <p id="registration-status" class="small registration-status" data-i18n="reg.status.missingEmail">
+            Sähköpostiosoite puuttuu vielä. Lisää vastaanottaja tiedostoon site-content.json.
+          </p>
+          <p id="registration-feedback" class="small registration-feedback" aria-live="polite"></p>
+          <button id="registration-submit" class="btn btn-primary" type="submit" data-i18n="reg.submit">Lähetä ilmoittautuminen</button>
+        </form>
       </div>
     </section>
 
@@ -219,12 +276,68 @@
             <p id="contact-address-lines">Sjögatan 49 / Merikatu 49<br>64100 Kristiinankaupunki</p>
             <p><a id="link-visit-website" href="https://visitkristinestad.fi" target="_blank" rel="noopener noreferrer">visitkristinestad.fi</a></p>
           </div>
+          <article class="contact-card contact-card-wide contact-team-card">
+            <h3 data-i18n="contact.team.h2">Työryhmä</h3>
+            <div class="contact-team-prose prose">
+              <p data-i18n="contact.team.p1">
+                Kymmenen vapaaehtoisen jäsenen joukko on kulkenut pitkän matkan yhdessä — suurin osa heistä on ollut mukana aivan alusta saakka. Heitä yhdistää halu tehdä jotain, mikä näkyy ja tuntuu koko yhteisössä.
+              </p>
+              <p data-i18n="contact.team.p2">
+                Tämän porukan käsissä syntyvät sekä Avoimet Portit että Merikaupungin joulukodit, kaksi tapahtumaa, jotka keräävät vuosittain yhteen niin paikalliset kuin kauempaakin tulevat vieraat. Kaikki toteutetaan talkoovoimin: ideointi, suunnittelu, järjestelyt ja viimeisetkin yksityiskohdat. Jokainen jäsen tuo mukanaan oman osaamisensa, energiansa ja intohimonsa — ja juuri siksi nämä tapahtumat ovat niin ainutlaatuisia.
+              </p>
+              <p data-i18n="contact.team.p3">
+                Työryhmä ei ole vain joukko vapaaehtoisia. Se on yhteisö, joka rakentaa elämyksiä, vaalii paikallista kulttuuria ja luo hetkiä, jotka jäävät jokaisen mieleen pitkäksi aikaa.
+              </p>
+            </div>
+            <ul class="contact-team-members">
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m1.line">Helena Patoranta, puheenjohtaja</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:helena.patoranta@krs.fi">helena.patoranta@krs.fi</a><span class="contact-team-sep"> · </span><a href="tel:+358407402311">040 740 2311</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m2.line">Maarit Juhala, sihteeri</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:maarit.juhala@gmail.com">maarit.juhala@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358408266246">040 826 6246</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m3.line">Reija Ådjers</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:adjers@gmail.com">adjers@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358405376667">040 537 6667</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m4.line">Kristina Itälaakso</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:kristina@jungman.fi">kristina@jungman.fi</a><span class="contact-team-sep"> · </span><a href="tel:+358405062060">040 506 2060</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m5.line">Maarit Rosengård</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:maarit.rosengard@gmail.com">maarit.rosengard@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358400562980">0400 562 980</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m6.line">Margaretha Reinlund</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:margaretha.reinlund@gmail.com">margaretha.reinlund@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358503490055">050 349 0055</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m7.line">Hilkka Wilhelms</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:wilhelmshilkka@gmail.com">wilhelmshilkka@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358445365123">044 536 5123</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m8.line">Karin Rusk</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:karin.r.rusk@gmail.com">karin.r.rusk@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358400383030">0400 383 030</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m9.line">Marit Hämäläinen</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:marit.hamalainen@gmail.com">marit.hamalainen@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358500500246">0500 500 246</a></div>
+              </li>
+              <li class="contact-team-member">
+                <div class="contact-team-member-line"><strong data-i18n="contact.team.m10.line">Helena Kari</strong></div>
+                <div class="contact-team-member-contact"><a href="mailto:helenamariakari@gmail.com">helenamariakari@gmail.com</a><span class="contact-team-sep"> · </span><a href="tel:+358408181581">040 818 1581</a></div>
+              </li>
+            </ul>
+          </article>
           <div class="contact-card contact-card-wide">
-            <h3 data-i18n="contact.links">Hyödylliset linkit</h3>
+            <h3 data-i18n="contact.links">Muut linkit</h3>
             <ul class="link-list">
               <li><a id="link-footer-1" href="https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/" target="_blank" rel="noopener noreferrer" data-i18n="contact.link1">Avoimet portit — Visit Kristinestad (FI)</a></li>
               <li><a id="link-footer-2" href="https://visitkristinestad.fi/en/experience/events/open-gates/" target="_blank" rel="noopener noreferrer" data-i18n="contact.link2">Open Gates — Visit Kristinestad (EN)</a></li>
-              <li><a id="link-footer-3" href="https://www.kristinestadoppnaportar.fi/fi" target="_blank" rel="noopener noreferrer" data-i18n="contact.link3">kristinestadoppnaportar.fi</a></li>
+              <li><a id="link-footer-3" href="https://visitkristinestad.fi/upplev/evenemang/oppna-portar/" target="_blank" rel="noopener noreferrer" data-i18n="contact.link3">Avoimet portit – Visit Kristinestad</a></li>
               <li><a id="link-footer-4" href="https://www.kristinestad.fi/vapaa-aika/tapahtumia" target="_blank" rel="noopener noreferrer" data-i18n="contact.link4">Kristiinankaupungin tapahtumakalenteri</a></li>
             </ul>
           </div>
