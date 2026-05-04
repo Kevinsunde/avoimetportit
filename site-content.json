@@ -9,11 +9,11 @@
         "wide": true
       },
       {
-        "file": "ap-gallery-2023-tapahtuma.jpg",
+        "file": "ap-gallery-2023-tapahtuma.png",
         "wide": false
       },
       {
-        "file": "ap-gallery-puutalo-2021.jpg",
+        "file": "ap-gallery-puutalo-2021.png",
         "wide": false
       }
     ]
@@ -59,69 +59,6 @@
   },
   "ajankohtasetByYear": [
     {
-      "year": "2024",
-      "images": [
-        {
-          "file": "kristinestad-street-1.jpg",
-          "caption": {
-            "fi": "Avoimet portit 2024 – puutalokatu",
-            "sv": "Öppna portar 2024 – trähusgata",
-            "en": "Open Gates 2024 – wooden-house street"
-          }
-        },
-        {
-          "file": "kristinestad-street-2.jpg",
-          "caption": {
-            "fi": "Kesäinen näkymä 2024",
-            "sv": "Sommarvy 2024",
-            "en": "Summer view 2024"
-          }
-        }
-      ]
-    },
-    {
-      "year": "2025",
-      "images": [
-        {
-          "file": "kristiinankaupunki-ruutukaava.jpg",
-          "caption": {
-            "fi": "Ruutukaava-alue 2025",
-            "sv": "Rutnätsstaden 2025",
-            "en": "Grid-plan quarter 2025"
-          }
-        },
-        {
-          "file": "kristinestad-street-1.jpg",
-          "caption": {
-            "fi": "Tapahtumavierailta 2025",
-            "sv": "Evenemangsbesök 2025",
-            "en": "Event visit 2025"
-          }
-        }
-      ]
-    },
-    {
-      "year": "2026",
-      "images": [
-        {
-          "file": "ap-gallery-2023-tapahtuma.jpg",
-          "caption": {
-            "fi": "Avoimet portit – tunnelmaa 2023",
-            "sv": "Öppna portar – stämning 2023",
-            "en": "Open Gates – atmosphere in 2023"
-          }
-        },
-        {
-          "file": "ap-gallery-drone-kristinestad.jpg",
-          "caption": {
-            "fi": "Kristiinankaupunki ilmasta",
-            "sv": "Kristinestad från luften",
-            "en": "Kristinestad from above"
-          }
-        }
-      ]
-    },
-    {
       "year": "2021–2023",
       "images": [
         { "file": "ap-aja-01.jpg" },
@@ -141,7 +78,29 @@
         { "file": "ap-aja-15.png" },
         { "file": "ap-aja-16.jpg" },
         { "file": "ap-aja-17.jpg" },
-        { "file": "ap-aja-18.jpg" }
+        { "file": "ap-aja-18.jpg" },
+        { "file": "ap-aja-19.jpg" },
+        { "file": "ap-aja-20.jpg" },
+        { "file": "ap-aja-21.jpg" },
+        { "file": "ap-aja-22.jpg" },
+        { "file": "ap-aja-23.jpg" },
+        { "file": "ap-aja-24.jpg" },
+        { "file": "ap-aja-25.jpg" },
+        { "file": "ap-aja-26.jpg" },
+        { "file": "ap-aja-27.png" },
+        { "file": "ap-aja-28.png" },
+        { "file": "ap-aja-29.png" },
+        { "file": "ap-aja-30.png" },
+        { "file": "ap-aja-31.png" },
+        { "file": "ap-aja-32.png" },
+        { "file": "ap-aja-33.png" },
+        { "file": "ap-aja-34.png" },
+        { "file": "ap-aja-35.png" },
+        { "file": "ap-aja-36.jpg" },
+        { "file": "ap-aja-37.jpg" },
+        { "file": "ap-aja-38.jpg" },
+        { "file": "ap-aja-39.jpg" },
+        { "file": "ap-aja-40.jpg" }
       ]
     }
   ],
@@ -167,14 +126,14 @@
       "cta.facebook": "Facebook",
       "gallery.h2": "Kristiinankaupunki",
       "gallery.linkVisit": "Tervetuloa Kristiinaan",
-      "gallery.linkDigiMap": "Digitaalinen kartta",
+      "gallery.linkDigiMap": "Vanhat kartat",
       "gallery.lead": "Aitoja näkymiä vanhasta puutalokaupungista — sama miljöö, jossa Avoimet portit -tapahtuma järjestetään.",
       "gallery.cap1": "Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.",
       "gallery.cap2": "Avoimet portit -tunnelmaa vanhassa puutalokaupungissa (2023).",
-      "gallery.cap3": "Kapea katu ja värikkäät puutalot keskustassa.",
+      "gallery.cap3": "Kesäinen piha ja puutarha — Avoimet portit -tunnelmaa.",
       "gallery.alt1": "Ilmakuva Kristiinankaupungin ruutukaava-alueesta ja puutaloista.",
       "gallery.alt2": "Avoimet portit Kristiinankaupungissa, kesäinen tapahtumakuva.",
-      "gallery.alt3": "Kristiinankaupungin kapea katu ja värikkäät puutalot.",
+      "gallery.alt3": "Pöytä puun alla kesäpuutarhassa, Kristiinankaupunki.",
       "gallery.legal": "Kuvat: Avoimet portit — työryhmän ja tapahtuman kuva-arkisto.",
       "map.h2": "Saapuminen ja tapahtuma-alue",
       "map.lead": "Tapahtuma levittäytyy kävelymatkan päähän matkailuinfosta ja vanhan kaupungin ruutukaava-alueesta. Tarkat kohteet julkaistaan virallisilla sivuilla lähempänä tapahtumaa.",
@@ -271,10 +230,10 @@
       "gallery.lead": "Äkta vyer från den gamla trästaden — samma miljö där Öppna portar ordnas.",
       "gallery.cap1": "Vy mot rutnätsplanens område och trähusens taklandskap.",
       "gallery.cap2": "Öppna portar-stämning i den gamla trästaden (2023).",
-      "gallery.cap3": "Smal gata och färgglada trähus i centrum.",
+      "gallery.cap3": "Somrig trädgård och uteplats — stämningen kring Öppna portar.",
       "gallery.alt1": "Flygbild över Kristinestads rutnätsplan och trähus.",
       "gallery.alt2": "Öppna portar i Kristinestad, somrig evenemangsbild.",
-      "gallery.alt3": "Smal gata och färgglada trähus i Kristinestad.",
+      "gallery.alt3": "Bord i skuggan under träd i en sommarträdgård, Kristinestad.",
       "gallery.legal": "Bilder: Öppna portar — arbetsgruppens och evenemangets arkiv.",
       "map.h2": "Hitta hit och arrangemangsområdet",
       "map.lead": "Arrangemanget sträcker sig inom gångavstånd från turistinformationen och den historiska rutnätsstaden. Exakta besöksmål publiceras på de officiella sidorna närmare evenemanget.",
@@ -371,10 +330,10 @@
       "gallery.lead": "Real views from the old wooden town — the same setting where Open Gates takes place.",
       "gallery.cap1": "A view towards the grid plan area and the sea of wooden rooftops.",
       "gallery.cap2": "Open Gates atmosphere in the old wooden town (2023).",
-      "gallery.cap3": "A narrow street and colourful wooden houses downtown.",
+      "gallery.cap3": "Summer garden and yard — the Open Gates atmosphere.",
       "gallery.alt1": "Aerial view of Kristinestad’s grid plan area and wooden houses.",
       "gallery.alt2": "Open Gates in Kristinestad — a summer event photo.",
-      "gallery.alt3": "A narrow street and colourful wooden houses in Kristinestad.",
+      "gallery.alt3": "A table in the shade in a summer garden, Kristinestad.",
       "gallery.legal": "Photos: Open Gates — the working group and event photo archive.",
       "map.h2": "Getting there and the event area",
       "map.lead": "The event spreads within walking distance of the tourist information point and the historic grid-plan quarter. Exact garden stops are published on official channels closer to the date.",

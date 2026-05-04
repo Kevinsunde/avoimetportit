@@ -23,15 +23,15 @@ const DEFAULT_STRINGS = {
     "cta.facebook": "Facebook",
     "gallery.h2": "Kristiinankaupunki",
     "gallery.linkVisit": "Tervetuloa Kristiinaan",
-    "gallery.linkDigiMap": "Digitaalinen kartta",
+    "gallery.linkDigiMap": "Vanhat kartat",
     "gallery.lead":
       "Aitoja näkymiä vanhasta puutalokaupungista — sama miljöö, jossa Avoimet portit -tapahtuma järjestetään.",
     "gallery.cap1": "Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.",
     "gallery.cap2": "Avoimet portit -tunnelmaa vanhassa puutalokaupungissa (2023).",
-    "gallery.cap3": "Kapea katu ja värikkäät puutalot keskustassa.",
+    "gallery.cap3": "Kesäinen piha ja puutarha — Avoimet portit -tunnelmaa.",
     "gallery.alt1": "Ilmakuva Kristiinankaupungin ruutukaava-alueesta ja puutaloista.",
     "gallery.alt2": "Avoimet portit Kristiinankaupungissa, kesäinen tapahtumakuva.",
-    "gallery.alt3": "Kristiinankaupungin kapea katu ja värikkäät puutalot.",
+    "gallery.alt3": "Pöytä puun alla kesäpuutarhassa, Kristiinankaupunki.",
     "gallery.legal": "Kuvat: Avoimet portit — työryhmän ja tapahtuman kuva-arkisto.",
     "map.h2": "Saapuminen ja tapahtuma-alue",
     "map.lead":
@@ -170,10 +170,10 @@ const DEFAULT_STRINGS = {
       "Äkta vyer från den gamla trästaden — samma miljö där Öppna portar ordnas.",
     "gallery.cap1": "Vy mot rutnätsplanens område och trähusens taklandskap.",
     "gallery.cap2": "Öppna portar-stämning i den gamla trästaden (2023).",
-    "gallery.cap3": "Smal gata och färgglada trähus i centrum.",
+    "gallery.cap3": "Somrig trädgård och uteplats — stämningen kring Öppna portar.",
     "gallery.alt1": "Flygbild över Kristinestads rutnätsplan och trähus.",
     "gallery.alt2": "Öppna portar i Kristinestad, somrig evenemangsbild.",
-    "gallery.alt3": "Smal gata och färgglada trähus i Kristinestad.",
+    "gallery.alt3": "Bord i skuggan under träd i en sommarträdgård, Kristinestad.",
     "gallery.legal": "Bilder: Öppna portar — arbetsgruppens och evenemangets arkiv.",
     "map.h2": "Hitta hit och arrangemangsområdet",
     "map.lead":
@@ -312,10 +312,10 @@ const DEFAULT_STRINGS = {
       "Real views from the old wooden town — the same setting where Open Gates takes place.",
     "gallery.cap1": "A view towards the grid plan area and the sea of wooden rooftops.",
     "gallery.cap2": "Open Gates atmosphere in the old wooden town (2023).",
-    "gallery.cap3": "A narrow street and colourful wooden houses downtown.",
+    "gallery.cap3": "Summer garden and yard — the Open Gates atmosphere.",
     "gallery.alt1": "Aerial view of Kristinestad’s grid plan area and wooden houses.",
     "gallery.alt2": "Open Gates in Kristinestad — a summer event photo.",
-    "gallery.alt3": "A narrow street and colourful wooden houses in Kristinestad.",
+    "gallery.alt3": "A table in the shade in a summer garden, Kristinestad.",
     "gallery.legal": "Photos: Open Gates — the working group and event photo archive.",
     "map.h2": "Getting there and the event area",
     "map.lead":
@@ -437,20 +437,7 @@ const MAP_POINTS = {
 };
 
 /** Fallback when site-content.json has no ajankohtasetByYear; images in public/images/ */
-const DEFAULT_AJANKOHTASET_BY_YEAR = [
-  {
-    year: "2024",
-    images: ["kristinestad-street-1.jpg", "kristinestad-street-2.jpg"],
-  },
-  {
-    year: "2025",
-    images: ["kristiinankaupunki-ruutukaava.jpg", "kristinestad-street-1.jpg"],
-  },
-  {
-    year: "2026",
-    images: ["ap-gallery-2023-tapahtuma.jpg", "ap-gallery-drone-kristinestad.jpg"],
-  },
-];
+const DEFAULT_AJANKOHTASET_BY_YEAR = [];
 
 let lastSiteContentData = null;
 
