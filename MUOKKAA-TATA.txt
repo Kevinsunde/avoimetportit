@@ -9,10 +9,12 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
    - "contact" → yhteyshenkilö, puhelin, sähköposti, osoite.
    - "links" → painikkeiden ja alalaidan linkkien osoitteet.
    - "prices" → hintarivien eurot (esim. "15 €").
-   - "registration" → ilmoittautumislomakkeen vastaanottaja:
-     - "receiverEmail": sähköposti, johon ilmoittautuminen lähetetään.
-     - "formAction": valinnainen lomakepalvelun osoite (esim. Formspree/FormSubmit).
-       Jos formAction on tyhjä, lomake avaa sähköpostiohjelman.
+   - "registration" → ilmoittautumislomakkeen vastaanottajat:
+     - "receiverEmail" ja "receiverEmail2": kaksi eri osoitetta; sama lomaketäyttö lähetetään molempiin
+       (FormSubmit). Tyhjä "receiverEmail2" poistaa toisen kopion. Molemmat osoitteet on vahvistettava
+       kerran palvelussa (formsubmit.co), kun lomake lähetetään ensimmäisen kerran.
+     - "formAction": valinnainen oma lomake-URL. Jos tämä on asetettu, lähetys menee vain sinne yhteen
+       osoitteeseen (ei kahteen); silloin kopion lähetys tehdään palvelun puolella.
 
    Tiedoston pitää olla kelvollista JSON:ia (pilkuilla ja lainausmerkeillä). Voit tarkistaa
    esim. osoitteessa jsonlint.com.
