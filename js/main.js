@@ -2,7 +2,7 @@ const DEFAULT_STRINGS = {
   fi: {
     "nav.event": "Tapahtuma",
     "nav.exp": "Kokemus",
-    "nav.ajankohtaset": "Ajankohtaset",
+    "nav.ajankohtaset": "Ajankohtaiset",
     "nav.joulukodit": "Merikaupungin joulukodit",
     "nav.gallery": "Kristiinankaupunki",
     "nav.map": "Saapuminen",
@@ -69,14 +69,14 @@ const DEFAULT_STRINGS = {
       "Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — katso päivitetyt vinkit ",
     "exp.c3p.link": "Tervetuloa Kristiinaan",
     "exp.c3p.after": ".",
-    "ajankohtaset.h2": "Ajankohtaset",
+    "ajankohtaset.h2": "Ajankohtaiset",
     "ajankohtaset.kicker": "Tiedotteet",
     "ajankohtaset.p1":
       "Lisätietoja tapahtuman ajankohdasta, lipuista ja kohteista julkaistaan keväällä Visit Kristinestadilla ja tapahtuman Facebook-sivulla.",
     "ajankohtaset.yearHeading": "{year} – Avoimet portit",
     "ajankohtaset.photoAlt": "Avoimet portit Kristiinankaupungissa, {year}",
     "ajankohtaset.backHome": "← Etusivulle",
-    "ajankohtaset.documentTitle": "Ajankohtaset – Avoimet portit | Kristiinankaupunki",
+    "ajankohtaset.documentTitle": "Ajankohtaiset – Avoimet portit | Kristiinankaupunki",
     "ajankohtaset.metaDescription":
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
     "joulukodit.h2": "Merikaupungin joulukodit",
@@ -91,10 +91,6 @@ const DEFAULT_STRINGS = {
     "prac.free": "ilmaiseksi",
     "prac.ticketIncludes":
       "Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.",
-    "prac.p4":
-      "Tarkista vierailukohteet, kartta ja mahdolliset uudet kohteet Visit Kristinestadin ja tapahtuman Facebook-sivuilta ennen matkaa.",
-    "prac.p5":
-      "Kristiinankaupungin tapahtumakalenterissa on ajantasaiset kellonajat ja yhteystiedot matkailuun.",
     "reg.h2": "Ilmoittautuminen",
     "reg.lead": "Täytä ilmoittautumislomake. Tiedot lähetetään järjestäjälle sähköpostiin.",
     "reg.field.name": "Nimi / Namn",
@@ -233,10 +229,6 @@ const DEFAULT_STRINGS = {
     "prac.free": "gratis",
     "prac.ticketIncludes":
       "I biljettpriset (armband) ingår information om besöksmål, karta över målen och evenemangsprogrammet.",
-    "prac.p4":
-      "Kontrollera besöksmål, karta och nya objekt hos Visit Kristinestad och på Facebook innan resan.",
-    "prac.p5":
-      "Kristinestads evenemangskalender har uppdaterade tider och kontakt till turismen.",
     "reg.h2": "Anmälan",
     "reg.lead": "Fyll i anmälningsformuläret. Uppgifterna skickas till arrangören via e-post.",
     "reg.field.name": "Namn",
@@ -375,10 +367,6 @@ const DEFAULT_STRINGS = {
     "prac.free": "free",
     "prac.ticketIncludes":
       "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
-    "prac.p4":
-      "Check sites on the map and any new venues on Visit Kristinestad and the Facebook page before you travel.",
-    "prac.p5":
-      "The City of Kristinestad event calendar has current times and tourism contacts.",
     "reg.h2": "Registration",
     "reg.lead": "Fill in the registration form. The details are sent to the organizer by email.",
     "reg.field.name": "Name",
