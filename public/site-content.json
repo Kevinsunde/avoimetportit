@@ -2,18 +2,18 @@
   "_info": "Muokkaa vain tätä tiedostoa ja public/images/-kuvia. Älä poista lainausmerkkejä tai pilkkuja vahingossa — käytä JSON-validaattoria. Kehitys: npm run dev. Uudelleenluonti oletuksista: node scripts/export-site-content.mjs",
   "images": {
     "heroBanner": "avoimet-portit-2026-banner.png",
-    "hero": "kristinestad-street-2.jpg",
+    "hero": "ap-hero-kaptenskans.jpg",
     "gallery": [
       {
-        "file": "kristiinankaupunki-ruutukaava.jpg",
+        "file": "ap-gallery-drone-kristinestad.jpg",
         "wide": true
       },
       {
-        "file": "kristinestad-street-1.jpg",
+        "file": "ap-gallery-2023-tapahtuma.jpg",
         "wide": false
       },
       {
-        "file": "kristinestad-street-2.jpg",
+        "file": "ap-gallery-puutalo-2021.jpg",
         "wide": false
       }
     ]
@@ -39,6 +39,7 @@
     "officialEvent": "https://visitkristinestad.fi/",
     "facebook": "https://www.facebook.com/oppnaportar.avoimetportit",
     "visitWebsite": "https://visitkristinestad.fi/",
+    "visitTourismFi": "https://visitkristinestad.fi/fi/",
     "programSite": "https://visitkristinestad.fi/upplev/evenemang/oppna-portar/",
     "cityCalendar": "https://www.kristinestad.fi/vapaa-aika/tapahtumia",
     "visitOpenGatesFi": "https://visitkristinestad.fi/fi/koe/tapahtumia/avoimet-portit/",
@@ -51,7 +52,8 @@
     "day2": "20 €"
   },
   "registration": {
-    "receiverEmail": "avoimetportit@outlook.com",
+    "receiverEmail": "",
+    "receiverEmail2": "preview",
     "subject": "Avoimet portit - ilmoittautuminen",
     "formAction": ""
   },
@@ -100,24 +102,46 @@
     },
     {
       "year": "2026",
-      "yearBanner": "avoimet-portit-2026-banner.png",
       "images": [
         {
-          "file": "kristinestad-street-2.jpg",
+          "file": "ap-gallery-2023-tapahtuma.jpg",
           "caption": {
-            "fi": "Tuleva tapahtuma 2026",
-            "sv": "Kommande evenemang 2026",
-            "en": "Upcoming event 2026"
+            "fi": "Avoimet portit – tunnelmaa 2023",
+            "sv": "Öppna portar – stämning 2023",
+            "en": "Open Gates – atmosphere in 2023"
           }
         },
         {
-          "file": "kristiinankaupunki-ruutukaava.jpg",
+          "file": "ap-gallery-drone-kristinestad.jpg",
           "caption": {
-            "fi": "Kristiinankaupunki ilmasta 2026",
-            "sv": "Kristinestad från luften 2026",
-            "en": "Kristinestad from above 2026"
+            "fi": "Kristiinankaupunki ilmasta",
+            "sv": "Kristinestad från luften",
+            "en": "Kristinestad from above"
           }
         }
+      ]
+    },
+    {
+      "year": "2021–2023",
+      "images": [
+        { "file": "ap-aja-01.jpg" },
+        { "file": "ap-aja-02.jpg" },
+        { "file": "ap-aja-03.jpg" },
+        { "file": "ap-aja-04.jpg" },
+        { "file": "ap-aja-05.jpg" },
+        { "file": "ap-aja-06.jpg" },
+        { "file": "ap-aja-07.jpg" },
+        { "file": "ap-aja-08.jpg" },
+        { "file": "ap-aja-09.jpg" },
+        { "file": "ap-aja-10.jpg" },
+        { "file": "ap-aja-11.jpg" },
+        { "file": "ap-aja-12.png" },
+        { "file": "ap-aja-13.png" },
+        { "file": "ap-aja-14.png" },
+        { "file": "ap-aja-15.png" },
+        { "file": "ap-aja-16.jpg" },
+        { "file": "ap-aja-17.jpg" },
+        { "file": "ap-aja-18.jpg" }
       ]
     }
   ],
@@ -129,12 +153,12 @@
       "nav.joulukodit": "Merikaupungin joulukodit",
       "nav.gallery": "Kristiinankaupunki",
       "nav.map": "Saapuminen",
-      "nav.contact": "Yhteys",
+      "nav.contact": "Yhteystiedot",
       "hero.eyebrow": "Kesäkuussa · Kristiinankaupungin keskusta",
       "hero.bannerAlt": "Öppna portar / Avoimet portit 2026, Kristiinankaupunki, 13.–14.6.2026 klo 10–18.",
       "hero.title": "Porttien takana avautuu salainen maailma",
       "hero.lead": "Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.",
-      "hero.photoCap": "Puutalokatu Kristiinankaupungissa — tapahtuman tunnelmaa.",
+      "hero.photoCap": "Kesäinen puutarhapolku ja Kaptenskans Café — Avoimet portit -tunnelmaa.",
       "meta.when": "Ajankohta",
       "meta.dates": "12.–13.6.2026 klo 10–18",
       "meta.where": "Paikka",
@@ -142,16 +166,16 @@
       "cta.official": "Visit Kristiinankaupunki",
       "cta.facebook": "Facebook",
       "gallery.h2": "Kristiinankaupunki",
-      "gallery.linkVisit": "Tervetuloa Kristinestadiin",
+      "gallery.linkVisit": "Tervetuloa Kristiinaan",
       "gallery.linkDigiMap": "Digitaalinen kartta",
-      "gallery.lead": "Aitoja näkymiä vanhasta puutalokaupungista — sama miljö, jossa Avoimet portit -tapahtuma järjestetään.",
+      "gallery.lead": "Aitoja näkymiä vanhasta puutalokaupungista — sama miljöö, jossa Avoimet portit -tapahtuma järjestetään.",
       "gallery.cap1": "Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.",
-      "gallery.cap2": "Idyllinen puutalokatu — porttien takana avautuu kesällä lisää nähtävää.",
+      "gallery.cap2": "Avoimet portit -tunnelmaa vanhassa puutalokaupungissa (2023).",
       "gallery.cap3": "Kapea katu ja värikkäät puutalot keskustassa.",
       "gallery.alt1": "Ilmakuva Kristiinankaupungin ruutukaava-alueesta ja puutaloista.",
-      "gallery.alt2": "Kristiinankaupungin puutalokatu kesällä.",
+      "gallery.alt2": "Avoimet portit Kristiinankaupungissa, kesäinen tapahtumakuva.",
       "gallery.alt3": "Kristiinankaupungin kapea katu ja värikkäät puutalot.",
-      "gallery.legal": "Kuvat: Visit Kristiinankaupunki",
+      "gallery.legal": "Kuvat: Avoimet portit — työryhmän ja tapahtuman kuva-arkisto.",
       "map.h2": "Saapuminen ja tapahtuma-alue",
       "map.lead": "Tapahtuma levittäytyy kävelymatkan päähän matkailuinfosta ja vanhan kaupungin ruutukaava-alueesta. Tarkat kohteet julkaistaan virallisilla sivuilla lähempänä tapahtumaa.",
       "map.osmLink": "Avaa suurempi kartta (OpenStreetMap)",
@@ -175,7 +199,7 @@
       "exp.c2p": "Näyttelyitä, yhteisöllistä ohjelmaa ja elämyksiä, jotka tuovat esiin sekä puutarhaa että rakennusperintöä.",
       "exp.c3h": "Yhdistä museoon",
       "exp.c3p.before": "Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — katso päivitetyt vinkit ",
-      "exp.c3p.link": "Tervetuloa Kristinestadiin",
+      "exp.c3p.link": "Tervetuloa Kristiinaan",
       "exp.c3p.after": ".",
       "ajankohtaset.h2": "Ajankohtaset",
       "ajankohtaset.kicker": "Tiedotteet",
@@ -234,7 +258,7 @@
       "hero.bannerAlt": "Öppna portar / Avoimet portit 2026, Kristinestad, 13.–14.6.2026 kl. 10–18.",
       "hero.title": "En hemlig värld öppnar sig bakom grindarna",
       "hero.lead": "Öppna portar är ett kulturarrangemang i hembygdsgårdarna: välkomnande gårdar som du vanligtvis inte ser i vardagen bjuder in till kulturlivet i den gamla trästaden och juni månads blomsterprakt.",
-      "hero.photoCap": "Trähusgata i Kristinestad — stämningen kring arrangemanget.",
+      "hero.photoCap": "Somrig trädgårdsgång mot Kaptenskans Café — stämningen kring Öppna portar.",
       "meta.when": "Tid",
       "meta.dates": "12.–13.6.2026 kl. 10–18",
       "meta.where": "Plats",
@@ -246,12 +270,12 @@
       "gallery.linkDigiMap": "Digital karta",
       "gallery.lead": "Äkta vyer från den gamla trästaden — samma miljö där Öppna portar ordnas.",
       "gallery.cap1": "Vy mot rutnätsplanens område och trähusens taklandskap.",
-      "gallery.cap2": "Idyllisk trähusgata — bakom grindarna väntar mer att se på sommaren.",
+      "gallery.cap2": "Öppna portar-stämning i den gamla trästaden (2023).",
       "gallery.cap3": "Smal gata och färgglada trähus i centrum.",
       "gallery.alt1": "Flygbild över Kristinestads rutnätsplan och trähus.",
-      "gallery.alt2": "Trähusgata i Kristinestad på sommaren.",
+      "gallery.alt2": "Öppna portar i Kristinestad, somrig evenemangsbild.",
       "gallery.alt3": "Smal gata och färgglada trähus i Kristinestad.",
-      "gallery.legal": "Bilder: Visit Kristinestad",
+      "gallery.legal": "Bilder: Öppna portar — arbetsgruppens och evenemangets arkiv.",
       "map.h2": "Hitta hit och arrangemangsområdet",
       "map.lead": "Arrangemanget sträcker sig inom gångavstånd från turistinformationen och den historiska rutnätsstaden. Exakta besöksmål publiceras på de officiella sidorna närmare evenemanget.",
       "map.osmLink": "Öppna större karta (OpenStreetMap)",
@@ -334,7 +358,7 @@
       "hero.bannerAlt": "Öppna portar / Avoimet portit 2026, Kristinestad, 13–14 June 2026, 10:00–18:00.",
       "hero.title": "A secret world opens behind the gates",
       "hero.lead": "Open Gates is a cultural event in home yards: welcoming yards you rarely see in everyday life invite you to explore the cultural life of the old wooden town and June in full bloom.",
-      "hero.photoCap": "A wooden-house street in Kristinestad — the spirit of the event.",
+      "hero.photoCap": "A summer garden path toward Kaptenskans Café — the Open Gates spirit.",
       "meta.when": "When",
       "meta.dates": "12–13 June 2026, 10:00–18:00",
       "meta.where": "Where",
@@ -346,12 +370,12 @@
       "gallery.linkDigiMap": "Digital map",
       "gallery.lead": "Real views from the old wooden town — the same setting where Open Gates takes place.",
       "gallery.cap1": "A view towards the grid plan area and the sea of wooden rooftops.",
-      "gallery.cap2": "An idyllic wooden-house street — more opens behind the gates in summer.",
+      "gallery.cap2": "Open Gates atmosphere in the old wooden town (2023).",
       "gallery.cap3": "A narrow street and colourful wooden houses downtown.",
       "gallery.alt1": "Aerial view of Kristinestad’s grid plan area and wooden houses.",
-      "gallery.alt2": "A wooden-house street in Kristinestad in summer.",
+      "gallery.alt2": "Open Gates in Kristinestad — a summer event photo.",
       "gallery.alt3": "A narrow street and colourful wooden houses in Kristinestad.",
-      "gallery.legal": "Photos: Visit Kristinestad",
+      "gallery.legal": "Photos: Open Gates — the working group and event photo archive.",
       "map.h2": "Getting there and the event area",
       "map.lead": "The event spreads within walking distance of the tourist information point and the historic grid-plan quarter. Exact garden stops are published on official channels closer to the date.",
       "map.osmLink": "Open a larger map (OpenStreetMap)",

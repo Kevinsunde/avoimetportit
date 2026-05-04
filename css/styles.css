@@ -386,6 +386,25 @@ a:hover {
   }
 }
 
+@media (min-width: 900px) {
+  .year-event-gallery--multi {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .year-event-gallery--multi {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.35rem;
+  }
+}
+
+.year-event-gallery--multi .year-event-figure img {
+  aspect-ratio: 3 / 2;
+  min-height: clamp(160px, 22vw, 260px);
+}
+
 .year-event-figure {
   margin: 0;
   border-radius: var(--radius);
@@ -488,7 +507,7 @@ a:hover {
 
 @media (min-width: 900px) {
   .hero-split {
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+    grid-template-columns: minmax(0, 1fr) minmax(340px, min(52vw, 620px));
     gap: 2.5rem;
   }
 }
@@ -507,7 +526,7 @@ a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 1280 / 628;
+  aspect-ratio: 4 / 3;
 }
 
 .photo-cap {

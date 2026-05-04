@@ -7,14 +7,14 @@ const DEFAULT_STRINGS = {
     "nav.gallery": "Kristiinankaupunki",
     "nav.map": "Saapuminen",
     "nav.register": "Ilmoittautuminen",
-    "nav.contact": "Yhteys",
+    "nav.contact": "Yhteystiedot",
     "hero.eyebrow": "Kesäkuussa · Kristiinankaupungin keskusta",
     "hero.bannerAlt":
       "Öppna portar / Avoimet portit 2026, Kristiinankaupunki, 13.–14.6.2026 klo 10–18.",
     "hero.title": "Porttien takana avautuu salainen maailma",
     "hero.lead":
       "Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.",
-    "hero.photoCap": "Puutalokatu Kristiinankaupungissa — tapahtuman tunnelmaa.",
+    "hero.photoCap": "Kesäinen puutarhapolku ja Kaptenskans Café — Avoimet portit -tunnelmaa.",
     "meta.when": "Ajankohta",
     "meta.dates": "12.–13.6.2026 klo 10–18",
     "meta.where": "Paikka",
@@ -22,17 +22,17 @@ const DEFAULT_STRINGS = {
     "cta.official": "Visit Kristiinankaupunki",
     "cta.facebook": "Facebook",
     "gallery.h2": "Kristiinankaupunki",
-    "gallery.linkVisit": "Tervetuloa Kristinestadiin",
+    "gallery.linkVisit": "Tervetuloa Kristiinaan",
     "gallery.linkDigiMap": "Digitaalinen kartta",
     "gallery.lead":
-      "Aitoja näkymiä vanhasta puutalokaupungista — sama miljö, jossa Avoimet portit -tapahtuma järjestetään.",
+      "Aitoja näkymiä vanhasta puutalokaupungista — sama miljöö, jossa Avoimet portit -tapahtuma järjestetään.",
     "gallery.cap1": "Näkymä kohti ruutukaava-aluetta ja puutalojen kattomaisemaa.",
-    "gallery.cap2": "Idyllinen puutalokatu — porttien takana avautuu kesällä lisää nähtävää.",
+    "gallery.cap2": "Avoimet portit -tunnelmaa vanhassa puutalokaupungissa (2023).",
     "gallery.cap3": "Kapea katu ja värikkäät puutalot keskustassa.",
     "gallery.alt1": "Ilmakuva Kristiinankaupungin ruutukaava-alueesta ja puutaloista.",
-    "gallery.alt2": "Kristiinankaupungin puutalokatu kesällä.",
+    "gallery.alt2": "Avoimet portit Kristiinankaupungissa, kesäinen tapahtumakuva.",
     "gallery.alt3": "Kristiinankaupungin kapea katu ja värikkäät puutalot.",
-    "gallery.legal": "Kuvat: Visit Kristiinankaupunki",
+    "gallery.legal": "Kuvat: Avoimet portit — työryhmän ja tapahtuman kuva-arkisto.",
     "map.h2": "Saapuminen ja tapahtuma-alue",
     "map.lead":
       "Tapahtuma levittäytyy kävelymatkan päähän matkailuinfosta ja vanhan kaupungin ruutukaava-alueesta. Tarkat kohteet julkaistaan virallisilla sivuilla lähempänä tapahtumaa.",
@@ -67,7 +67,7 @@ const DEFAULT_STRINGS = {
     "exp.c3h": "Yhdistä museoon",
     "exp.c3p.before":
       "Tapahtuman yhteyteen kannattaa yhdistää museo- ja galleriakäyntejä — katso päivitetyt vinkit ",
-    "exp.c3p.link": "Tervetuloa Kristinestadiin",
+    "exp.c3p.link": "Tervetuloa Kristiinaan",
     "exp.c3p.after": ".",
     "ajankohtaset.h2": "Ajankohtaset",
     "ajankohtaset.kicker": "Tiedotteet",
@@ -156,7 +156,7 @@ const DEFAULT_STRINGS = {
     "hero.title": "En hemlig värld öppnar sig bakom grindarna",
     "hero.lead":
       "Öppna portar är ett kulturarrangemang i hembygdsgårdarna: välkomnande gårdar som du vanligtvis inte ser i vardagen bjuder in till kulturlivet i den gamla trästaden och juni månads blomsterprakt.",
-    "hero.photoCap": "Trähusgata i Kristinestad — stämningen kring arrangemanget.",
+    "hero.photoCap": "Somrig trädgårdsgång mot Kaptenskans Café — stämningen kring Öppna portar.",
     "meta.when": "Tid",
     "meta.dates": "12.–13.6.2026 kl. 10–18",
     "meta.where": "Plats",
@@ -169,12 +169,12 @@ const DEFAULT_STRINGS = {
     "gallery.lead":
       "Äkta vyer från den gamla trästaden — samma miljö där Öppna portar ordnas.",
     "gallery.cap1": "Vy mot rutnätsplanens område och trähusens taklandskap.",
-    "gallery.cap2": "Idyllisk trähusgata — bakom grindarna väntar mer att se på sommaren.",
+    "gallery.cap2": "Öppna portar-stämning i den gamla trästaden (2023).",
     "gallery.cap3": "Smal gata och färgglada trähus i centrum.",
     "gallery.alt1": "Flygbild över Kristinestads rutnätsplan och trähus.",
-    "gallery.alt2": "Trähusgata i Kristinestad på sommaren.",
+    "gallery.alt2": "Öppna portar i Kristinestad, somrig evenemangsbild.",
     "gallery.alt3": "Smal gata och färgglada trähus i Kristinestad.",
-    "gallery.legal": "Bilder: Visit Kristinestad",
+    "gallery.legal": "Bilder: Öppna portar — arbetsgruppens och evenemangets arkiv.",
     "map.h2": "Hitta hit och arrangemangsområdet",
     "map.lead":
       "Arrangemanget sträcker sig inom gångavstånd från turistinformationen och den historiska rutnätsstaden. Exakta besöksmål publiceras på de officiella sidorna närmare evenemanget.",
@@ -298,7 +298,7 @@ const DEFAULT_STRINGS = {
     "hero.title": "A secret world opens behind the gates",
     "hero.lead":
       "Open Gates is a cultural event in home yards: welcoming yards you rarely see in everyday life invite you to explore the cultural life of the old wooden town and June in full bloom.",
-    "hero.photoCap": "A wooden-house street in Kristinestad — the spirit of the event.",
+    "hero.photoCap": "A summer garden path toward Kaptenskans Café — the Open Gates spirit.",
     "meta.when": "When",
     "meta.dates": "12–13 June 2026, 10:00–18:00",
     "meta.where": "Where",
@@ -311,12 +311,12 @@ const DEFAULT_STRINGS = {
     "gallery.lead":
       "Real views from the old wooden town — the same setting where Open Gates takes place.",
     "gallery.cap1": "A view towards the grid plan area and the sea of wooden rooftops.",
-    "gallery.cap2": "An idyllic wooden-house street — more opens behind the gates in summer.",
+    "gallery.cap2": "Open Gates atmosphere in the old wooden town (2023).",
     "gallery.cap3": "A narrow street and colourful wooden houses downtown.",
     "gallery.alt1": "Aerial view of Kristinestad’s grid plan area and wooden houses.",
-    "gallery.alt2": "A wooden-house street in Kristinestad in summer.",
+    "gallery.alt2": "Open Gates in Kristinestad — a summer event photo.",
     "gallery.alt3": "A narrow street and colourful wooden houses in Kristinestad.",
-    "gallery.legal": "Photos: Visit Kristinestad",
+    "gallery.legal": "Photos: Open Gates — the working group and event photo archive.",
     "map.h2": "Getting there and the event area",
     "map.lead":
       "The event spreads within walking distance of the tourist information point and the historic grid-plan quarter. Exact garden stops are published on official channels closer to the date.",
@@ -448,8 +448,7 @@ const DEFAULT_AJANKOHTASET_BY_YEAR = [
   },
   {
     year: "2026",
-    yearBanner: "avoimet-portit-2026-banner.png",
-    images: ["kristinestad-street-2.jpg", "kristiinankaupunki-ruutukaava.jpg"],
+    images: ["ap-gallery-2023-tapahtuma.jpg", "ap-gallery-drone-kristinestad.jpg"],
   },
 ];
 
@@ -462,6 +461,7 @@ let infoKioskMarker;
 let registrationConfig = {
   formAction: "",
   receiverEmail: "",
+  receiverEmail2: "",
   subject: "Avoimet portit - ilmoittautuminen",
 };
 
@@ -490,6 +490,18 @@ function imgPath(filename) {
   return `images/${clean}`;
 }
 
+function registrationRecipientEmails() {
+  const a =
+    typeof registrationConfig.receiverEmail === "string"
+      ? registrationConfig.receiverEmail.trim()
+      : "";
+  const b =
+    typeof registrationConfig.receiverEmail2 === "string"
+      ? registrationConfig.receiverEmail2.trim()
+      : "";
+  return [...new Set([a, b].filter(Boolean))];
+}
+
 function registrationStatusText(bundle, mode, hasEmail) {
   if (mode === "remote") return bundle["reg.status.remote"] || "";
   if (hasEmail) return bundle["reg.status.mailto"] || "";
@@ -503,7 +515,7 @@ function updateRegistrationUi() {
   const status = document.getElementById("registration-status");
   const submit = document.getElementById("registration-submit");
   const mode = form.dataset.submitMode || "remote";
-  const hasEmail = Boolean(registrationConfig.receiverEmail);
+  const hasEmail = registrationRecipientEmails().length > 0;
 
   if (status) status.textContent = registrationStatusText(bundle, mode, hasEmail);
   if (submit) submit.disabled = !hasEmail;
@@ -577,9 +589,10 @@ function applyStructuredContent(data) {
     const visit = document.getElementById("link-visit-website");
     if (visit && links.visitWebsite) visit.href = links.visitWebsite;
     const expC3Visit = document.getElementById("link-exp-c3-visit");
-    if (expC3Visit && links.visitWebsite) expC3Visit.href = links.visitWebsite;
+    const tourismFi = links.visitTourismFi || links.visitWebsite;
+    if (expC3Visit && tourismFi) expC3Visit.href = tourismFi;
     const galleryVisit = document.getElementById("link-gallery-visit");
-    if (galleryVisit && links.visitWebsite) galleryVisit.href = links.visitWebsite;
+    if (galleryVisit && tourismFi) galleryVisit.href = tourismFi;
     const galleryDigi = document.getElementById("link-gallery-digi");
     if (galleryDigi && links.krsDigiArcMap) galleryDigi.href = links.krsDigiArcMap;
     const f1 = document.getElementById("link-footer-1");
@@ -631,6 +644,8 @@ function applyStructuredContent(data) {
       formAction: typeof reg.formAction === "string" ? reg.formAction.trim() : "",
       receiverEmail:
         typeof reg.receiverEmail === "string" ? reg.receiverEmail.trim() : "",
+      receiverEmail2:
+        typeof reg.receiverEmail2 === "string" ? reg.receiverEmail2.trim() : "",
       subject:
         typeof reg.subject === "string" && reg.subject.trim()
           ? reg.subject.trim()
@@ -709,8 +724,10 @@ function renderAjankohtasetYearBlocks() {
 
     const grid = document.createElement("div");
     grid.className = "year-event-gallery";
-
     const imgs = Array.isArray(entry.images) ? entry.images : [];
+    if (imgs.length >= 12) {
+      grid.classList.add("year-event-gallery--multi");
+    }
     for (const imgEntry of imgs) {
       const file = typeof imgEntry === "string" ? imgEntry : imgEntry?.file;
       if (!file) continue;
@@ -909,52 +926,66 @@ function initRegistrationForm() {
   form.addEventListener("submit", async (ev) => {
     ev.preventDefault();
     setRegistrationFeedback("", "");
-    if (!registrationConfig.receiverEmail) {
+    const recipients = registrationRecipientEmails();
+    if (!recipients.length) {
       updateRegistrationUi();
       return;
     }
 
     const b = STRINGS[currentLangKey()] || STRINGS.fi;
-    const formData = new FormData(form);
-    const consent = formData.get("photoConsent")
-      ? b["reg.consent.yes"] || "Yes"
-      : b["reg.consent.no"] || "No";
-    const sendData = new FormData();
-    sendData.append(
-      b["reg.field.name"] || "Name",
-      String(formData.get("participantName") || "")
-    );
-    sendData.append(
-      b["reg.field.address"] || "Address",
-      String(formData.get("participantAddress") || "")
-    );
-    sendData.append(
-      b["reg.field.phone"] || "Phone",
-      String(formData.get("participantPhone") || "")
-    );
-    sendData.append(
-      b["reg.field.email"] || "Email",
-      String(formData.get("participantEmail") || "")
-    );
-    sendData.append(b["reg.field.consent"] || "Photo consent", consent);
-    sendData.append("_subject", registrationConfig.subject);
-    sendData.append("_captcha", "false");
-
-    const endpoint =
-      registrationConfig.formAction ||
-      `https://formsubmit.co/ajax/${encodeURIComponent(
-        registrationConfig.receiverEmail
-      )}`;
+    const createSendData = () => {
+      const formData = new FormData(form);
+      const consent = formData.get("photoConsent")
+        ? b["reg.consent.yes"] || "Yes"
+        : b["reg.consent.no"] || "No";
+      const sendData = new FormData();
+      sendData.append(
+        b["reg.field.name"] || "Name",
+        String(formData.get("participantName") || "")
+      );
+      sendData.append(
+        b["reg.field.address"] || "Address",
+        String(formData.get("participantAddress") || "")
+      );
+      sendData.append(
+        b["reg.field.phone"] || "Phone",
+        String(formData.get("participantPhone") || "")
+      );
+      sendData.append(
+        b["reg.field.email"] || "Email",
+        String(formData.get("participantEmail") || "")
+      );
+      sendData.append(b["reg.field.consent"] || "Photo consent", consent);
+      sendData.append("_subject", registrationConfig.subject);
+      sendData.append("_captcha", "false");
+      return sendData;
+    };
 
     const submitBtn = document.getElementById("registration-submit");
     if (submitBtn) submitBtn.disabled = true;
     try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: sendData,
-      });
-      if (!res.ok) throw new Error("submit failed");
+      if (registrationConfig.formAction) {
+        const res = await fetch(registrationConfig.formAction, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: createSendData(),
+        });
+        if (!res.ok) throw new Error("submit failed");
+      } else {
+        const results = await Promise.all(
+          recipients.map((email) =>
+            fetch(
+              `https://formsubmit.co/ajax/${encodeURIComponent(email)}`,
+              {
+                method: "POST",
+                headers: { Accept: "application/json" },
+                body: createSendData(),
+              }
+            )
+          )
+        );
+        if (!results.every((r) => r.ok)) throw new Error("submit failed");
+      }
       form.reset();
       setRegistrationFeedback("success", "reg.feedback.success");
     } catch {
