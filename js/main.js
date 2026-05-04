@@ -18,7 +18,7 @@ const DEFAULT_STRINGS = {
     "meta.when": "Ajankohta",
     "meta.dates": "12.–13.6.2026 klo 10–18",
     "meta.where": "Paikka",
-    "meta.place": "Kristiinankaupungin keskustan puutalovyöhyke",
+    "meta.place": "Kristiinankaupungin keskustan puutalokorttelit",
     "cta.official": "Visit Kristiinankaupunki",
     "cta.facebook": "Facebook",
     "gallery.h2": "Kristiinankaupunki",
