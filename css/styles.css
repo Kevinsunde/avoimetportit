@@ -400,6 +400,13 @@ a:hover {
   }
 }
 
+@media (min-width: 1400px) {
+  .year-event-gallery--multi {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+}
+
 .year-event-gallery--multi .year-event-figure img {
   aspect-ratio: 3 / 2;
   min-height: clamp(160px, 22vw, 260px);

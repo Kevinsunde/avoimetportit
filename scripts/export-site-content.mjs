@@ -37,8 +37,8 @@ for (let j = i + needle.length; j < src.length; j++) {
           hero: "ap-hero-kaptenskans.jpg",
           gallery: [
             { file: "ap-gallery-drone-kristinestad.jpg", wide: true },
-            { file: "ap-gallery-2023-tapahtuma.jpg", wide: false },
-            { file: "ap-gallery-puutalo-2021.jpg", wide: false },
+            { file: "ap-gallery-2023-tapahtuma.png", wide: false },
+            { file: "ap-gallery-puutalo-2021.png", wide: false },
           ],
         },
         site: {
@@ -76,69 +76,6 @@ for (let j = i + needle.length; j < src.length; j++) {
         },
         ajankohtasetByYear: [
           {
-            year: "2024",
-            images: [
-              {
-                file: "kristinestad-street-1.jpg",
-                caption: {
-                  fi: "Avoimet portit 2024 – puutalokatu",
-                  sv: "Öppna portar 2024 – trähusgata",
-                  en: "Open Gates 2024 – wooden-house street",
-                },
-              },
-              {
-                file: "kristinestad-street-2.jpg",
-                caption: {
-                  fi: "Kesäinen näkymä 2024",
-                  sv: "Sommarvy 2024",
-                  en: "Summer view 2024",
-                },
-              },
-            ],
-          },
-          {
-            year: "2025",
-            images: [
-              {
-                file: "kristiinankaupunki-ruutukaava.jpg",
-                caption: {
-                  fi: "Ruutukaava-alue 2025",
-                  sv: "Rutnätsstaden 2025",
-                  en: "Grid-plan quarter 2025",
-                },
-              },
-              {
-                file: "kristinestad-street-1.jpg",
-                caption: {
-                  fi: "Tapahtumavierailta 2025",
-                  sv: "Evenemangsbesök 2025",
-                  en: "Event visit 2025",
-                },
-              },
-            ],
-          },
-          {
-            year: "2026",
-            images: [
-              {
-                file: "ap-gallery-2023-tapahtuma.jpg",
-                caption: {
-                  fi: "Avoimet portit – tunnelmaa 2023",
-                  sv: "Öppna portar – stämning 2023",
-                  en: "Open Gates – atmosphere in 2023",
-                },
-              },
-              {
-                file: "ap-gallery-drone-kristinestad.jpg",
-                caption: {
-                  fi: "Kristiinankaupunki ilmasta",
-                  sv: "Kristinestad från luften",
-                  en: "Kristinestad from above",
-                },
-              },
-            ],
-          },
-          {
             year: "2021–2023",
             images: [
               { file: "ap-aja-01.jpg" },
@@ -159,6 +96,28 @@ for (let j = i + needle.length; j < src.length; j++) {
               { file: "ap-aja-16.jpg" },
               { file: "ap-aja-17.jpg" },
               { file: "ap-aja-18.jpg" },
+              { file: "ap-aja-19.jpg" },
+              { file: "ap-aja-20.jpg" },
+              { file: "ap-aja-21.jpg" },
+              { file: "ap-aja-22.jpg" },
+              { file: "ap-aja-23.jpg" },
+              { file: "ap-aja-24.jpg" },
+              { file: "ap-aja-25.jpg" },
+              { file: "ap-aja-26.jpg" },
+              { file: "ap-aja-27.png" },
+              { file: "ap-aja-28.png" },
+              { file: "ap-aja-29.png" },
+              { file: "ap-aja-30.png" },
+              { file: "ap-aja-31.png" },
+              { file: "ap-aja-32.png" },
+              { file: "ap-aja-33.png" },
+              { file: "ap-aja-34.png" },
+              { file: "ap-aja-35.png" },
+              { file: "ap-aja-36.jpg" },
+              { file: "ap-aja-37.jpg" },
+              { file: "ap-aja-38.jpg" },
+              { file: "ap-aja-39.jpg" },
+              { file: "ap-aja-40.jpg" },
             ],
           },
         ],
