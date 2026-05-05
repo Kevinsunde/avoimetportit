@@ -371,7 +371,7 @@ const DEFAULT_STRINGS = {
       "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
     "reg.h2": "Registration",
     "reg.lead":
-      "Fill in the registration form. Your details are sent to Kristinestad tourism’s official address visit@krs.fi.",
+      "Fill in the registration form. Your details are sent to the official Kristinestad tourism address visit@krs.fi.",
     "reg.field.name": "Name",
     "reg.field.address": "Address",
     "reg.field.phone": "Phone",
