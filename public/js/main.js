@@ -440,7 +440,53 @@ const MAP_POINTS = {
 };
 
 /** Fallback when site-content.json has no ajankohtasetByYear; images in public/images/ */
-const DEFAULT_AJANKOHTASET_BY_YEAR = [];
+const DEFAULT_AJANKOHTASET_BY_YEAR = [
+  {
+    year: "2021–2023",
+    images: [
+      { file: "ap-aja-01.jpg" },
+      { file: "ap-aja-02.jpg" },
+      { file: "ap-aja-03.jpg" },
+      { file: "ap-aja-04.jpg" },
+      { file: "ap-aja-05.jpg" },
+      { file: "ap-aja-06.jpg" },
+      { file: "ap-aja-07.jpg" },
+      { file: "ap-aja-08.jpg" },
+      { file: "ap-aja-09.jpg" },
+      { file: "ap-aja-10.jpg" },
+      { file: "ap-aja-11.jpg" },
+      { file: "ap-aja-12.png" },
+      { file: "ap-aja-13.png" },
+      { file: "ap-aja-14.png" },
+      { file: "ap-aja-15.png" },
+      { file: "ap-aja-16.jpg" },
+      { file: "ap-aja-17.jpg" },
+      { file: "ap-aja-18.jpg" },
+      { file: "ap-aja-19.jpg" },
+      { file: "ap-aja-20.jpg" },
+      { file: "ap-aja-21.jpg" },
+      { file: "ap-aja-22.jpg" },
+      { file: "ap-aja-23.jpg" },
+      { file: "ap-aja-24.jpg" },
+      { file: "ap-aja-25.jpg" },
+      { file: "ap-aja-26.jpg" },
+      { file: "ap-aja-27.png" },
+      { file: "ap-aja-28.png" },
+      { file: "ap-aja-29.png" },
+      { file: "ap-aja-30.png" },
+      { file: "ap-aja-31.png" },
+      { file: "ap-aja-32.png" },
+      { file: "ap-aja-33.png" },
+      { file: "ap-aja-34.png" },
+      { file: "ap-aja-35.png" },
+      { file: "ap-aja-36.jpg" },
+      { file: "ap-aja-37.jpg" },
+      { file: "ap-aja-38.jpg" },
+      { file: "ap-aja-39.jpg" },
+      { file: "ap-aja-40.jpg" },
+    ],
+  },
+];
 
 let lastSiteContentData = null;
 
