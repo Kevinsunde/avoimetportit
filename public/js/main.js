@@ -92,7 +92,8 @@ const DEFAULT_STRINGS = {
     "prac.ticketIncludes":
       "Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.",
     "reg.h2": "Ilmoittautuminen",
-    "reg.lead": "Täytä ilmoittautumislomake. Tiedot lähetetään järjestäjälle sähköpostiin.",
+    "reg.lead":
+      "Täytä ilmoittautumislomake. Tiedot lähetetään Kristiinankaupungin matkailun viralliseen osoitteeseen visit@krs.fi.",
     "reg.field.name": "Nimi / Namn",
     "reg.field.address": "Osoite / Adress",
     "reg.field.phone": "Puh.nro / Tel.nr",
@@ -105,7 +106,7 @@ const DEFAULT_STRINGS = {
     "reg.status.mailto":
       "Lähetys avaa sähköpostiohjelman valmiilla viestillä. Tarkista vastaanottaja ennen lähettämistä.",
     "reg.status.remote":
-      "Lomake lähetetään suoraan valittuun lomakepalveluun.",
+      "Lomake lähetetään suoraan osoitteeseen visit@krs.fi turvallisen lomakepalvelun kautta.",
     "reg.feedback.success": "Ilmoittautuminen lähetetty.",
     "reg.feedback.error": "Lähetys epäonnistui. Yritä uudelleen.",
     "reg.consent.yes": "Kyllä",
@@ -230,7 +231,8 @@ const DEFAULT_STRINGS = {
     "prac.ticketIncludes":
       "I biljettpriset (armband) ingår information om besöksmål, karta över målen och evenemangsprogrammet.",
     "reg.h2": "Anmälan",
-    "reg.lead": "Fyll i anmälningsformuläret. Uppgifterna skickas till arrangören via e-post.",
+    "reg.lead":
+      "Fyll i anmälningsformuläret. Uppgifterna skickas till Kristinestads turisms officiella adress visit@krs.fi.",
     "reg.field.name": "Namn",
     "reg.field.address": "Adress",
     "reg.field.phone": "Tel.nr",
@@ -243,7 +245,7 @@ const DEFAULT_STRINGS = {
     "reg.status.mailto":
       "Skickandet öppnar ditt e-postprogram med ett färdigt meddelande. Kontrollera mottagaren före sändning.",
     "reg.status.remote":
-      "Formuläret skickas direkt till den valda formulärtjänsten.",
+      "Formuläret skickas direkt till visit@krs.fi via en säker formulärtjänst.",
     "reg.feedback.success": "Anmälan skickades.",
     "reg.feedback.error": "Skickandet misslyckades. Försök igen.",
     "reg.consent.yes": "Ja",
@@ -368,7 +370,8 @@ const DEFAULT_STRINGS = {
     "prac.ticketIncludes":
       "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
     "reg.h2": "Registration",
-    "reg.lead": "Fill in the registration form. The details are sent to the organizer by email.",
+    "reg.lead":
+      "Fill in the registration form. Your details are sent to Kristinestad tourism’s official address visit@krs.fi.",
     "reg.field.name": "Name",
     "reg.field.address": "Address",
     "reg.field.phone": "Phone",
@@ -381,7 +384,7 @@ const DEFAULT_STRINGS = {
     "reg.status.mailto":
       "Submitting opens your mail app with a prefilled message. Confirm the receiver before sending.",
     "reg.status.remote":
-      "This form submits directly to the configured form service.",
+      "This form submits directly to visit@krs.fi via a secure form service.",
     "reg.feedback.success": "Registration sent.",
     "reg.feedback.error": "Sending failed. Please try again.",
     "reg.consent.yes": "Yes",
