@@ -52,8 +52,8 @@
     "day2": "20 €"
   },
   "registration": {
-    "receiverEmail": "",
-    "receiverEmail2": "preview",
+    "receiverEmail": "visit@krs.fi",
+    "receiverEmail2": "",
     "subject": "Avoimet portit - ilmoittautuminen",
     "formAction": ""
   },
