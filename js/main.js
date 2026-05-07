@@ -496,7 +496,7 @@ let historicMarker;
 let infoKioskMarker;
 let registrationConfig = {
   formAction: "",
-  receiverEmail: "",
+  receiverEmail: "visit@krs.fi",
   receiverEmail2: "",
   subject: "Avoimet portit - ilmoittautuminen",
 };
