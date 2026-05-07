@@ -1108,6 +1108,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 49;
     background: rgba(246, 243, 236, 0.98);
     flex-direction: column;
     align-items: stretch;
@@ -1116,6 +1117,8 @@ a:hover {
     padding-left: max(1.25rem, env(safe-area-inset-left));
     padding-right: max(1.25rem, env(safe-area-inset-right));
     gap: 1.5rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     transform: translateX(100%);
     transition: transform 0.25s ease;
   }
