@@ -59,7 +59,8 @@
   },
   "analytics": {
     "googleMeasurementId": "",
-    "plausibleDomain": ""
+    "plausibleDomain": "",
+    "requireConsent": true
   },
   "ajankohtasetByYear": [
     {

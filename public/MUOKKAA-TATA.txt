@@ -9,10 +9,28 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
    - "contact" → yhteyshenkilö, puhelin, sähköposti, osoite.
    - "links" → painikkeiden ja alalaidan linkkien osoitteet.
    - "prices" → hintarivien eurot (esim. "15 €").
-   - "analytics" → kävijätilastot (valinnainen). Tyhjä = ei seurantaa.
-     - "googleMeasurementId": Google Analytics 4 -mittaus-ID (esim. G-XXXXXXXX).
-       Raportit: analytics.google.com. Ilmainen tili vaaditaan.
-     - "plausibleDomain": Plausible-tilastot (esim. avoimetportit.fi). Vaihtoehto GA:lle.
+   - "analytics" → kävijätilastot (valinnainen). Tyhjä = ei seurantaa. Käytä vain yhtä palvelua.
+     - "googleMeasurementId": Google Analytics 4 -mittaus-ID (esim. G-XXXXXXXXXX).
+       Raportit: https://analytics.google.com (ilmainen Google-tili).
+     - "plausibleDomain": Plausible (yksinkertaisempi, EU-ystävällinen). Esim. kevinsunde.github.io
+       Raportit: https://plausible.io — vaatii tilauksen.
+     - "requireConsent": true = evästepalkki ennen GA:ta (suositus). false = lataa heti.
+       Plausiblella voi käyttää false, jos et käytä Google Analyticsia.
+
+   GOOGLE ANALYTICS 4 — ASENNUSOHJE:
+   1) Avaa https://analytics.google.com ja kirjaudu Google-tilillä.
+   2) Admin → Luo tili / Luo ominaisuus (Property) → Verkkovirta (Web).
+   3) Sivuston URL: GitHub-sivu (esim. https://kevinsunde.github.io/avoimetportit/)
+      tai oma domain, jos sellainen on käytössä.
+   4) Kopioi Mittaus-ID (alkaa G-).
+   5) Liitä site-content.json → "googleMeasurementId": "G-XXXXXXXXXX"
+   6) Työnnä muutokset GitHubiin (npm run build + push) — seuranta alkaa muutaman tunnin sisällä.
+
+   PLAUSIBLE — ASENNUSOHJE:
+   1) Luo tili osoitteessa https://plausible.io
+   2) Lisää sivusto (domain = sama kuin sivuston osoite, esim. kevinsunde.github.io)
+   3) Liitä "plausibleDomain": "kevinsunde.github.io" (ilman https://)
+   4) Jätä googleMeasurementId tyhjäksi.
    - "registration" → ilmoittautumislomakkeen vastaanottajat:
      - "receiverEmail" ja "receiverEmail2": kaksi eri osoitetta; sama lomaketäyttö lähetetään molempiin
        (FormSubmit). Tyhjä "receiverEmail2" poistaa toisen kopion. Molemmat osoitteet on vahvistettava

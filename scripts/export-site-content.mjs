@@ -77,6 +77,7 @@ for (let j = i + needle.length; j < src.length; j++) {
         analytics: {
           googleMeasurementId: "",
           plausibleDomain: "",
+          requireConsent: true,
         },
         ajankohtasetByYear: [
           {
