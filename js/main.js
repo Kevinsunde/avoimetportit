@@ -116,6 +116,10 @@ const DEFAULT_STRINGS = {
     "reg.feedback.error": "Lähetys epäonnistui. Yritä uudelleen.",
     "reg.consent.yes": "Kyllä",
     "reg.consent.no": "Ei",
+    "analytics.consent.text":
+      "Käytämme evästeitä kävijämäärien mittaamiseen (Google Analytics). Hyväksytkö analytiikan?",
+    "analytics.consent.accept": "Hyväksy",
+    "analytics.consent.decline": "Ei kiitos",
     "contact.h2": "Yhteystiedot",
     "contact.deck": "Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu",
     "contact.chair": "Puheenjohtaja",
@@ -260,6 +264,10 @@ const DEFAULT_STRINGS = {
     "reg.feedback.error": "Skickandet misslyckades. Försök igen.",
     "reg.consent.yes": "Ja",
     "reg.consent.no": "Nej",
+    "analytics.consent.text":
+      "Vi använder cookies för besöksstatistik (Google Analytics). Godkänner du analys?",
+    "analytics.consent.accept": "Godkänn",
+    "analytics.consent.decline": "Nej tack",
     "contact.h2": "Kontakt",
     "contact.deck": "Arbetsgruppen Öppna portar och Kristinestads turism",
     "contact.chair": "Ordförande",
@@ -404,6 +412,10 @@ const DEFAULT_STRINGS = {
     "reg.feedback.error": "Sending failed. Please try again.",
     "reg.consent.yes": "Yes",
     "reg.consent.no": "No",
+    "analytics.consent.text":
+      "We use cookies to measure traffic (Google Analytics). Do you accept analytics?",
+    "analytics.consent.accept": "Accept",
+    "analytics.consent.decline": "No thanks",
     "contact.h2": "Contact",
     "contact.deck": "Open Gates working group and Kristinestad tourism",
     "contact.chair": "Chair",
@@ -810,15 +822,37 @@ function baseHrefForSiteFiles() {
   return u.href;
 }
 
-function initAnalytics(data) {
-  const analytics = data?.analytics;
-  if (!analytics || typeof analytics !== "object") return;
+const ANALYTICS_CONSENT_KEY = "ap-analytics-consent";
 
+function analyticsConfig(data) {
+  const analytics = data?.analytics;
+  if (!analytics || typeof analytics !== "object") return null;
   const gaId = String(analytics.googleMeasurementId || "").trim();
-  if (gaId) {
+  const plausibleDomain = String(analytics.plausibleDomain || "").trim();
+  if (!gaId && !plausibleDomain) return null;
+  return { analytics, gaId, plausibleDomain };
+}
+
+function analyticsNeedsConsent(cfg) {
+  if (!cfg) return false;
+  if (cfg.analytics.requireConsent === false) return false;
+  if (cfg.analytics.requireConsent === true) return true;
+  return Boolean(cfg.gaId);
+}
+
+function loadAnalyticsScripts(cfg) {
+  if (!cfg) return;
+
+  if (cfg.gaId && cfg.plausibleDomain) {
+    console.warn(
+      "Avoimet portit: käytä vain googleMeasurementId TAI plausibleDomain, ei molempia."
+    );
+  }
+
+  if (cfg.gaId && !cfg.plausibleDomain) {
     const gtagScript = document.createElement("script");
     gtagScript.async = true;
-    gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`;
+    gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(cfg.gaId)}`;
     document.head.appendChild(gtagScript);
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -826,17 +860,99 @@ function initAnalytics(data) {
     }
     window.gtag = gtag;
     gtag("js", new Date());
-    gtag("config", gaId, { anonymize_ip: true });
+    gtag("config", cfg.gaId, {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+      send_page_view: true,
+    });
   }
 
-  const plausibleDomain = String(analytics.plausibleDomain || "").trim();
-  if (plausibleDomain) {
+  if (cfg.plausibleDomain) {
     const plausibleScript = document.createElement("script");
     plausibleScript.defer = true;
-    plausibleScript.dataset.domain = plausibleDomain;
+    plausibleScript.dataset.domain = cfg.plausibleDomain;
     plausibleScript.src = "https://plausible.io/js/script.js";
     document.head.appendChild(plausibleScript);
   }
+}
+
+function showAnalyticsConsentBanner(onChoice) {
+  if (document.getElementById("analytics-consent")) return;
+
+  const lang = currentLangKey();
+  const bundle = STRINGS[lang] || STRINGS.fi;
+  const bar = document.createElement("div");
+  bar.id = "analytics-consent";
+  bar.className = "analytics-consent";
+  bar.setAttribute("role", "dialog");
+  bar.setAttribute("aria-live", "polite");
+  bar.setAttribute("aria-label", "Analytics consent");
+
+  const text = document.createElement("p");
+  text.className = "analytics-consent-text";
+  text.textContent = bundle["analytics.consent.text"] || "";
+
+  const actions = document.createElement("div");
+  actions.className = "analytics-consent-actions";
+
+  const accept = document.createElement("button");
+  accept.type = "button";
+  accept.className = "btn btn-primary analytics-consent-accept";
+  accept.textContent = bundle["analytics.consent.accept"] || "Accept";
+
+  const decline = document.createElement("button");
+  decline.type = "button";
+  decline.className = "btn btn-ghost analytics-consent-decline";
+  decline.textContent = bundle["analytics.consent.decline"] || "Decline";
+
+  accept.addEventListener("click", () => onChoice(true));
+  decline.addEventListener("click", () => onChoice(false));
+
+  actions.appendChild(accept);
+  actions.appendChild(decline);
+  bar.appendChild(text);
+  bar.appendChild(actions);
+  document.body.appendChild(bar);
+}
+
+function hideAnalyticsConsentBanner() {
+  document.getElementById("analytics-consent")?.remove();
+}
+
+function setupAnalytics(data) {
+  const cfg = analyticsConfig(data);
+  if (!cfg) return;
+
+  const activate = () => loadAnalyticsScripts(cfg);
+
+  if (!analyticsNeedsConsent(cfg)) {
+    activate();
+    return;
+  }
+
+  let stored = "";
+  try {
+    stored = localStorage.getItem(ANALYTICS_CONSENT_KEY) || "";
+  } catch {
+    stored = "";
+  }
+
+  if (stored === "granted") {
+    activate();
+    return;
+  }
+  if (stored === "denied") return;
+
+  showAnalyticsConsentBanner((accepted) => {
+    try {
+      localStorage.setItem(ANALYTICS_CONSENT_KEY, accepted ? "granted" : "denied");
+    } catch {
+      /* ignore */
+    }
+    hideAnalyticsConsentBanner();
+    if (accepted) activate();
+  });
 }
 
 async function loadSiteContent() {
@@ -852,7 +968,7 @@ async function loadSiteContent() {
   if (data) {
     mergeLanguagesFromFile(data);
     applyStructuredContent(data);
-    initAnalytics(data);
+    setupAnalytics(data);
   }
   renderAjankohtasetYearBlocks();
 }
