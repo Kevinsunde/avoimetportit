@@ -1077,10 +1077,10 @@ function initNav() {
   const backdrop = document.getElementById("nav-backdrop");
   if (!toggle || !nav) return;
 
-  const header = document.querySelector(".site-header");
+  const headerBar = document.querySelector(".header-inner");
   const setHeaderH = () => {
-    if (header) {
-      document.documentElement.style.setProperty("--header-h", `${header.offsetHeight}px`);
+    if (headerBar) {
+      document.documentElement.style.setProperty("--header-h", `${headerBar.offsetHeight}px`);
     }
   };
   setHeaderH();
@@ -1091,8 +1091,14 @@ function initNav() {
     document.body.classList.toggle("nav-open", open);
     toggle.setAttribute("aria-expanded", String(open));
     if (backdrop) {
+      backdrop.classList.toggle("is-visible", open);
       backdrop.hidden = !open;
       backdrop.setAttribute("aria-hidden", String(!open));
+    }
+    const main = document.getElementById("main");
+    if (main) {
+      if (open) main.setAttribute("inert", "");
+      else main.removeAttribute("inert");
     }
     requestAnimationFrame(() => {
       if (mapInstance) mapInstance.invalidateSize();
