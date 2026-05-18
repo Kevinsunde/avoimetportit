@@ -74,6 +74,10 @@ for (let j = i + needle.length; j < src.length; j++) {
           day1: "15 €",
           day2: "20 €",
         },
+        analytics: {
+          googleMeasurementId: "",
+          plausibleDomain: "",
+        },
         ajankohtasetByYear: [
           {
             year: "2021–2023",

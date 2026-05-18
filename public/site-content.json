@@ -57,6 +57,10 @@
     "subject": "Avoimet portit - ilmoittautuminen",
     "formAction": ""
   },
+  "analytics": {
+    "googleMeasurementId": "",
+    "plausibleDomain": ""
+  },
   "ajankohtasetByYear": [
     {
       "year": "2021–2023",
@@ -110,6 +114,7 @@
       "nav.exp": "Kokemus",
       "nav.ajankohtaset": "Ajankohtaiset",
       "nav.joulukodit": "Merikaupungin joulukodit",
+      "logo.sub": "Kristiinankaupunki",
       "nav.gallery": "Kristiinankaupunki",
       "nav.map": "Saapuminen",
       "nav.contact": "Yhteystiedot",
@@ -212,7 +217,8 @@
       "nav.exp": "Upplevelse",
       "nav.ajankohtaset": "Aktuellt",
       "nav.joulukodit": "Sjöstadens julhem",
-      "nav.gallery": "Kristiinankaupunki",
+      "logo.sub": "Kristinestad",
+      "nav.gallery": "Kristinestad",
       "nav.map": "Ankomst",
       "nav.contact": "Kontakt",
       "hero.eyebrow": "I juni · Kristinestads centrum",
@@ -314,7 +320,8 @@
       "nav.exp": "Experience",
       "nav.ajankohtaset": "News",
       "nav.joulukodit": "Christmas homes",
-      "nav.gallery": "Kristiinankaupunki",
+      "logo.sub": "Kristinestad",
+      "nav.gallery": "Kristinestad",
       "nav.map": "Getting here",
       "nav.contact": "Contact",
       "hero.eyebrow": "In June · Kristinestad city centre",

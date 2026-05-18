@@ -4,6 +4,7 @@ const DEFAULT_STRINGS = {
     "nav.exp": "Kokemus",
     "nav.ajankohtaset": "Ajankohtaiset",
     "nav.joulukodit": "Merikaupungin joulukodit",
+    "logo.sub": "Kristiinankaupunki",
     "nav.gallery": "Kristiinankaupunki",
     "nav.map": "Saapuminen",
     "nav.register": "Ilmoittautuminen",
@@ -147,7 +148,8 @@ const DEFAULT_STRINGS = {
     "nav.exp": "Upplevelse",
     "nav.ajankohtaset": "Aktuellt",
     "nav.joulukodit": "Sjöstadens julhem",
-    "nav.gallery": "Kristiinankaupunki",
+    "logo.sub": "Kristinestad",
+    "nav.gallery": "Kristinestad",
     "nav.map": "Ankomst",
     "nav.register": "Anmälan",
     "nav.contact": "Kontakt",
@@ -290,7 +292,8 @@ const DEFAULT_STRINGS = {
     "nav.exp": "Experience",
     "nav.ajankohtaset": "News",
     "nav.joulukodit": "Christmas homes",
-    "nav.gallery": "Kristiinankaupunki",
+    "logo.sub": "Kristinestad",
+    "nav.gallery": "Kristinestad",
     "nav.map": "Getting here",
     "nav.register": "Registration",
     "nav.contact": "Contact",
@@ -587,7 +590,6 @@ function applyStructuredContent(data) {
     const lt = document.getElementById("logo-title");
     const ls = document.getElementById("logo-sub");
     if (lt && logo.title) lt.textContent = logo.title;
-    if (ls && logo.subtitle) ls.textContent = logo.subtitle;
   }
 
   const c = data.contact;
@@ -808,6 +810,35 @@ function baseHrefForSiteFiles() {
   return u.href;
 }
 
+function initAnalytics(data) {
+  const analytics = data?.analytics;
+  if (!analytics || typeof analytics !== "object") return;
+
+  const gaId = String(analytics.googleMeasurementId || "").trim();
+  if (gaId) {
+    const gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`;
+    document.head.appendChild(gtagScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", gaId, { anonymize_ip: true });
+  }
+
+  const plausibleDomain = String(analytics.plausibleDomain || "").trim();
+  if (plausibleDomain) {
+    const plausibleScript = document.createElement("script");
+    plausibleScript.defer = true;
+    plausibleScript.dataset.domain = plausibleDomain;
+    plausibleScript.src = "https://plausible.io/js/script.js";
+    document.head.appendChild(plausibleScript);
+  }
+}
+
 async function loadSiteContent() {
   mergeDefaultStrings();
   let data = null;
@@ -821,6 +852,7 @@ async function loadSiteContent() {
   if (data) {
     mergeLanguagesFromFile(data);
     applyStructuredContent(data);
+    initAnalytics(data);
   }
   renderAjankohtasetYearBlocks();
 }
@@ -937,6 +969,11 @@ function setLanguage(lang) {
     }
   });
 
+  const logoSub = document.getElementById("logo-sub");
+  if (logoSub && bundle["logo.sub"]) {
+    logoSub.textContent = bundle["logo.sub"];
+  }
+
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     const isActive = btn.getAttribute("data-lang") === lang;
     btn.classList.toggle("is-active", isActive);
@@ -1037,6 +1074,7 @@ function initRegistrationForm() {
 function initNav() {
   const toggle = document.getElementById("nav-toggle");
   const nav = document.getElementById("site-nav");
+  const backdrop = document.getElementById("nav-backdrop");
   if (!toggle || !nav) return;
 
   const header = document.querySelector(".site-header");
@@ -1048,22 +1086,29 @@ function initNav() {
   setHeaderH();
   window.addEventListener("resize", setHeaderH);
 
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
+  const setNavOpen = (open) => {
+    nav.classList.toggle("is-open", open);
+    document.body.classList.toggle("nav-open", open);
     toggle.setAttribute("aria-expanded", String(open));
+    if (backdrop) {
+      backdrop.hidden = !open;
+      backdrop.setAttribute("aria-hidden", String(!open));
+    }
     requestAnimationFrame(() => {
       if (mapInstance) mapInstance.invalidateSize();
     });
+  };
+
+  toggle.addEventListener("click", () => {
+    setNavOpen(!nav.classList.contains("is-open"));
   });
 
+  if (backdrop) {
+    backdrop.addEventListener("click", () => setNavOpen(false));
+  }
+
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-      requestAnimationFrame(() => {
-        if (mapInstance) mapInstance.invalidateSize();
-      });
-    });
+    link.addEventListener("click", () => setNavOpen(false));
   });
 }
 

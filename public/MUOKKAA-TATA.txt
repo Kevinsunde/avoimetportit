@@ -9,6 +9,10 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
    - "contact" → yhteyshenkilö, puhelin, sähköposti, osoite.
    - "links" → painikkeiden ja alalaidan linkkien osoitteet.
    - "prices" → hintarivien eurot (esim. "15 €").
+   - "analytics" → kävijätilastot (valinnainen). Tyhjä = ei seurantaa.
+     - "googleMeasurementId": Google Analytics 4 -mittaus-ID (esim. G-XXXXXXXX).
+       Raportit: analytics.google.com. Ilmainen tili vaaditaan.
+     - "plausibleDomain": Plausible-tilastot (esim. avoimetportit.fi). Vaihtoehto GA:lle.
    - "registration" → ilmoittautumislomakkeen vastaanottajat:
      - "receiverEmail" ja "receiverEmail2": kaksi eri osoitetta; sama lomaketäyttö lähetetään molempiin
        (FormSubmit). Tyhjä "receiverEmail2" poistaa toisen kopion. Molemmat osoitteet on vahvistettava
