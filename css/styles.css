@@ -11,6 +11,7 @@
   --font-serif: "Cormorant Garamond", "Georgia", serif;
   --font-sans: "Outfit", system-ui, sans-serif;
   --radius: 12px;
+  --header-bar-radius: 14px;
   --shadow: 0 18px 50px rgba(28, 36, 25, 0.08);
   --header-h: 4.25rem;
 }
@@ -230,7 +231,10 @@ a:hover {
     padding-right: max(1.25rem, env(safe-area-inset-right));
     background: rgba(246, 243, 236, 0.92);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-line);
+    border: 1px solid var(--color-line);
+    border-top: 0;
+    border-radius: 0 0 var(--header-bar-radius) var(--header-bar-radius);
+    box-shadow: 0 10px 28px rgba(28, 36, 25, 0.06);
   }
 
   .site-header {
@@ -1123,7 +1127,10 @@ a:hover {
     position: sticky;
     top: 0;
     background: rgba(246, 243, 236, 0.98);
-    border-bottom: 1px solid var(--color-line);
+    border: 1px solid var(--color-line);
+    border-top: 0;
+    border-radius: 0 0 var(--header-bar-radius) var(--header-bar-radius);
+    box-shadow: 0 8px 24px rgba(28, 36, 25, 0.06);
     /* backdrop-filter breaks position:fixed menus on iOS/Android */
   }
 
