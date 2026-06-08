@@ -82,10 +82,10 @@ const DEFAULT_STRINGS = {
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
     "ajankohtaset.archive.h2": "Kuvagalleria",
     "ajankohtaset.gardens.kicker": "Pihakohteet",
-    "ajankohtaset.gardens.h2": "Avoimet Portit 13.–14.6. – Pihaesittelyt alkavat!",
+    "ajankohtaset.gardens.h2": "Avoimet Portit 13.–14.6.2026 – Pihaesittelyt alkavat!",
     "ajankohtaset.gardens.intro":
       "Tutustu etukäteen Kristiinankaupungin pihoihin. Uusia esittelyjä ja kuvia julkaistaan pian.",
-    "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.",
+    "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.2026.",
     "ajankohtaset.gardens.yardHeading": "Piha nro {number}",
     "ajankohtaset.gardens.location": "Piha nro {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -136,6 +136,8 @@ const DEFAULT_STRINGS = {
     "contact.h2": "Yhteystiedot",
     "contact.deck": "Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu",
     "contact.chair": "Puheenjohtaja",
+    "contact.chair.with":
+      "Yhdessä näiden kanssa: Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen ja Helena Kari.",
     "contact.tourism": "Matkailu",
     "contact.links": "Muut linkit",
     "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",
@@ -243,10 +245,10 @@ const DEFAULT_STRINGS = {
       "Aktuella meddelanden om Öppna portar i Kristinestad.",
     "ajankohtaset.archive.h2": "Bildgalleri",
     "ajankohtaset.gardens.kicker": "Gårdar",
-    "ajankohtaset.gardens.h2": "Öppna Portar 13–14.6 – Gårdspresentationerna börjar!",
+    "ajankohtaset.gardens.h2": "Öppna Portar 13–14.6.2026 – Gårdspresentationerna börjar!",
     "ajankohtaset.gardens.intro":
       "Lär känna gårdarna i förväg. Fler presentationer och bilder publiceras snart.",
-    "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6",
+    "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6.2026",
     "ajankohtaset.gardens.yardHeading": "Gård nr {number}",
     "ajankohtaset.gardens.location": "Trädgård nr {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -297,6 +299,8 @@ const DEFAULT_STRINGS = {
     "contact.h2": "Kontakt",
     "contact.deck": "Arbetsgruppen Öppna portar och Kristinestads turism",
     "contact.chair": "Ordförande",
+    "contact.chair.with":
+      "Tillsammans med Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen och Helena Kari.",
     "contact.tourism": "Turism",
     "contact.links": "Övriga länkar",
     "contact.link1": "Öppna portar — Visit Kristinestad (FI)",
@@ -404,10 +408,10 @@ const DEFAULT_STRINGS = {
       "Latest news and reminders about the Open Gates event in Kristinestad.",
     "ajankohtaset.archive.h2": "Photo gallery",
     "ajankohtaset.gardens.kicker": "Garden stops",
-    "ajankohtaset.gardens.h2": "Open Gates 13–14 June – Garden spotlights begin!",
+    "ajankohtaset.gardens.h2": "Open Gates 13–14 June 2026 – Garden spotlights begin!",
     "ajankohtaset.gardens.intro":
       "Get to know the yards in advance. More spotlights and photos will be published soon.",
-    "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June",
+    "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June 2026",
     "ajankohtaset.gardens.yardHeading": "Garden No. {number}",
     "ajankohtaset.gardens.location": "Yard no. {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -458,6 +462,8 @@ const DEFAULT_STRINGS = {
     "contact.h2": "Contact",
     "contact.deck": "Open Gates working group and Kristinestad tourism",
     "contact.chair": "Chair",
+    "contact.chair.with":
+      "Together with Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen and Helena Kari.",
     "contact.tourism": "Tourism",
     "contact.links": "Other links",
     "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",

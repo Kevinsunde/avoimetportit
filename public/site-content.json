@@ -143,6 +143,62 @@
         "sv": "På denna charmiga gård får du njuta av en mångsidig perennträdgård där en enorm rododendron stjäl uppmärksamheten. Den idylliska gårdsmiljön kompletteras av en historisk bagarstuga som i år firar sitt imponerande 200-årsjubileum.",
         "en": "At this charming property, you can enjoy a diverse perennial garden where an enormous rhododendron steals the spotlight. The idyllic farmyard setting is complemented by a historic bakehouse, which this year celebrates its impressive 200th anniversary."
       }
+    },
+    {
+      "yardNumber": 25,
+      "hosts": "Marit Hämäläinen",
+      "images": [
+        {
+          "file": "piha-25-01.jpg",
+          "caption": {
+            "fi": "Terassikalusteet ja kesäinen pihapiiri.",
+            "sv": "Terrassmöbler och somrig gårdsmiljö.",
+            "en": "Terrace seating and summer yard."
+          }
+        },
+        {
+          "file": "piha-25-02.jpg",
+          "caption": {
+            "fi": "Runsaita perennaistutoksia pihapiirissä.",
+            "sv": "Rikliga perennplanteringar på gården.",
+            "en": "Abundant perennial plantings in the garden."
+          }
+        },
+        {
+          "file": "piha-25-03.jpg",
+          "caption": {
+            "fi": "Mukulakivipiha ja kukkiva puu.",
+            "sv": "Kullerstensgård och blommande träd.",
+            "en": "Cobblestone courtyard and blooming tree."
+          }
+        },
+        {
+          "file": "piha-25-04.jpg",
+          "caption": {
+            "fi": "Mukulakivipiha ja kesäinen istumapaikka.",
+            "sv": "Kullerstensgård och sommarplats att sitta.",
+            "en": "Cobblestone patio with outdoor seating."
+          }
+        },
+        {
+          "file": "piha-25-05.jpg",
+          "caption": {
+            "fi": "Talojen julkisivu mukulakivikadulla.",
+            "sv": "Husfasad vid kullerstensgatan.",
+            "en": "House facade on the cobblestone street."
+          }
+        }
+      ],
+      "lead": {
+        "fi": "Piha nro 25, Marit Hämäläisen puutarha.",
+        "sv": "Gård nummer 25, Marit Hämäläinens trädgård.",
+        "en": "Garden No. 25 – Marit Hämäläinen's Garden."
+      },
+      "body": {
+        "fi": "Tällä vehreällä pihalla sinua tervehtii kaunis mukulakivipiha, jota ympäröivät runsaat vanhanajan perennaistutukset. Vanha navetta on muutettu viehättäväksi kesähuoneeksi, joka luo pihapiiriin nostalgista tunnelmaa. Pihalla ja kesähuoneessa voit nauttia kahvia sekä makeita ja suolaisia herkkuja tunnelmallisen vanhanajan musiikin säestyksellä.",
+        "sv": "På denna lummiga gård möts du av en vacker kullerstensgård omgiven av rikliga planteringar med gammaldags perenner. Den gamla ladugården har förvandlats till ett charmigt sommarhus som bidrar till den nostalgiska atmosfären. På gården och i sommarhuset kan du njuta av kaffe med både söta och salta tilltugg, ackompanjerat av stämningsfull musik från svunna tider.",
+        "en": "This lush garden welcomes visitors with a beautiful cobblestone courtyard surrounded by abundant plantings of traditional perennial flowers. An old barn has been transformed into a charming summer room, adding a nostalgic touch to the setting. In the garden and the summer room, you can enjoy coffee along with sweet and savory treats while listening to the delightful melodies of music from bygone days."
+      }
     }
   ],
   "ajankohtasetByYear": [
@@ -275,6 +331,7 @@
       "contact.h2": "Yhteystiedot",
       "contact.deck": "Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu",
       "contact.chair": "Puheenjohtaja",
+      "contact.chair.with": "Yhdessä näiden kanssa: Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen ja Helena Kari.",
       "contact.tourism": "Matkailu",
       "contact.links": "Muut linkit",
       "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",
@@ -378,6 +435,7 @@
       "contact.h2": "Kontakt",
       "contact.deck": "Arbetsgruppen Öppna portar och Kristinestads turism",
       "contact.chair": "Ordförande",
+      "contact.chair.with": "Tillsammans med Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen och Helena Kari.",
       "contact.tourism": "Turism",
       "contact.links": "Övriga länkar",
       "contact.link1": "Öppna portar — Visit Kristinestad (FI)",
@@ -481,6 +539,7 @@
       "contact.h2": "Contact",
       "contact.deck": "Open Gates working group and Kristinestad tourism",
       "contact.chair": "Chair",
+      "contact.chair.with": "Together with Maarit Juhala, Reija Ådjers, Kristina Itälaakso, Maarit Rosengård, Margaretha Reinlund, Hilkka Wilhelms, Karin Rusk, Marit Hämäläinen and Helena Kari.",
       "contact.tourism": "Tourism",
       "contact.links": "Other links",
       "contact.link1": "Avoimet portit — Visit Kristinestad (FI)",

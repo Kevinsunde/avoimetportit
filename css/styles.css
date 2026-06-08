@@ -1166,6 +1166,12 @@ a:hover {
   color: var(--color-ink-muted);
 }
 
+.contact-chair-with {
+  margin-top: 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .contact-card a {
   font-weight: 500;
 }
