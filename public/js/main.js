@@ -86,6 +86,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.intro":
       "Tutustu etukäteen Kristiinankaupungin pihoihin. Uusia esittelyjä ja kuvia julkaistaan pian.",
     "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.",
+    "ajankohtaset.gardens.yardHeading": "Piha nro {number}",
     "ajankohtaset.gardens.location": "Piha nro {number} – {hosts}",
     "ajankohtaset.gardens.closing":
       "Avoimet Portit tarjoaa jälleen mahdollisuuden tutustua Kristiinankaupungin kauniisiin ja persoonallisiin pihoihin sekä niiden tarinoihin. Tule inspiroitumaan puutarhoista, historiasta ja kesäisestä tunnelmasta!",
@@ -246,6 +247,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.intro":
       "Lär känna gårdarna i förväg. Fler presentationer och bilder publiceras snart.",
     "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6",
+    "ajankohtaset.gardens.yardHeading": "Gård nr {number}",
     "ajankohtaset.gardens.location": "Trädgård nr {number} – {hosts}",
     "ajankohtaset.gardens.closing":
       "Öppna Portar ger återigen möjligheten att upptäcka Kristinestads vackra och personliga gårdar samt historierna bakom dem. Kom och inspireras av trädgårdar, historia och härlig sommarstämning!",
@@ -406,6 +408,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.intro":
       "Get to know the yards in advance. More spotlights and photos will be published soon.",
     "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June",
+    "ajankohtaset.gardens.yardHeading": "Garden No. {number}",
     "ajankohtaset.gardens.location": "Yard no. {number} – {hosts}",
     "ajankohtaset.gardens.closing":
       "Open Gates once again invites you to discover Kristinestad’s beautiful, personal yards and the stories behind them. Come and be inspired by gardens, history and the summer atmosphere!",
@@ -816,6 +819,14 @@ function renderGardenSpotlights() {
     const card = document.createElement("article");
     card.className = "garden-spotlight-card";
 
+    if (yardNumber) {
+      const yardHeadingTpl = bundle["ajankohtaset.gardens.yardHeading"] || "Piha nro {number}";
+      const yardHeading = document.createElement("h3");
+      yardHeading.className = "garden-spotlight-yard-heading";
+      yardHeading.textContent = fillTemplate(yardHeadingTpl, vars);
+      card.appendChild(yardHeading);
+    }
+
     const imgs = Array.isArray(entry.images) ? entry.images : [];
     if (imgs.length > 0) {
       const grid = document.createElement("div");
@@ -906,9 +917,7 @@ function renderGardenSpotlights() {
       card.appendChild(datesEl);
     }
 
-    const locationTpl = bundle["ajankohtaset.gardens.location"] || "";
-    const location =
-      localizedContent(entry.location, lang) || fillTemplate(locationTpl, vars);
+    const location = localizedContent(entry.location, lang);
     if (location) {
       const locEl = document.createElement("p");
       locEl.className = "garden-spotlight-meta";

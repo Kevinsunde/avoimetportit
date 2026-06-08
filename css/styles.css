@@ -476,6 +476,15 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
+.garden-spotlight-yard-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
 .garden-spotlight-lead {
   font-family: var(--font-serif);
   font-size: 1.2rem;
