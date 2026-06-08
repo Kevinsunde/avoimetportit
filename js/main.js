@@ -80,6 +80,18 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "Ajankohtaiset – Avoimet portit | Kristiinankaupunki",
     "ajankohtaset.metaDescription":
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
+    "ajankohtaset.archive.h2": "Kuvagalleria",
+    "ajankohtaset.gardens.kicker": "Pihakohteet",
+    "ajankohtaset.gardens.h2": "Avoimet Portit 13.–14.6. – Pihaesittelyt alkavat!",
+    "ajankohtaset.gardens.intro":
+      "Tutustu etukäteen Kristiinankaupungin pihoihin. Uusia esittelyjä ja kuvia julkaistaan pian.",
+    "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.",
+    "ajankohtaset.gardens.location": "Piha nro {number} – {hosts}",
+    "ajankohtaset.gardens.closing":
+      "Avoimet Portit tarjoaa jälleen mahdollisuuden tutustua Kristiinankaupungin kauniisiin ja persoonallisiin pihoihin sekä niiden tarinoihin. Tule inspiroitumaan puutarhoista, historiasta ja kesäisestä tunnelmasta!",
+    "ajankohtaset.gardens.more": "Näitä tulee lisää!",
+    "ajankohtaset.gardens.photoPlaceholder": "Kuvia lisätään pian.",
+    "ajankohtaset.gardens.photoAlt": "Piha nro {number}, {hosts}",
     "joulukodit.h2": "Merikaupungin joulukodit",
     "joulukodit.backHome": "← Etusivulle",
     "joulukodit.documentTitle": "Merikaupungin joulukodit – Avoimet portit | Kristiinankaupunki",
@@ -228,6 +240,18 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "Aktuellt – Öppna portar | Kristinestad",
     "ajankohtaset.metaDescription":
       "Aktuella meddelanden om Öppna portar i Kristinestad.",
+    "ajankohtaset.archive.h2": "Bildgalleri",
+    "ajankohtaset.gardens.kicker": "Gårdar",
+    "ajankohtaset.gardens.h2": "Öppna Portar 13–14.6 – Gårdspresentationerna börjar!",
+    "ajankohtaset.gardens.intro":
+      "Lär känna gårdarna i förväg. Fler presentationer och bilder publiceras snart.",
+    "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6",
+    "ajankohtaset.gardens.location": "Trädgård nr {number} – {hosts}",
+    "ajankohtaset.gardens.closing":
+      "Öppna Portar ger återigen möjligheten att upptäcka Kristinestads vackra och personliga gårdar samt historierna bakom dem. Kom och inspireras av trädgårdar, historia och härlig sommarstämning!",
+    "ajankohtaset.gardens.more": "Fler presentationer kommer!",
+    "ajankohtaset.gardens.photoPlaceholder": "Bilder läggs till snart.",
+    "ajankohtaset.gardens.photoAlt": "Gård nr {number}, {hosts}",
     "joulukodit.h2": "Sjöstadens julhem",
     "joulukodit.backHome": "← Till startsidan",
     "joulukodit.documentTitle": "Sjöstadens julhem – Öppna portar | Kristinestad",
@@ -376,6 +400,18 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.documentTitle": "News – Open Gates | Kristinestad",
     "ajankohtaset.metaDescription":
       "Latest news and reminders about the Open Gates event in Kristinestad.",
+    "ajankohtaset.archive.h2": "Photo gallery",
+    "ajankohtaset.gardens.kicker": "Garden stops",
+    "ajankohtaset.gardens.h2": "Open Gates 13–14 June – Garden spotlights begin!",
+    "ajankohtaset.gardens.intro":
+      "Get to know the yards in advance. More spotlights and photos will be published soon.",
+    "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June",
+    "ajankohtaset.gardens.location": "Yard no. {number} – {hosts}",
+    "ajankohtaset.gardens.closing":
+      "Open Gates once again invites you to discover Kristinestad’s beautiful, personal yards and the stories behind them. Come and be inspired by gardens, history and the summer atmosphere!",
+    "ajankohtaset.gardens.more": "More spotlights coming soon!",
+    "ajankohtaset.gardens.photoPlaceholder": "Photos coming soon.",
+    "ajankohtaset.gardens.photoAlt": "Yard no. {number}, {hosts}",
     "joulukodit.h2": "Christmas homes",
     "joulukodit.backHome": "← Home",
     "joulukodit.documentTitle": "Christmas homes – Open Gates | Kristinestad",
@@ -721,6 +757,24 @@ function getAjankohtasetByYear() {
   return DEFAULT_AJANKOHTASET_BY_YEAR;
 }
 
+function getGardenSpotlights() {
+  const fromFile = lastSiteContentData?.gardenSpotlights;
+  if (Array.isArray(fromFile)) return fromFile;
+  return [];
+}
+
+function localizedContent(value, lang) {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  return value[lang] || value.fi || value.sv || value.en || "";
+}
+
+function fillTemplate(tpl, vars) {
+  return String(tpl || "").replace(/\{(\w+)\}/g, (_, key) =>
+    vars[key] != null ? String(vars[key]) : ""
+  );
+}
+
 function yearImageCaption(imgEntry, lang) {
   if (typeof imgEntry !== "object" || imgEntry == null) return "";
   const c = imgEntry.caption;
@@ -737,6 +791,133 @@ function yearImageAlt(imgEntry, year, lang, bundle) {
   }
   const tpl = bundle["ajankohtaset.photoAlt"] || "";
   return tpl.replace(/\{year\}/g, String(year));
+}
+
+function renderGardenSpotlights() {
+  const root = document.getElementById("garden-spotlights-root");
+  const section = document.getElementById("pihaesittelyt");
+  if (!root) return;
+
+  const lang = currentLangKey();
+  const bundle = STRINGS[lang] || STRINGS.fi;
+  const items = getGardenSpotlights();
+
+  if (section) {
+    section.hidden = items.length === 0;
+  }
+  root.innerHTML = "";
+  if (!items.length) return;
+
+  for (const entry of items) {
+    const yardNumber = entry.yardNumber != null ? String(entry.yardNumber) : "";
+    const hosts = entry.hosts != null ? String(entry.hosts) : "";
+    const vars = { number: yardNumber, hosts };
+
+    const card = document.createElement("article");
+    card.className = "garden-spotlight-card";
+
+    const imgs = Array.isArray(entry.images) ? entry.images : [];
+    if (imgs.length > 0) {
+      const grid = document.createElement("div");
+      grid.className = "garden-spotlight-gallery";
+      if (imgs.length > 2) grid.classList.add("garden-spotlight-gallery--multi");
+
+      for (const imgEntry of imgs) {
+        const file = typeof imgEntry === "string" ? imgEntry : imgEntry?.file;
+        if (!file) continue;
+
+        const isVideo =
+          (typeof imgEntry === "object" && imgEntry != null && imgEntry.video === true) ||
+          /\.(mov|mp4|webm)$/i.test(file);
+
+        const fig = document.createElement("figure");
+        fig.className = "garden-spotlight-figure";
+        if (isVideo) fig.classList.add("garden-spotlight-figure--video");
+
+        if (isVideo) {
+          const vid = document.createElement("video");
+          vid.src = imgPath(file);
+          vid.controls = true;
+          vid.playsInline = true;
+          vid.preload = "metadata";
+          vid.setAttribute(
+            "aria-label",
+            fillTemplate(
+              localizedContent(imgEntry?.alt, lang) ||
+                bundle["ajankohtaset.gardens.photoAlt"] ||
+                "",
+              vars
+            )
+          );
+          fig.appendChild(vid);
+        } else {
+          const im = document.createElement("img");
+          im.src = imgPath(file);
+          im.alt = fillTemplate(
+            localizedContent(imgEntry?.alt, lang) ||
+              bundle["ajankohtaset.gardens.photoAlt"] ||
+              "",
+            vars
+          );
+          im.loading = "lazy";
+          fig.appendChild(im);
+        }
+
+        const cap = yearImageCaption(imgEntry, lang);
+        if (cap) {
+          const fc = document.createElement("figcaption");
+          fc.className = "photo-cap";
+          fc.textContent = cap;
+          fig.appendChild(fc);
+        }
+
+        grid.appendChild(fig);
+      }
+
+      if (grid.childElementCount > 0) card.appendChild(grid);
+    } else {
+      const placeholder = document.createElement("p");
+      placeholder.className = "garden-spotlight-placeholder";
+      placeholder.textContent = bundle["ajankohtaset.gardens.photoPlaceholder"] || "";
+      card.appendChild(placeholder);
+    }
+
+    const lead = localizedContent(entry.lead, lang);
+    if (lead) {
+      const leadEl = document.createElement("p");
+      leadEl.className = "garden-spotlight-lead";
+      leadEl.textContent = lead;
+      card.appendChild(leadEl);
+    }
+
+    const body = localizedContent(entry.body, lang);
+    if (body) {
+      const bodyEl = document.createElement("p");
+      bodyEl.className = "garden-spotlight-body";
+      bodyEl.textContent = body;
+      card.appendChild(bodyEl);
+    }
+
+    const dates = localizedContent(entry.dates, lang) || bundle["ajankohtaset.gardens.dates"] || "";
+    if (dates) {
+      const datesEl = document.createElement("p");
+      datesEl.className = "garden-spotlight-meta";
+      datesEl.textContent = dates;
+      card.appendChild(datesEl);
+    }
+
+    const locationTpl = bundle["ajankohtaset.gardens.location"] || "";
+    const location =
+      localizedContent(entry.location, lang) || fillTemplate(locationTpl, vars);
+    if (location) {
+      const locEl = document.createElement("p");
+      locEl.className = "garden-spotlight-meta";
+      locEl.textContent = location;
+      card.appendChild(locEl);
+    }
+
+    root.appendChild(card);
+  }
 }
 
 function renderAjankohtasetYearBlocks() {
@@ -970,6 +1151,7 @@ async function loadSiteContent() {
     applyStructuredContent(data);
     setupAnalytics(data);
   }
+  renderGardenSpotlights();
   renderAjankohtasetYearBlocks();
 }
 
@@ -1099,6 +1281,7 @@ function setLanguage(lang) {
   updateMapPopups();
   updateRegistrationUi();
   applySubpageChrome();
+  renderGardenSpotlights();
   renderAjankohtasetYearBlocks();
 
   try {

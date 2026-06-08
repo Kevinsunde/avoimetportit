@@ -52,6 +52,15 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
 3) AJANKOHTASET-SIVU
    Tiedosto: ajankohtaset.html (valikon linkki). Tekstit: site-content.json → languages →
    avaimet ajankohtaset.* (fi, sv, en).
+   Pihaesittelyt (uudet pihakohteet): site-content.json → gardenSpotlights: lista kohteista.
+   Jokaisella kohde:
+     - "yardNumber": esim. 11
+     - "hosts": esim. "Maarit Juhala & Christer Sundell"
+     - "images": lista kuvista ja videoista (tyhjä [] = näytetään "Kuvia lisätään pian")
+       { "file": "piha-11-1.jpg", "caption": { "fi": "...", "sv": "...", "en": "..." } }
+       { "file": "piha-11-video.mov", "video": true, "caption": { "fi": "...", "sv": "...", "en": "..." } }
+     - "lead" ja "body": lyhyt esittelyteksti (fi, sv, en)
+   Lisää uusi kohde kopioimalla edellinen lohko listaan ja vaihtamalla numeron, tekstit ja kuvat.
    Vuosikuvat: sama tiedosto → ajankohtasetByYear: lista vuosista, jokaisella "year"
    (esim. "2024") ja "images"-lista. Valinnainen "yearBanner": leveä tapahtumakuva
    (esim. vuoden logo/päivämäärä) näytetään kyseisen vuoden otsikon yläpuolella.
