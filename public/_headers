@@ -1,0 +1,5 @@
+/site-content.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/js/main.js
+  Cache-Control: public, max-age=300, must-revalidate

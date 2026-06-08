@@ -77,6 +77,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Avoimet portit",
     "ajankohtaset.photoAlt": "Avoimet portit Kristiinankaupungissa, {year}",
     "ajankohtaset.backHome": "← Etusivulle",
+    "ajankohtaset.gardens.jump": "Pihaesittelyt ↓",
     "ajankohtaset.documentTitle": "Ajankohtaiset – Avoimet portit | Kristiinankaupunki",
     "ajankohtaset.metaDescription":
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
@@ -240,6 +241,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Öppna portar",
     "ajankohtaset.photoAlt": "Öppna portar i Kristinestad, {year}",
     "ajankohtaset.backHome": "← Till startsidan",
+    "ajankohtaset.gardens.jump": "Gårdspresentationer ↓",
     "ajankohtaset.documentTitle": "Aktuellt – Öppna portar | Kristinestad",
     "ajankohtaset.metaDescription":
       "Aktuella meddelanden om Öppna portar i Kristinestad.",
@@ -403,6 +405,7 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Open Gates",
     "ajankohtaset.photoAlt": "Open Gates in Kristinestad, {year}",
     "ajankohtaset.backHome": "← Home",
+    "ajankohtaset.gardens.jump": "Garden spotlights ↓",
     "ajankohtaset.documentTitle": "News – Open Gates | Kristinestad",
     "ajankohtaset.metaDescription":
       "Latest news and reminders about the Open Gates event in Kristinestad.",
@@ -812,10 +815,16 @@ function renderGardenSpotlights() {
   const items = getGardenSpotlights();
 
   if (section) {
-    section.hidden = items.length === 0;
+    section.hidden = false;
   }
   root.innerHTML = "";
-  if (!items.length) return;
+  if (!items.length) {
+    const placeholder = document.createElement("p");
+    placeholder.className = "garden-spotlight-placeholder";
+    placeholder.textContent = bundle["ajankohtaset.gardens.photoPlaceholder"] || "";
+    root.appendChild(placeholder);
+    return;
+  }
 
   for (const entry of items) {
     const yardNumber = entry.yardNumber != null ? String(entry.yardNumber) : "";
@@ -1151,12 +1160,29 @@ function setupAnalytics(data) {
   });
 }
 
+async function fetchSiteContentData() {
+  const bases = [baseHrefForSiteFiles(), `${window.location.origin}/`];
+  const seen = new Set();
+  for (const base of bases) {
+    if (!base || seen.has(base)) continue;
+    seen.add(base);
+    try {
+      const url = new URL("site-content.json", base);
+      url.searchParams.set("v", String(Date.now()));
+      const res = await fetch(url, { cache: "no-store" });
+      if (res.ok) return await res.json();
+    } catch {
+      /* try next base */
+    }
+  }
+  return null;
+}
+
 async function loadSiteContent() {
   mergeDefaultStrings();
   let data = null;
   try {
-    const res = await fetch(new URL("site-content.json", baseHrefForSiteFiles()));
-    if (res.ok) data = await res.json();
+    data = await fetchSiteContentData();
   } catch {
     /* use defaults only */
   }
