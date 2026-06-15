@@ -360,6 +360,10 @@ a:hover {
   font-weight: 500;
 }
 
+body[data-page="ajankohtaset"] .section-inner {
+  max-width: 1280px;
+}
+
 .ajankohtaset-years {
   margin-top: 2.5rem;
 }
@@ -427,14 +431,14 @@ a:hover {
 
 @media (min-width: 1400px) {
   .year-event-gallery--multi {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.35rem;
   }
 }
 
 .year-event-gallery--multi .year-event-figure img {
   aspect-ratio: 3 / 2;
-  min-height: clamp(160px, 22vw, 260px);
+  min-height: clamp(200px, 28vw, 320px);
 }
 
 .year-event-figure {
@@ -513,7 +517,7 @@ a:hover {
 
 .garden-spotlight-gallery {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
   margin-bottom: 1.25rem;
   grid-template-columns: 1fr;
 }
@@ -521,11 +525,25 @@ a:hover {
 @media (min-width: 640px) {
   .garden-spotlight-gallery {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 }
 
 .garden-spotlight-gallery--multi {
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+@media (min-width: 900px) {
+  .garden-spotlight-gallery--multi {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.35rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .garden-spotlight-gallery--multi {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .garden-spotlight-figure {
@@ -542,6 +560,7 @@ a:hover {
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
+  min-height: clamp(200px, 32vw, 360px);
   object-fit: cover;
   background: #000;
 }
@@ -1018,6 +1037,30 @@ a:hover {
 
 .prac-grid {
   align-items: stretch;
+}
+
+.prac-intro {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--color-ink-muted);
+  margin: -0.5rem 0 1.75rem;
+  max-width: 65ch;
+}
+
+.prac-details .prac-meta {
+  margin: 0;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.prac-details .prac-meta + .prac-meta {
+  margin-top: 0.35rem;
+}
+
+.prac-closing {
+  margin-top: 1rem !important;
+  font-weight: 500;
+  color: var(--color-ink);
 }
 
 .price-panel {

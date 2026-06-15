@@ -64,6 +64,84 @@
   },
   "gardenSpotlights": [
     {
+      "title": {
+        "fi": "Keltainen paviljonki & JANTE-kivi",
+        "sv": "Gula paviljongen & JANTE-stenen",
+        "en": "Yellow Pavilion & JANTE Stone"
+      },
+      "images": [
+        { "file": "saunapuisto-01.jpg", "caption": { "fi": "Keltainen paviljonki Saunapuistossa.", "sv": "Gula paviljongen i Badhusparken.", "en": "The Yellow Pavilion in Sauna Park." } },
+        { "file": "saunapuisto-03.jpg", "caption": { "fi": "JANTE-kivi puistossa.", "sv": "JANTE-stenen i parken.", "en": "The JANTE stone in the park." } },
+        { "file": "saunapuisto-02.jpg", "caption": { "fi": "Saunapuiston vehreää maisemaa.", "sv": "Grönskande miljö i Badhusparken.", "en": "The green scenery of Sauna Park." } }
+      ],
+      "lead": {
+        "fi": "Tällä kertaa esittelyssä ovat Saunapuiston Keltainen paviljonki ja sen vieressä sijaitseva mystinen JANTE-kivi.",
+        "sv": "Den här gången presenterar vi den Gula paviljongen i Badhusparken och den mystiska JANTE-stenen som hittas intill.",
+        "en": "This time we feature the Yellow Pavilion in Sauna Park and the mysterious JANTE stone beside it."
+      },
+      "body": {
+        "fi": "Saunapuisto on yksi Kristiinankaupungin rakastetuimmista puistoalueista. Puiston sydämessä sijaitseva Keltainen paviljonki on tunnelmallinen maamerkki, joka kutsuu pysähtymään hetkeksi, nauttimaan merellisestä ympäristöstä ja puiston rauhasta.\n\nPaviljongin läheisyydessä sijaitsee JANTE-kivi, johon liittyy vanha uskomus. Tarinan mukaan kiven päälle astutaan tai sitä poljetaan, jotta huolet, murheet ja pahat ajatukset jäisivät kiven sisään. Näin vierailija voi jatkaa matkaansa kevyemmin mielin ja jättää ikävät asiat taakseen.",
+        "sv": "Den Gula paviljongen är ett stämningsfullt landmärke i en av Kristinestads mest omtyckta parker. Här kan besökaren njuta av den lugna parkmiljön och den havsnära atmosfären.\n\nBredvid paviljongen finns JANTE-stenen, som enligt en gammal tradition har en särskild uppgift. Genom att trampa på stenen lämnar man sina bekymmer, dåliga tankar och all ondska kvar i stenen. Därefter kan man fortsätta sin väg med lättare sinne.",
+        "en": "Sauna Park is one of Kristinestad's most beloved park areas. At its heart stands the Yellow Pavilion, an atmospheric landmark that invites you to pause for a moment and enjoy the seaside setting and the peace of the park.\n\nNear the pavilion lies the JANTE stone, which is linked to an old belief. According to tradition, you step or tread on the stone so that worries, troubles and bad thoughts remain inside it — allowing the visitor to continue with a lighter mind and leave unpleasant things behind."
+      },
+      "dates": {
+        "fi": "Avoimet Portit la–su 13.–14.6.2026 klo 10–18",
+        "sv": "Öppna Portar lör–sön 13–14.6.2026 kl. 10–18",
+        "en": "Open Gates Sat–Sun 13–14 June 2026, 10:00–18:00"
+      },
+      "location": {
+        "fi": "Keltainen paviljonki & JANTE-kivi, Saunapuisto",
+        "sv": "Gula paviljongen & JANTE-stenen, Badhusparken",
+        "en": "Yellow Pavilion & JANTE Stone, Sauna Park"
+      },
+      "footer": {
+        "fi": "Avoimet Portit tarjoaa jälleen mahdollisuuden tutustua Kristiinankaupungin mielenkiintoisiin kohteisiin ja niiden tarinoihin. Käy tervehtimässä Keltaista paviljonkia ja kokeile, jäisikö jokin murheistasi JANTE-kiven huomaan.",
+        "sv": "Öppna Portar ger återigen möjligheten att upptäcka Kristinestads unika besöksmål och historierna bakom dem. Kom och hälsa på den Gula paviljongen – och se om du kan lämna kvar dina bekymmer hos JANTE-stenen.",
+        "en": "Open Gates once again offers a chance to discover Kristinestad's fascinating destinations and the stories behind them. Come say hello to the Yellow Pavilion — and see if you can leave a worry or two with the JANTE stone."
+      }
+    },
+    {
+      "title": {
+        "fi": "Kissanpiiskajankuja",
+        "sv": "Kattpiskargränden",
+        "en": "Cat Whip Alley"
+      },
+      "images": [
+        { "file": "kissanpiiskajankuja-01.jpg", "caption": { "fi": "Kissan koriste punaisella aidalla.", "sv": "Kattdekoration på rött staket.", "en": "Cat decoration on a red fence." } },
+        { "file": "kissanpiiskajankuja-02.jpg", "caption": { "fi": "Kissan siluetti aidan päällä.", "sv": "Kattsilhuett på staketet.", "en": "Cat silhouette on the fence." } },
+        { "file": "kissanpiiskajankuja-03.jpg", "caption": { "fi": "Kapea kuja ja vanhat puutalot.", "sv": "Smal gränd och gamla trähus.", "en": "Narrow alley and old wooden houses." } },
+        { "file": "kissanpiiskajankuja-04.jpg", "caption": { "fi": "Kissan siluetti kurkistaa ikkunasta.", "sv": "Kattsilhuett tittar ut genom fönstret.", "en": "Cat silhouette peeking from a window." } },
+        { "file": "kissanpiiskajankuja-05.jpg", "caption": { "fi": "Vanha polkupyörä ja kissan koriste.", "sv": "Gammal cykel och kattdekoration.", "en": "Old bicycle and cat decoration." } },
+        { "file": "kissanpiiskajankuja-06.jpg", "caption": { "fi": "Kissanpiiskajankuja ja punaiset puutalot.", "sv": "Kattpiskargränden och röda trähus.", "en": "Cat Whip Alley and red wooden houses." } },
+        { "file": "kissanpiiskajankuja-07.jpg", "caption": { "fi": "Suomen kapein kaksisuuntainen katu.", "sv": "Finlands smalaste dubbelriktade gata.", "en": "Finland's narrowest two-way street." } }
+      ],
+      "lead": {
+        "fi": "Tällä kertaa esittelyssä on Kissanpiiskajankuja, yksi Kristiinankaupungin tunnetuimmista ja persoonallisimmista nähtävyyksistä.",
+        "sv": "Den här gången presenterar vi Kattpiskargränden, en av Kristinestads mest kända och personliga sevärdheter.",
+        "en": "This time we feature Cat Whip Alley, one of Kristinestad's best-known and most distinctive sights."
+      },
+      "body": {
+        "fi": "Kissanpiiskajankuja on Suomen kapein kaksisuuntainen katu – ainutlaatuinen historiallinen kuja, joka hurmaa kävijänsä tunnelmallaan ja vanhoilla puutaloillaan. Kujalla kulkiessa pääsee aistimaan vanhan puukaupungin tunnelmaa parhaimmillaan ja tutustumaan samalla sen mielenkiintoiseen historiaan.\n\nAvoimet Portit tarjoaa jälleen mahdollisuuden tutustua Kristiinankaupungin kauniisiin ja persoonallisiin pihoihin sekä niiden tarinoihin. Kissanpiiskajankuja on kohde, jota ei kannata jättää väliin!",
+        "sv": "Kattpiskargränden är Finlands smalaste dubbelriktade gata – en unik historisk gränd som förtrollar besökaren med sin stämning och sina gamla trähus. Här kan du uppleva den gamla trästadens atmosfär på nära håll och samtidigt ta del av dess intressanta historia.\n\nÖppna Portar ger återigen möjligheten att upptäcka Kristinestads vackra och personliga gårdar samt historierna bakom dem. Kattpiskargränden är ett besöksmål du inte vill missa!",
+        "en": "Cat Whip Alley is Finland's narrowest two-way street – a unique historic lane that charms visitors with its atmosphere and old wooden houses. Walking along the alley, you can experience the old wooden town at its best while learning about its fascinating history.\n\nOpen Gates once again offers a chance to discover Kristinestad's beautiful and distinctive gardens and the stories behind them. Cat Whip Alley is a destination you won't want to miss!"
+      },
+      "dates": {
+        "fi": "Avoimet Portit la–su 13.–14.6.2026 klo 10–18",
+        "sv": "Öppna Portar lör–sön 13–14.6.2026 kl. 10–18",
+        "en": "Open Gates Sat–Sun 13–14 June 2026, 10:00–18:00"
+      },
+      "location": {
+        "fi": "Kissanpiiskajankuja",
+        "sv": "Kattpiskargränden",
+        "en": "Cat Whip Alley"
+      },
+      "footer": {
+        "fi": "Tule kokemaan Suomen kapein kaksisuuntainen katu ja nauttimaan Kristiinankaupungin ainutlaatuisesta kesätunnelmasta!",
+        "sv": "Kom och upplev Finlands smalaste dubbelriktade gata och njut av Kristinestads unika sommarstämning!",
+        "en": "Come experience Finland's narrowest two-way street and enjoy Kristinestad's unique summer atmosphere!"
+      }
+    },
+    {
       "yardNumber": 11,
       "hosts": "Maarit Juhala & Christer Sundell",
       "images": [
@@ -203,6 +281,18 @@
   ],
   "ajankohtasetByYear": [
     {
+      "year": "2026",
+      "images": [
+        { "file": "ap-2026-01.jpg", "caption": { "fi": "Kasvien myynti ja kesäinen tunnelma pihalla.", "sv": "Växtförsäljning och sommarstämning på gården.", "en": "Plant sale and summer atmosphere in a yard." } },
+        { "file": "ap-2026-02.jpg", "caption": { "fi": "Käsityötä ja yhdessäoloa pihapiirissä.", "sv": "Hantverk och gemenskap på gården.", "en": "Crafts and togetherness in a courtyard." } },
+        { "file": "ap-2026-03.jpg", "caption": { "fi": "Kahvitauko vehreässä puutarhassa.", "sv": "Kaffepaus i en grönskande trädgård.", "en": "Coffee break in a lush garden." } },
+        { "file": "ap-2026-04.jpg", "caption": { "fi": "Vierailijoita Kissanpiiskajankujalla.", "sv": "Besökare i Kattpiskargränden.", "en": "Visitors in Cat Whip Alley." } },
+        { "file": "ap-2026-05.jpg", "caption": { "fi": "Vierailijoita tutustumassa pihoihin.", "sv": "Besökare som upptäcker gårdarna.", "en": "Visitors exploring the yards." } },
+        { "file": "ap-2026-06.jpg", "caption": { "fi": "Syreenit ja kesäinen puutarha.", "sv": "Syrener och sommarträdgård.", "en": "Lilacs and a summer garden." } },
+        { "file": "ap-2026-07.jpg", "caption": { "fi": "Musiikkia ja tapahtumatunnelmaa kauppatorilla.", "sv": "Musik och evenemangsstämning vid torget.", "en": "Music and event atmosphere at the market square." } }
+      ]
+    },
+    {
       "year": "2021–2023",
       "images": [
         { "file": "ap-aja-01.jpg" },
@@ -322,12 +412,18 @@
       "joulukodit.img1.alt": "Merikaupungin joulukodit -tapahtuman tunnelmaa",
       "joulukodit.img2.alt": "Talvinen puutalokaupunki Kristiinankaupungissa",
       "prac.h2": "Liput",
+      "prac.deck": "Avoimet Portit 13.–14.6.2026 Kristiinankaupungissa!",
+      "prac.intro": "Tule viettämään kesäpäivää idyllisessä puukaupungissa ja kurkista ainutlaatuisten porttien taakse. Vehreät puutarhat, tunnelmalliset pihat, taide, kulttuuri ja paikalliset herkut odottavat sinua!",
       "prac.priceh": "Hinnat (viitteenä)",
-      "prac.p1": "1 päivä",
-      "prac.p2": "2 päivää",
+      "prac.p1": "Päiväranneke",
+      "prac.p2": "Viikonloppuranneke",
       "prac.p3": "Lapset alle 12 v",
       "prac.free": "ilmaiseksi",
-      "prac.ticketIncludes": "Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.",
+      "prac.sales": "Lipunmyyntimökit löytyvät Kauppatorin ylälaidalta, mistä saat tapahtumarannekkeet, kartan ja ohjelman.",
+      "prac.info": "Myyntimökkien vieressä palvelee info-mökki, jossa paikalliset oppaat jakavat vinkkejä kaupungin nähtävyyksistä, kohteista ja elämyksistä.",
+      "prac.dates": "13.–14.6.2026 klo 10–18",
+      "prac.place": "Kristiinankaupunki",
+      "prac.closing": "Tervetuloa kokemaan Avoimet Portit ja Kristiinankaupungin ainutlaatuinen tunnelma!",
       "contact.h2": "Yhteystiedot",
       "contact.deck": "Avoimet Portit -työryhmä ja Kristiinankaupungin matkailu",
       "contact.chair": "Puheenjohtaja",
@@ -426,12 +522,18 @@
       "joulukodit.img1.alt": "Stamning fran Sjostadens julhem-evenemanget",
       "joulukodit.img2.alt": "Vinterlig trahusstad i Kristinestad",
       "prac.h2": "Biljetter",
+      "prac.deck": "Öppna Portar 13–14.6.2026 i Kristinestad!",
+      "prac.intro": "Kom och njut av sommaren i den idylliska trästaden och upptäck vad som döljer sig bakom portarna. Grönskande trädgårdar, stämningsfulla gårdar, konst, kultur och lokala delikatesser väntar på dig!",
       "prac.priceh": "Priser (vägledande)",
-      "prac.p1": "1 dag",
-      "prac.p2": "2 dagar",
+      "prac.p1": "Dagsarmband",
+      "prac.p2": "Veckoslutsarmband",
       "prac.p3": "Barn under 12 år",
       "prac.free": "gratis",
-      "prac.ticketIncludes": "I biljettpriset (armband) ingår information om besöksmål, karta över målen och evenemangsprogrammet.",
+      "prac.sales": "Biljettförsäljningsstugorna finns vid övre delen av Salutorget, där du får evenemangsarmband, karta och program.",
+      "prac.info": "Intill försäljningsstugorna finns en infostuga där lokala guider gärna tipsar om stadens sevärdheter, besöksmål och upplevelser.",
+      "prac.dates": "13–14.6.2026 kl. 10–18",
+      "prac.place": "Kristinestad",
+      "prac.closing": "Välkommen att uppleva Öppna Portar och den unika atmosfären i Kristinestad!",
       "contact.h2": "Kontakt",
       "contact.deck": "Arbetsgruppen Öppna portar och Kristinestads turism",
       "contact.chair": "Ordförande",
@@ -530,12 +632,18 @@
       "joulukodit.img1.alt": "Atmosphere from the Christmas homes event",
       "joulukodit.img2.alt": "Winter wooden town in Kristinestad",
       "prac.h2": "Tickets",
+      "prac.deck": "Open Gates 13–14 June 2026 in Kristinestad!",
+      "prac.intro": "Come spend a summer day in the idyllic wooden town and peek behind unique gates. Lush gardens, atmospheric yards, art, culture and local treats await you!",
       "prac.priceh": "Prices (indicative)",
-      "prac.p1": "1 day",
-      "prac.p2": "2 days",
+      "prac.p1": "Day wristband",
+      "prac.p2": "Weekend wristband",
       "prac.p3": "Children under 12",
       "prac.free": "free",
-      "prac.ticketIncludes": "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
+      "prac.sales": "Ticket booths are at the upper end of the Market Square, where you get event wristbands, a map and the programme.",
+      "prac.info": "Next to the ticket booths, an info booth is staffed by local guides who share tips on sights, destinations and experiences in town.",
+      "prac.dates": "13–14 June 2026, 10:00–18:00",
+      "prac.place": "Kristinestad",
+      "prac.closing": "Welcome to experience Open Gates and Kristinestad's unique atmosphere!",
       "contact.h2": "Contact",
       "contact.deck": "Open Gates working group and Kristinestad tourism",
       "contact.chair": "Chair",
