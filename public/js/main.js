@@ -924,11 +924,13 @@ function renderGardenSpotlights() {
         } else {
           const im = document.createElement("img");
           im.src = imgPath(file);
+          const capText = yearImageCaption(imgEntry, lang);
           im.alt = fillTemplate(
             localizedContent(imgEntry?.alt, lang) ||
-              (customTitle ||
-                bundle["ajankohtaset.gardens.photoAlt"] ||
-                ""),
+              capText ||
+              customTitle ||
+              bundle["ajankohtaset.gardens.photoAlt"] ||
+              "",
             vars
           );
           im.loading = "lazy";

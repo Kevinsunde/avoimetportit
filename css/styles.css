@@ -558,11 +558,9 @@ body[data-page="ajankohtaset"] .section-inner {
 .garden-spotlight-figure video {
   display: block;
   width: 100%;
-  height: auto;
   aspect-ratio: 4 / 3;
-  min-height: clamp(200px, 32vw, 360px);
   object-fit: cover;
-  background: #000;
+  background: var(--color-bg-alt);
 }
 
 .garden-spotlight-figure--video {
