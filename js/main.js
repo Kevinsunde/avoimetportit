@@ -77,16 +77,16 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Avoimet portit",
     "ajankohtaset.photoAlt": "Avoimet portit Kristiinankaupungissa, {year}",
     "ajankohtaset.backHome": "← Etusivulle",
-    "ajankohtaset.gardens.jump": "Pihaesittelyt ↓",
+    "ajankohtaset.gardens.jump": "Kohde-esittelyt ↓",
     "ajankohtaset.documentTitle": "Ajankohtaiset – Avoimet portit | Kristiinankaupunki",
     "ajankohtaset.metaDescription":
       "Ajankohtaiset tiedotteet ja muistutukset Avoimet portit -tapahtumasta Kristiinankaupungissa.",
     "ajankohtaset.archive.h2": "Kuvagalleria",
     "ajankohtaset.gardens.kicker": "Pihakohteet",
-    "ajankohtaset.gardens.h2": "Avoimet Portit 13.–14.6.2026 – Pihaesittelyt alkavat!",
+    "ajankohtaset.gardens.h2": "Avoimet Portit 13.–14.6. – Kohde-esittelyt jatkuvat!",
     "ajankohtaset.gardens.intro":
       "Tutustu etukäteen Kristiinankaupungin pihoihin. Uusia esittelyjä ja kuvia julkaistaan pian.",
-    "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.2026.",
+    "ajankohtaset.gardens.dates": "Avoimet Portit la–su 13.–14.6.2026 klo 10–18",
     "ajankohtaset.gardens.yardHeading": "Piha nro {number}",
     "ajankohtaset.gardens.location": "Piha nro {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -103,13 +103,22 @@ const DEFAULT_STRINGS = {
     "joulukodit.img1.alt": "Merikaupungin joulukodit -tapahtuman tunnelmaa",
     "joulukodit.img2.alt": "Talvinen puutalokaupunki Kristiinankaupungissa",
     "prac.h2": "Liput",
+    "prac.deck": "Avoimet Portit 13.–14.6.2026 Kristiinankaupungissa!",
+    "prac.intro":
+      "Tule viettämään kesäpäivää idyllisessä puukaupungissa ja kurkista ainutlaatuisten porttien taakse. Vehreät puutarhat, tunnelmalliset pihat, taide, kulttuuri ja paikalliset herkut odottavat sinua!",
     "prac.priceh": "Hinnat (viitteenä)",
-    "prac.p1": "1 päivä",
-    "prac.p2": "2 päivää",
+    "prac.p1": "Päiväranneke",
+    "prac.p2": "Viikonloppuranneke",
     "prac.p3": "Lapset alle 12 v",
     "prac.free": "ilmaiseksi",
-    "prac.ticketIncludes":
-      "Lipun (ranneke) hintaan sisältyy vierailukohdetiedot, kartta kohteista ja tapahtumaohjelma.",
+    "prac.sales":
+      "Lipunmyyntimökit löytyvät Kauppatorin ylälaidalta, mistä saat tapahtumarannekkeet, kartan ja ohjelman.",
+    "prac.info":
+      "Myyntimökkien vieressä palvelee info-mökki, jossa paikalliset oppaat jakavat vinkkejä kaupungin nähtävyyksistä, kohteista ja elämyksistä.",
+    "prac.dates": "13.–14.6.2026 klo 10–18",
+    "prac.place": "Kristiinankaupunki",
+    "prac.closing":
+      "Tervetuloa kokemaan Avoimet Portit ja Kristiinankaupungin ainutlaatuinen tunnelma!",
     "reg.h2": "Ilmoittautuminen",
     "reg.lead":
       "Täytä ilmoittautumislomake. Tiedot lähetetään Kristiinankaupungin matkailun viralliseen osoitteeseen visit@krs.fi.",
@@ -241,16 +250,16 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Öppna portar",
     "ajankohtaset.photoAlt": "Öppna portar i Kristinestad, {year}",
     "ajankohtaset.backHome": "← Till startsidan",
-    "ajankohtaset.gardens.jump": "Gårdspresentationer ↓",
+    "ajankohtaset.gardens.jump": "Presentationerna ↓",
     "ajankohtaset.documentTitle": "Aktuellt – Öppna portar | Kristinestad",
     "ajankohtaset.metaDescription":
       "Aktuella meddelanden om Öppna portar i Kristinestad.",
     "ajankohtaset.archive.h2": "Bildgalleri",
     "ajankohtaset.gardens.kicker": "Gårdar",
-    "ajankohtaset.gardens.h2": "Öppna Portar 13–14.6.2026 – Gårdspresentationerna börjar!",
+    "ajankohtaset.gardens.h2": "Öppna Portar 13–14.6 – Presentationerna fortsätter!",
     "ajankohtaset.gardens.intro":
       "Lär känna gårdarna i förväg. Fler presentationer och bilder publiceras snart.",
-    "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6.2026",
+    "ajankohtaset.gardens.dates": "Öppna Portar lör–sön 13–14.6.2026 kl. 10–18",
     "ajankohtaset.gardens.yardHeading": "Gård nr {number}",
     "ajankohtaset.gardens.location": "Trädgård nr {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -267,13 +276,22 @@ const DEFAULT_STRINGS = {
     "joulukodit.img1.alt": "Stamning fran Sjostadens julhem-evenemanget",
     "joulukodit.img2.alt": "Vinterlig trahusstad i Kristinestad",
     "prac.h2": "Biljetter",
+    "prac.deck": "Öppna Portar 13–14.6.2026 i Kristinestad!",
+    "prac.intro":
+      "Kom och njut av sommaren i den idylliska trästaden och upptäck vad som döljer sig bakom portarna. Grönskande trädgårdar, stämningsfulla gårdar, konst, kultur och lokala delikatesser väntar på dig!",
     "prac.priceh": "Priser (vägledande)",
-    "prac.p1": "1 dag",
-    "prac.p2": "2 dagar",
+    "prac.p1": "Dagsarmband",
+    "prac.p2": "Veckoslutsarmband",
     "prac.p3": "Barn under 12 år",
     "prac.free": "gratis",
-    "prac.ticketIncludes":
-      "I biljettpriset (armband) ingår information om besöksmål, karta över målen och evenemangsprogrammet.",
+    "prac.sales":
+      "Biljettförsäljningsstugorna finns vid övre delen av Salutorget, där du får evenemangsarmband, karta och program.",
+    "prac.info":
+      "Intill försäljningsstugorna finns en infostuga där lokala guider gärna tipsar om stadens sevärdheter, besöksmål och upplevelser.",
+    "prac.dates": "13–14.6.2026 kl. 10–18",
+    "prac.place": "Kristinestad",
+    "prac.closing":
+      "Välkommen att uppleva Öppna Portar och den unika atmosfären i Kristinestad!",
     "reg.h2": "Anmälan",
     "reg.lead":
       "Fyll i anmälningsformuläret. Uppgifterna skickas till Kristinestads turisms officiella adress visit@krs.fi.",
@@ -405,16 +423,16 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.yearHeading": "{year} – Open Gates",
     "ajankohtaset.photoAlt": "Open Gates in Kristinestad, {year}",
     "ajankohtaset.backHome": "← Home",
-    "ajankohtaset.gardens.jump": "Garden spotlights ↓",
+    "ajankohtaset.gardens.jump": "Destination spotlights ↓",
     "ajankohtaset.documentTitle": "News – Open Gates | Kristinestad",
     "ajankohtaset.metaDescription":
       "Latest news and reminders about the Open Gates event in Kristinestad.",
     "ajankohtaset.archive.h2": "Photo gallery",
     "ajankohtaset.gardens.kicker": "Garden stops",
-    "ajankohtaset.gardens.h2": "Open Gates 13–14 June 2026 – Garden spotlights begin!",
+    "ajankohtaset.gardens.h2": "Open Gates 13–14 June – Destination spotlights continue!",
     "ajankohtaset.gardens.intro":
       "Get to know the yards in advance. More spotlights and photos will be published soon.",
-    "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June 2026",
+    "ajankohtaset.gardens.dates": "Open Gates Sat–Sun 13–14 June 2026, 10:00–18:00",
     "ajankohtaset.gardens.yardHeading": "Garden No. {number}",
     "ajankohtaset.gardens.location": "Yard no. {number} – {hosts}",
     "ajankohtaset.gardens.closing":
@@ -431,13 +449,22 @@ const DEFAULT_STRINGS = {
     "joulukodit.img1.alt": "Atmosphere from the Christmas homes event",
     "joulukodit.img2.alt": "Winter wooden town in Kristinestad",
     "prac.h2": "Tickets",
+    "prac.deck": "Open Gates 13–14 June 2026 in Kristinestad!",
+    "prac.intro":
+      "Come spend a summer day in the idyllic wooden town and peek behind unique gates. Lush gardens, atmospheric yards, art, culture and local treats await you!",
     "prac.priceh": "Prices (indicative)",
-    "prac.p1": "1 day",
-    "prac.p2": "2 days",
+    "prac.p1": "Day wristband",
+    "prac.p2": "Weekend wristband",
     "prac.p3": "Children under 12",
     "prac.free": "free",
-    "prac.ticketIncludes":
-      "The ticket (wristband) price includes visitor site information, a map of venues, and the event programme.",
+    "prac.sales":
+      "Ticket booths are at the upper end of the Market Square, where you get event wristbands, a map and the programme.",
+    "prac.info":
+      "Next to the ticket booths, an info booth is staffed by local guides who share tips on sights, destinations and experiences in town.",
+    "prac.dates": "13–14 June 2026, 10:00–18:00",
+    "prac.place": "Kristinestad",
+    "prac.closing":
+      "Welcome to experience Open Gates and Kristinestad's unique atmosphere!",
     "reg.h2": "Registration",
     "reg.lead":
       "Fill in the registration form. Your details are sent to the official Kristinestad tourism address visit@krs.fi.",
@@ -504,6 +531,18 @@ const MAP_POINTS = {
 
 /** Fallback when site-content.json has no ajankohtasetByYear; images in public/images/ */
 const DEFAULT_AJANKOHTASET_BY_YEAR = [
+  {
+    year: "2026",
+    images: [
+      { file: "ap-2026-01.jpg" },
+      { file: "ap-2026-02.jpg" },
+      { file: "ap-2026-03.jpg" },
+      { file: "ap-2026-04.jpg" },
+      { file: "ap-2026-05.jpg" },
+      { file: "ap-2026-06.jpg" },
+      { file: "ap-2026-07.jpg" },
+    ],
+  },
   {
     year: "2021–2023",
     images: [
@@ -829,12 +868,18 @@ function renderGardenSpotlights() {
   for (const entry of items) {
     const yardNumber = entry.yardNumber != null ? String(entry.yardNumber) : "";
     const hosts = entry.hosts != null ? String(entry.hosts) : "";
-    const vars = { number: yardNumber, hosts };
+    const customTitle = localizedContent(entry.title, lang);
+    const vars = { number: yardNumber, hosts, title: customTitle };
 
     const card = document.createElement("article");
     card.className = "garden-spotlight-card";
 
-    if (yardNumber) {
+    if (customTitle) {
+      const yardHeading = document.createElement("h3");
+      yardHeading.className = "garden-spotlight-yard-heading";
+      yardHeading.textContent = customTitle;
+      card.appendChild(yardHeading);
+    } else if (yardNumber) {
       const yardHeadingTpl = bundle["ajankohtaset.gardens.yardHeading"] || "Piha nro {number}";
       const yardHeading = document.createElement("h3");
       yardHeading.className = "garden-spotlight-yard-heading";
@@ -881,8 +926,9 @@ function renderGardenSpotlights() {
           im.src = imgPath(file);
           im.alt = fillTemplate(
             localizedContent(imgEntry?.alt, lang) ||
-              bundle["ajankohtaset.gardens.photoAlt"] ||
-              "",
+              (customTitle ||
+                bundle["ajankohtaset.gardens.photoAlt"] ||
+                ""),
             vars
           );
           im.loading = "lazy";
@@ -918,10 +964,22 @@ function renderGardenSpotlights() {
 
     const body = localizedContent(entry.body, lang);
     if (body) {
-      const bodyEl = document.createElement("p");
-      bodyEl.className = "garden-spotlight-body";
-      bodyEl.textContent = body;
-      card.appendChild(bodyEl);
+      for (const part of body.split(/\n\n+/)) {
+        const text = part.trim();
+        if (!text) continue;
+        const bodyEl = document.createElement("p");
+        bodyEl.className = "garden-spotlight-body";
+        bodyEl.textContent = text;
+        card.appendChild(bodyEl);
+      }
+    }
+
+    const footer = localizedContent(entry.footer, lang);
+    if (footer) {
+      const footerEl = document.createElement("p");
+      footerEl.className = "garden-spotlight-body garden-spotlight-footer";
+      footerEl.textContent = footer;
+      card.appendChild(footerEl);
     }
 
     const dates = localizedContent(entry.dates, lang) || bundle["ajankohtaset.gardens.dates"] || "";
