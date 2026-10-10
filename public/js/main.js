@@ -94,14 +94,30 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.more": "Näitä tulee lisää!",
     "ajankohtaset.gardens.photoPlaceholder": "Kuvia lisätään pian.",
     "ajankohtaset.gardens.photoAlt": "Piha nro {number}, {hosts}",
-    "joulukodit.h2": "Merikaupungin joulukodit",
+    "joulukodit.h2": "Merikaupungin Joulukodit Kristiinankaupungissa",
     "joulukodit.backHome": "← Etusivulle",
     "joulukodit.documentTitle": "Merikaupungin joulukodit – Avoimet portit | Kristiinankaupunki",
     "joulukodit.metaDescription": "Merikaupungin joulukodit Kristiinankaupungissa.",
     "joulukodit.info.opening": "Avoinna 5.12.2026 klo 12–18.",
-    "joulukodit.info.more": "Lisää tietoa tulee syksyllä 2026.",
+    "joulukodit.lightbox.close": "Sulje",
+    "joulukodit.lightbox.prev": "Edellinen kuva",
+    "joulukodit.lightbox.next": "Seuraava kuva",
+    "joulukodit.body.p1": "Astu suoraan elävään joulusatuun. Kun talven hämärä laskeutuu Kristiinankaupungin ylle, vanhojen puutalokortteleiden valot syttyvät – ja ovet avautuvat koteihin, jotka ovat täynnä lämpöä, perinteitä ja joulun taikaa.",
+    "joulukodit.body.p2": "Merikaupungin Joulukodit tarjoaa ainutlaatuisen mahdollisuuden kurkistaa sisälle yksityisiin koteihin kaupungin historiallisessa keskustassa ja kokea, miten joulua vietetään idyllisessä rannikkokaupungissa. Glögin ja vastaleivottujen herkkujen tuoksu, taustalla soiva joulumusiikki ja jokaisen kodin oma tarina luovat unohtumattoman tunnelman.",
+    "joulukodit.body.p3": "Kulje tunnelmallista joulukatua Kirkkokadulla, jossa valosarjat valaisevat iltaa ja pienet kojut tarjoavat käsitöitä, herkkuja ja persoonallisia joululahjoja.",
+    "joulukodit.body.p4": "Kristiinankaupungin merellinen historia elää yhä vahvasti tässä päivässä. Merenkulku, kapteenit ja merimiehet ovat tuoneet mukanaan vaikutteita ja perinteitä eri puolilta maailmaa – jotka ovat vuosien varrella sulautuneet osaksi paikallista elämää ja antavat täällä joulunvietolle oman, ainutlaatuisen sävynsä.",
+    "joulukodit.body.p5": "Täällä voit aistia jotakin ainutlaatuista – rauhan, yhteisöllisyyden ja aitouden – jota ei voi kokea missään muualla.",
+    "joulukodit.body.p6": "Tämä on enemmän kuin tapahtuma – se on perinteitä, jotka siirtyvät sukupolvelta toiselle, paikallisten ihmisten vaalimina.",
+    "joulukodit.body.p7": "Ota perhe ja ystävät mukaan, pukeudu lämpimästi ja anna joulun tunnelman viedä mukanaan.",
+    "joulukodit.body.p8": "Tervetuloa kokemaan joulu sen aidossa ja taianomaisessa muodossa Kristiinankaupungissa.",
     "joulukodit.img1.alt": "Merikaupungin joulukodit -tapahtuman tunnelmaa",
     "joulukodit.img2.alt": "Talvinen puutalokaupunki Kristiinankaupungissa",
+    "joulukodit.img3.alt": "Jouluinen kahvikattaus ja tonttu punaisen pöytäliinan ääressä",
+    "joulukodit.img4.alt": "Lucia-neito kynttiläkruunussaan yleisön keskellä joulukodissa",
+    "joulukodit.img5.alt": "Lucia-kuoro laulaa kynttilät käsissään",
+    "joulukodit.img6.alt": "Joulupöytä, jossa kynttelikkö ja piparkakkutalo",
+    "joulukodit.img7.alt": "Juhlava joulukattaus kynttilöineen, taustalla joulukuusi",
+    "joulukodit.img8.alt": "Valaistu joulukylä ja tonttuja lipaston päällä",
     "prac.h2": "Liput",
     "prac.deck": "Avoimet Portit 13.–14.6.2026 Kristiinankaupungissa!",
     "prac.intro":
@@ -267,14 +283,30 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.more": "Fler presentationer kommer!",
     "ajankohtaset.gardens.photoPlaceholder": "Bilder läggs till snart.",
     "ajankohtaset.gardens.photoAlt": "Gård nr {number}, {hosts}",
-    "joulukodit.h2": "Sjöstadens julhem",
+    "joulukodit.h2": "Sjöstadens Julhem i Kristinestad",
     "joulukodit.backHome": "← Till startsidan",
     "joulukodit.documentTitle": "Sjöstadens julhem – Öppna portar | Kristinestad",
     "joulukodit.metaDescription": "Sjöstadens julhem i Kristinestad.",
-    "joulukodit.info.opening": "Oppet 5.12.2026 kl. 12–18.",
-    "joulukodit.info.more": "Mer information kommer under hosten 2026.",
-    "joulukodit.img1.alt": "Stamning fran Sjostadens julhem-evenemanget",
-    "joulukodit.img2.alt": "Vinterlig trahusstad i Kristinestad",
+    "joulukodit.info.opening": "Öppet 5.12.2026 kl. 12–18.",
+    "joulukodit.lightbox.close": "Stäng",
+    "joulukodit.lightbox.prev": "Föregående bild",
+    "joulukodit.lightbox.next": "Nästa bild",
+    "joulukodit.body.p1": "Välkommen att kliva rakt in i en levande julsaga. När vintermörkret sänker sig över Kristinestad tänds ljusen i de gamla trähuskvarteren – och dörrarna öppnas till hem fyllda av värme, tradition och julens magi.",
+    "joulukodit.body.p2": "Under Sjöstadens Julhem får du en unik möjlighet att stiga in i privata hem i stadens historiska centrum och uppleva hur julen firas i en idyllisk kuststad. Doften av glögg och nybakade delikatesser möter dig, mjuk julmusik hörs i bakgrunden och varje hem bär på sin egen historia.",
+    "joulukodit.body.p3": "Promenera längs den stämningsfulla julgatan på Kyrkogatan, där ljusslingor lyser upp kvällen och små bodar erbjuder hantverk, godsaker och personliga julklappar.",
+    "joulukodit.body.p4": "Kristinestad bär på ett rikt maritimt arv, där sjöfarten, kaptener och sjömän genom tiderna har satt sin prägel på staden. Med dem har influenser och traditioner från olika delar av världen följt med hem och flätats samman med våra egna – vilket ger julfirandet en alldeles särskild karaktär.",
+    "joulukodit.body.p5": "Här finns den där speciella känslan – lugnet, gemenskapen och det genuina – som inte går att återskapa någon annanstans.",
+    "joulukodit.body.p6": "Det här är mer än ett evenemang – det är traditioner som lever vidare från generation till generation och hålls vid liv av människorna som bor här.",
+    "joulukodit.body.p7": "Ta med familj och vänner, klä dig varmt och låt dig svepas med i en av årets mest stämningsfulla upplevelser.",
+    "joulukodit.body.p8": "Välkommen att uppleva julen i sin mest äkta och magiska form – i Kristinestad.",
+    "joulukodit.img1.alt": "Stämning från Sjöstadens julhem-evenemanget",
+    "joulukodit.img2.alt": "Vinterlig trähusstad i Kristinestad",
+    "joulukodit.img3.alt": "Juldukat kaffebord med en tomte vid den röda duken",
+    "joulukodit.img4.alt": "Lucia med ljuskrona bland publiken i ett julhem",
+    "joulukodit.img5.alt": "Luciakören sjunger med ljus i händerna",
+    "joulukodit.img6.alt": "Julbord med kandelaber och pepparkakshus",
+    "joulukodit.img7.alt": "Festlig juldukning med levande ljus och julgran i bakgrunden",
+    "joulukodit.img8.alt": "Upplyst julby och tomtar på en byrå",
     "prac.h2": "Biljetter",
     "prac.deck": "Öppna Portar 13–14.6.2026 i Kristinestad!",
     "prac.intro":
@@ -440,14 +472,30 @@ const DEFAULT_STRINGS = {
     "ajankohtaset.gardens.more": "More spotlights coming soon!",
     "ajankohtaset.gardens.photoPlaceholder": "Photos coming soon.",
     "ajankohtaset.gardens.photoAlt": "Yard no. {number}, {hosts}",
-    "joulukodit.h2": "Christmas homes",
+    "joulukodit.h2": "Christmas Homes in the Coastal Town of Kristinestad",
     "joulukodit.backHome": "← Home",
     "joulukodit.documentTitle": "Christmas homes – Open Gates | Kristinestad",
     "joulukodit.metaDescription": "Christmas homes event in Kristinestad.",
     "joulukodit.info.opening": "Open on 5 Dec 2026, 12:00-18:00.",
-    "joulukodit.info.more": "More information will be published in autumn 2026.",
+    "joulukodit.lightbox.close": "Close",
+    "joulukodit.lightbox.prev": "Previous image",
+    "joulukodit.lightbox.next": "Next image",
+    "joulukodit.body.p1": "Step into a living Christmas fairytale. As the winter dusk settles over Kristinestad, the lights in the old wooden quarters begin to glow – and doors open to homes filled with warmth, tradition and Christmas magic.",
+    "joulukodit.body.p2": "Christmas Homes in the Coastal Town of Kristinestad offers a unique opportunity to step inside private homes in the town’s historic centre and experience how Christmas is celebrated in an idyllic coastal town. The scent of mulled wine and freshly baked treats, soft Christmas music in the background, and the story of each home create an unforgettable atmosphere.",
+    "joulukodit.body.p3": "Stroll along the atmospheric Christmas street on Kyrkogatan, where twinkling lights brighten the evening and small stalls offer handicrafts, delicacies and personal Christmas gifts.",
+    "joulukodit.body.p4": "Kristinestad’s maritime history is still very much present today. Seafaring, captains, and sailors have, over the centuries, brought influences and traditions from around the world, which have gradually blended into local life and given Christmas celebrations here a truly unique character.",
+    "joulukodit.body.p5": "Here, you’ll find that special feeling – a sense of calm, community and authenticity – that cannot be recreated anywhere else.",
+    "joulukodit.body.p6": "This is more than an event – it is Christmas traditions passed down from generation to generation, kept alive by the people who live here.",
+    "joulukodit.body.p7": "Bring your family and friends, dress warmly and let yourself be swept away by one of the most magical experiences of the year.",
+    "joulukodit.body.p8": "Welcome to experience Christmas in its most genuine and enchanting form – in Kristinestad.",
     "joulukodit.img1.alt": "Atmosphere from the Christmas homes event",
     "joulukodit.img2.alt": "Winter wooden town in Kristinestad",
+    "joulukodit.img3.alt": "Christmas coffee table setting with an elf doll by the red tablecloth",
+    "joulukodit.img4.alt": "Lucia with her crown of candles among the audience in a Christmas home",
+    "joulukodit.img5.alt": "The Lucia choir singing with candles in their hands",
+    "joulukodit.img6.alt": "Christmas table with a candelabra and a gingerbread house",
+    "joulukodit.img7.alt": "Festive Christmas table with candles and a Christmas tree in the background",
+    "joulukodit.img8.alt": "Illuminated Christmas village and elves on a sideboard",
     "prac.h2": "Tickets",
     "prac.deck": "Open Gates 13–14 June 2026 in Kristinestad!",
     "prac.intro":
@@ -1536,6 +1584,42 @@ function initLang() {
   });
 }
 
+function initJoulukoditLightbox() {
+  const dialog = document.getElementById("joulukodit-lightbox");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  const view = dialog.querySelector(".joulukodit-lightbox-img");
+  const thumbs = Array.from(document.querySelectorAll(".joulukodit-zoom img"));
+  if (!view || !thumbs.length) return;
+  let index = 0;
+
+  function show(i) {
+    index = (i + thumbs.length) % thumbs.length;
+    view.src = thumbs[index].currentSrc || thumbs[index].src;
+    view.alt = thumbs[index].alt;
+  }
+
+  thumbs.forEach((img, i) => {
+    img.closest(".joulukodit-zoom").addEventListener("click", () => {
+      show(i);
+      dialog.showModal();
+    });
+  });
+
+  dialog.addEventListener("click", (e) => {
+    const step = e.target.closest("[data-lightbox-step]");
+    if (step) {
+      show(index + Number(step.getAttribute("data-lightbox-step")));
+      return;
+    }
+    if (e.target !== view) dialog.close();
+  });
+
+  dialog.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") show(index - 1);
+    else if (e.key === "ArrowRight") show(index + 1);
+  });
+}
+
 async function boot() {
   initNav();
   initYear();
@@ -1544,6 +1628,7 @@ async function boot() {
   applySubpageChrome();
   initMap();
   initRegistrationForm();
+  initJoulukoditLightbox();
 }
 
 function initYear() {

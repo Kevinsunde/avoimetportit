@@ -1420,3 +1420,174 @@ body[data-page="ajankohtaset"] .section-inner {
   font-size: 0.88rem;
   padding: 0.5rem 0.85rem;
 }
+
+/* Merikaupungin joulukodit */
+.joulukodit-lead {
+  margin: 0 0 2.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  box-shadow: var(--shadow);
+  background: var(--color-surface);
+}
+
+.joulukodit-lead img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .joulukodit-lead img {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.joulukodit-prose {
+  margin: 0 auto 3rem;
+}
+
+.joulukodit-prose .joulukodit-opening {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.joulukodit-prose .joulukodit-intro {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+}
+
+.joulukodit-prose .joulukodit-welcome {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--color-accent);
+  margin-top: 1.5rem;
+}
+
+.joulukodit-inline {
+  margin: 1.75rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.joulukodit-inline img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.joulukodit-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.joulukodit-zoom:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: -3px;
+}
+
+.joulukodit-zoom img {
+  transition: transform 0.4s ease;
+}
+
+.joulukodit-zoom:hover img {
+  transform: scale(1.03);
+}
+
+.joulukodit-gallery .joulukodit-img-top {
+  object-position: center 30%;
+}
+
+.joulukodit-lightbox {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(16, 20, 14, 0.94);
+}
+
+.joulukodit-lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+.joulukodit-lightbox::backdrop {
+  background: rgba(16, 20, 14, 0.94);
+}
+
+.joulukodit-lightbox-img {
+  max-width: min(100vw - 2rem, 1400px);
+  max-height: calc(100vh - 6rem);
+  max-height: calc(100dvh - 6rem);
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+
+.joulukodit-lightbox-btn {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 252, 247, 0.16);
+  color: #fffcf7;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.joulukodit-lightbox-btn:hover {
+  background: rgba(255, 252, 247, 0.3);
+}
+
+.joulukodit-lightbox-btn:focus-visible {
+  outline: 2px solid #fffcf7;
+  outline-offset: 2px;
+}
+
+.joulukodit-lightbox-close {
+  top: max(0.75rem, env(safe-area-inset-top));
+  right: max(0.75rem, env(safe-area-inset-right));
+}
+
+.joulukodit-lightbox-prev {
+  left: max(0.75rem, env(safe-area-inset-left));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.joulukodit-lightbox-next {
+  right: max(0.75rem, env(safe-area-inset-right));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .joulukodit-zoom img {
+    transition: none;
+  }
+
+  .joulukodit-zoom:hover img {
+    transform: none;
+  }
+}
