@@ -1469,6 +1469,60 @@ body[data-page="ajankohtaset"] .section-inner {
   margin-top: 1.5rem;
 }
 
+.joulukodit-more {
+  margin: 0 auto 3rem;
+}
+
+.joulukodit-more-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.joulukodit-cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  align-items: start;
+}
+
+.joulukodit-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.4rem;
+}
+
+.joulukodit-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
+  color: var(--color-accent);
+}
+
+.joulukodit-card p {
+  margin: 0 0 0.8rem;
+}
+
+.joulukodit-card p:last-child {
+  margin-bottom: 0;
+}
+
+.joulukodit-card .joulukodit-card-lead {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.joulukodit-card .joulukodit-card-meta {
+  font-weight: 600;
+  color: var(--color-warm);
+}
+
 .joulukodit-inline {
   margin: 1.75rem 0;
   border-radius: var(--radius);
