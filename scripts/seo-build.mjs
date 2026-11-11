@@ -343,7 +343,9 @@ function buildGardenPages(gardens, template) {
       const firstBody = r.localizedContent(entry.body, lang).split(/\n\n+/)[0];
       meta[lang] = {
         title: `${heading[lang]} | ${BRAND[lang]} ${CITY[lang]}`,
-        description: clip(r.localizedContent(entry.lead, lang) || firstBody || b["ajankohtaset.gardens.dates"]),
+        description: clip(
+          [r.localizedContent(entry.lead, lang), firstBody, b["ajankohtaset.gardens.dates"]].filter(Boolean).join(" "),
+        ),
       };
 
       const others = list
@@ -413,6 +415,9 @@ ${
 
 const SMALL_WIDTH = 800;
 
+/** Every image's size, for width/height attributes (stops the page jumping while photos load). */
+const IMAGE_SIZES = new Map();
+
 /** Writes an 800px-wide WebP copy of every large photo to dist/images/w800/. Returns name → original width. */
 async function makeResponsiveImages() {
   const dir = join(dist, "images");
@@ -420,9 +425,11 @@ async function makeResponsiveImages() {
   mkdirSync(out, { recursive: true });
   const made = new Map();
   for (const name of readdirSync(dir)) {
-    if (!/\.(jpe?g|png)$/i.test(name) || name.startsWith("og-")) continue;
+    if (!/\.(jpe?g|png|webp)$/i.test(name)) continue;
     try {
-      const { width } = await sharp(join(dir, name)).metadata();
+      const { width, height } = await sharp(join(dir, name)).metadata();
+      if (width && height) IMAGE_SIZES.set(name, { width, height });
+      if (/\.webp$/i.test(name) || name.startsWith("og-")) continue;
       if (!width || width <= SMALL_WIDTH * 1.15) continue;
       await sharp(join(dir, name))
         .resize({ width: SMALL_WIDTH })
@@ -439,8 +446,12 @@ async function makeResponsiveImages() {
 /** Lazy-loaded photos get a srcset, so phones and normal screens load the small copy. */
 function addSrcset(html, made) {
   return html.replace(/<img\b[^>]*>/g, (tag) => {
-    if (/\ssrcset=/.test(tag) || !/\sloading="lazy"/.test(tag)) return tag;
     const m = tag.match(/\ssrc="images\/([^"/]+)"/);
+    const size = m && IMAGE_SIZES.get(m[1]);
+    if (size && !/\swidth=/.test(tag)) {
+      tag = tag.replace(/^<img/, `<img width="${size.width}" height="${size.height}"`);
+    }
+    if (/\ssrcset=/.test(tag) || !/\sloading="lazy"/.test(tag)) return tag;
     if (!m || !made.has(m[1])) return tag;
     const small = `images/w${SMALL_WIDTH}/${m[1].replace(/\.\w+$/, ".webp")}`;
     const srcset = `${small} ${SMALL_WIDTH}w, images/${m[1]} ${made.get(m[1])}w`;
