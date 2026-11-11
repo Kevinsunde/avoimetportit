@@ -76,3 +76,15 @@ AVOIMET PORTIT – SISÄLLÖN MUOKKAUS (ASIAKAS)
 5) OLETUKSET UUDELLEEN
    Kehittäjä voi luoda site-content.json:n uudelleen koodista komennolla:
    npm run content:export
+
+6) HAKUKONEET (SEO)
+   site-content.json → "seo":
+   - "pages" → "home" / "joulukodit" → "events": tapahtumien nimet ja päivämäärät Googlelle.
+     PÄIVITÄ JOKA VUOSI uudet päivämäärät (startDate / endDate) ja nimet (esim. 2027).
+     Aika: VVVV-KK-PPTtt:mm:ss+03:00 kesällä, +02:00 talvella.
+   - "shareImage": kuva, joka näkyy kun sivu jaetaan Facebookissa (1200 x 630 px, images-kansiossa).
+   - Sivun otsikko ja kuvaus Googlessa: "site" (suomi) sekä "languages" → "home.documentTitle" ja
+     "home.metaDescription" (ruotsi/englanti), "joulukodit.metaDescription" jne.
+   Ruotsin- ja englanninkieliset sivut (/sv/ ja /en/), sitemap.xml ja robots.txt syntyvät
+   automaattisesti julkaisun yhteydessä (npm run build).
+
