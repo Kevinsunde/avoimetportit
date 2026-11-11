@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build && node scripts/seo-build.mjs",
     "preview": "vite preview",
-    "content:export": "node scripts/export-site-content.mjs"
+    "content:export": "node scripts/export-site-content.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "devDependencies": {
     "leaflet": "^1.9.4",
