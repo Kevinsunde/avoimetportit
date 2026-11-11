@@ -1548,13 +1548,20 @@ function initMap() {
   const load = () => {
     if (started) return;
     started = true;
+    // Build the map only after BOTH files are in: Leaflet needs its CSS for sizes and marker icons.
+    let pending = 2;
+    const done = () => {
+      if (--pending === 0) createMap(el);
+    };
     const css = document.createElement("link");
     css.rel = "stylesheet";
     css.href = new URL("vendor/leaflet/leaflet.css", document.baseURI).href;
+    css.onload = done;
+    css.onerror = done;
     document.head.appendChild(css);
     const script = document.createElement("script");
     script.src = new URL("vendor/leaflet/leaflet.js", document.baseURI).href;
-    script.onload = () => createMap(el);
+    script.onload = done;
     document.body.appendChild(script);
   };
   if ("IntersectionObserver" in window) {
@@ -1575,6 +1582,8 @@ function initMap() {
 
 function createMap(el) {
   if (mapInstance || typeof L === "undefined") return;
+  // Explicit marker image folder (Leaflet otherwise guesses it from its CSS).
+  L.Icon.Default.imagePath = new URL("vendor/leaflet/images/", document.baseURI).href;
 
   mapInstance = L.map(el, { scrollWheelZoom: false });
   // Standard OpenStreetMap tiles (free, no key). CARTO basemaps now need an API key.
