@@ -19,6 +19,31 @@ const DEFAULT_STRINGS = {
     "home.documentTitle": "Avoimet portit 2026 – pihat ja puutarhat | Kristiinankaupunki",
     "home.metaDescription": "Avoimet portit Kristiinankaupungissa 13.–14.6.2026: vanhan puutalokaupungin yksityiset pihat ja puutarhat avautuvat. Taidetta, musiikkia ja kahviloita.",
     "hero.photoAlt": "Kesäinen puutarhapolku Kaptenskans Cafén pihalla Kristiinankaupungissa",
+    "nav.info": "Käytännön tiedot",
+    "info.documentTitle": "Käytännön tiedot – liput, aika ja paikka | Avoimet portit Kristiinankaupunki",
+    "info.metaDescription": "Avoimet portit 13.–14.6.2026 klo 10–18: liput 15 € / 20 €, alle 12-vuotiaat ilmaiseksi. Lipunmyynti Kauppatorilla. Näin pääset Kristiinankaupungin pihoille.",
+    "info.kicker": "Vierailijalle",
+    "info.h1": "Käytännön tiedot",
+    "info.lead": "Kaikki mitä tarvitset Avoimet portit -vierailuun Kristiinankaupungissa: ajankohta, paikka, liput ja saapuminen.",
+    "info.q1": "Milloin Avoimet portit järjestetään?",
+    "info.a1": "Avoimet portit järjestetään 13.–14.6.2026 klo 10–18. Tapahtuma järjestetään vuosittain kesäkuussa, kun puutarhat ovat kauneimmillaan.",
+    "info.q2": "Missä tapahtuma on?",
+    "info.a2": "Kristiinankaupungin keskustan vanhoissa puutalokortteleissa. Pihat ovat kävelymatkan päässä toisistaan, matkailuinfosta ja vanhan kaupungin ruutukaava-alueesta.",
+    "info.q3": "Mistä saan liput ja paljonko ne maksavat?",
+    "info.a3": "Rannekkeita myydään lipunmyyntimökeistä Kauppatorin ylälaidalta. Päiväranneke maksaa 15 € ja viikonloppuranneke 20 €. Alle 12-vuotiaat pääsevät ilmaiseksi. Mökeiltä saat myös kartan ja ohjelman.",
+    "info.q4": "Mistä saan kartan ja vinkkejä?",
+    "info.a4": "Lipunmyyntimökkien vieressä on info-mökki, jossa paikalliset oppaat kertovat kaupungin nähtävyyksistä, kohteista ja elämyksistä.",
+    "info.q5": "Mitä tapahtumassa voi nähdä ja kokea?",
+    "info.a5": "Viime vuosina mukana on ollut 35–50 pihaa: moderneja, japanilaisvaikutteisia, villiintyneitä ja historiallisia puutarhoja. Ohjelmassa on musiikkia, teatteria, näyttelyitä, kahviloita ja luentoja niin lapsille kuin aikuisille.",
+    "info.q6": "Miten Kristiinankaupunkiin pääsee?",
+    "info.a6": "Kristiinankaupunki sijaitsee Pohjanmaan rannikolla valtatie 8:n varrella, Vaasan ja Porin välissä. Tapahtuma-alue on keskustassa, ja pihoja kierretään kävellen.",
+    "info.q7": "Keneltä voin kysyä lisää?",
+    "info.a7": "Kristiinankaupungin matkailu, Merikatu 49, 64100 Kristiinankaupunki, visit@krs.fi. Avoimet portit -työryhmän puheenjohtaja Helena Patoranta, puh. +358 40 740 2311.",
+    "info.q8": "Järjestetäänkö talvella jotain vastaavaa?",
+    "info.a8": "Kyllä. Sama työryhmä järjestää joulukuussa Merikaupungin joulukodit -tapahtuman, jossa pääset kurkistamaan jouluisiin koteihin vanhassa puutalokaupungissa.",
+    "info.linksH2": "Katso myös",
+    "garden.othersH2": "Muut kohde-esittelyt",
+    "garden.back": "← Ajankohtaiset",
     "meta.when": "Ajankohta",
     "meta.dates": "13.-14.6.2026 klo 10–18",
     "meta.where": "Paikka",
@@ -228,6 +253,31 @@ const DEFAULT_STRINGS = {
     "home.documentTitle": "Öppna portar 2026 – gårdar och trädgårdar | Kristinestad",
     "home.metaDescription": "Öppna portar i Kristinestad 13–14.6.2026: den gamla trästadens privata gårdar och trädgårdar öppnas för besökare. Konst, musik och caféer.",
     "hero.photoAlt": "Somrig trädgårdsgång vid Kaptenskans Café i Kristinestad",
+    "nav.info": "Praktisk information",
+    "info.documentTitle": "Praktisk information – biljetter, tid och plats | Öppna portar Kristinestad",
+    "info.metaDescription": "Öppna portar 13–14.6.2026 kl. 10–18: armband 15 € / 20 €, barn under 12 år gratis. Biljettförsäljning vid Salutorget. Så hittar du till gårdarna i Kristinestad.",
+    "info.kicker": "För besökare",
+    "info.h1": "Praktisk information",
+    "info.lead": "Allt du behöver veta inför ditt besök på Öppna portar i Kristinestad: tid, plats, biljetter och hur du hittar hit.",
+    "info.q1": "När ordnas Öppna portar?",
+    "info.a1": "Öppna portar ordnas 13–14.6.2026 kl. 10–18. Evenemanget ordnas varje år i juni, när trädgårdarna är som vackrast.",
+    "info.q2": "Var äger evenemanget rum?",
+    "info.a2": "I trähuskvarteren i Kristinestads centrum. Gårdarna ligger på gångavstånd från varandra, från turistinformationen och från den gamla stadens rutnätsplan.",
+    "info.q3": "Var får jag biljetter och vad kostar de?",
+    "info.a3": "Armband säljs i biljettstugorna vid övre delen av Salutorget. Dagsarmband kostar 15 € och veckoslutsarmband 20 €. Barn under 12 år går in gratis. I stugorna får du också karta och program.",
+    "info.q4": "Var får jag karta och tips?",
+    "info.a4": "Bredvid biljettstugorna finns en infostuga där lokala guider berättar om stadens sevärdheter, besöksmål och upplevelser.",
+    "info.q5": "Vad kan man se och uppleva?",
+    "info.a5": "De senaste åren har 35–50 gårdar varit med: moderna, japanskinspirerade, vildvuxna och historiska trädgårdar. Programmet bjuder på musik, teater, utställningar, caféer och föreläsningar för både barn och vuxna.",
+    "info.q6": "Hur tar jag mig till Kristinestad?",
+    "info.a6": "Kristinestad ligger vid Österbottens kust längs riksväg 8, mellan Vasa och Björneborg. Evenemangsområdet finns i centrum och gårdarna besöks till fots.",
+    "info.q7": "Vem kan jag fråga mer?",
+    "info.a7": "Kristinestads turism, Sjögatan 49, 64100 Kristinestad, visit@krs.fi. Öppna portar-arbetsgruppens ordförande Helena Patoranta, tfn +358 40 740 2311.",
+    "info.q8": "Ordnas något liknande på vintern?",
+    "info.a8": "Ja. Samma arbetsgrupp ordnar Sjöstadens julhem i december, då du kan kika in i juldekorerade hem i den gamla trästaden.",
+    "info.linksH2": "Se också",
+    "garden.othersH2": "Fler presentationer",
+    "garden.back": "← Aktuellt",
     "meta.when": "Tid",
     "meta.dates": "13.–14.6.2026 kl. 10–18",
     "meta.where": "Plats",
@@ -437,6 +487,31 @@ const DEFAULT_STRINGS = {
     "home.documentTitle": "Open Gates 2026 – gardens and courtyards | Kristinestad, Finland",
     "home.metaDescription": "Open Gates in Kristinestad, Finland, 13–14 June 2026: private gardens and courtyards in the old wooden town open to visitors. Art, music and cafés.",
     "hero.photoAlt": "A summer garden path at Kaptenskans Café in Kristinestad",
+    "nav.info": "Practical info",
+    "info.documentTitle": "Practical info – tickets, dates and location | Open Gates Kristinestad",
+    "info.metaDescription": "Open Gates 13–14 June 2026, 10:00–18:00: wristbands €15 / €20, children under 12 free. Tickets at the market square. How to visit the gardens of Kristinestad.",
+    "info.kicker": "For visitors",
+    "info.h1": "Practical information",
+    "info.lead": "Everything you need for your visit to Open Gates in Kristinestad, Finland: dates, location, tickets and getting here.",
+    "info.q1": "When is Open Gates held?",
+    "info.a1": "Open Gates takes place on 13–14 June 2026, 10:00–18:00. The event is held every year in June, when the gardens are at their most beautiful.",
+    "info.q2": "Where does the event take place?",
+    "info.a2": "In the old wooden-house quarters of central Kristinestad. The gardens are within walking distance of each other, the tourist information office and the old town's grid plan.",
+    "info.q3": "Where can I buy tickets and how much do they cost?",
+    "info.a3": "Wristbands are sold at the ticket huts at the top of the market square. A day wristband costs €15 and a weekend wristband €20. Children under 12 get in free. The huts also have the map and programme.",
+    "info.q4": "Where can I get a map and tips?",
+    "info.a4": "Next to the ticket huts there is an info hut where local guides share tips about the town's sights, venues and experiences.",
+    "info.q5": "What can I see and do?",
+    "info.a5": "In recent years 35–50 gardens have taken part: modern, Japanese-inspired, wild and historic gardens. The programme includes music, theatre, exhibitions, cafés and talks for children and adults.",
+    "info.q6": "How do I get to Kristinestad?",
+    "info.a6": "Kristinestad lies on the Ostrobothnian coast along national road 8, between Vaasa and Pori. The event area is in the town centre and the gardens are visited on foot.",
+    "info.q7": "Who can I contact for more information?",
+    "info.a7": "Kristinestad Tourism, Sjögatan 49, 64100 Kristinestad, visit@krs.fi. Open Gates working group chair Helena Patoranta, tel. +358 40 740 2311.",
+    "info.q8": "Is there a similar event in winter?",
+    "info.a8": "Yes. The same working group organises Christmas Homes in December, when you can step inside festively decorated homes in the old wooden town.",
+    "info.linksH2": "See also",
+    "garden.othersH2": "More featured places",
+    "garden.back": "← News",
     "meta.when": "When",
     "meta.dates": "13–14 June 2026, 10:00–18:00",
     "meta.where": "Where",
@@ -785,7 +860,8 @@ function applyStructuredContent(data) {
 
   const site = data.site;
   const pageId = document.body?.getAttribute("data-page");
-  const isContentSubpage = pageId === "ajankohtaset" || pageId === "joulukodit";
+  // Every page except the home page has its own title (set in applySubpageChrome or at build time).
+  const isContentSubpage = Boolean(pageId) && pageId !== "home";
   if (site && site.title && !isContentSubpage) document.title = site.title;
   const meta = document.getElementById("meta-description");
   if (meta && site && site.description && !isContentSubpage) {
@@ -953,6 +1029,38 @@ function yearImageAlt(imgEntry, year, lang, bundle) {
   return tpl.replace(/\{year\}/g, String(year));
 }
 
+/** Heading for a garden spotlight: its own title, or "Piha nro {number}". */
+function gardenSpotlightHeading(entry, lang) {
+  const bundle = STRINGS[lang] || STRINGS.fi;
+  const customTitle = localizedContent(entry.title, lang);
+  if (customTitle) return customTitle;
+  if (entry.yardNumber == null) return "";
+  const tpl = bundle["ajankohtaset.gardens.yardHeading"] || "Piha nro {number}";
+  return fillTemplate(tpl, { number: String(entry.yardNumber), hosts: entry.hosts || "", title: "" });
+}
+
+/** URL slug for a garden spotlight's own page (/kohteet/{slug}). */
+function gardenSlug(entry) {
+  if (entry.slug) return String(entry.slug);
+  if (entry.yardNumber != null) return `piha-${entry.yardNumber}`;
+  const fi = localizedContent(entry.title, "fi");
+  return fi
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/** Link to the spotlight's own page; only on the built site, where those pages exist. */
+function gardenPageHref(entry, lang) {
+  const hasPages =
+    window.__AP_BUILD_PAGES === true || Boolean(document.querySelector('link[rel="alternate"][hreflang="sv"]'));
+  const slug = gardenSlug(entry);
+  if (!hasPages || !slug) return "";
+  return `${lang === "fi" ? "/" : `/${lang}/`}kohteet/${slug}`;
+}
+
 function renderGardenSpotlights() {
   const root = document.getElementById("garden-spotlights-root");
   const section = document.getElementById("pihaesittelyt");
@@ -965,6 +1073,8 @@ function renderGardenSpotlights() {
   if (section) {
     section.hidden = false;
   }
+  // Already rendered into the HTML at build time (scripts/seo-build.mjs) for this language.
+  if (root.dataset.prerendered === lang) return;
   root.innerHTML = "";
   if (!items.length) {
     const placeholder = document.createElement("p");
@@ -983,16 +1093,19 @@ function renderGardenSpotlights() {
     const card = document.createElement("article");
     card.className = "garden-spotlight-card";
 
-    if (customTitle) {
+    const headingText = gardenSpotlightHeading(entry, lang);
+    if (headingText) {
       const yardHeading = document.createElement("h3");
       yardHeading.className = "garden-spotlight-yard-heading";
-      yardHeading.textContent = customTitle;
-      card.appendChild(yardHeading);
-    } else if (yardNumber) {
-      const yardHeadingTpl = bundle["ajankohtaset.gardens.yardHeading"] || "Piha nro {number}";
-      const yardHeading = document.createElement("h3");
-      yardHeading.className = "garden-spotlight-yard-heading";
-      yardHeading.textContent = fillTemplate(yardHeadingTpl, vars);
+      const pageHref = gardenPageHref(entry, lang);
+      if (pageHref) {
+        const link = document.createElement("a");
+        link.href = pageHref;
+        link.textContent = headingText;
+        yardHeading.appendChild(link);
+      } else {
+        yardHeading.textContent = headingText;
+      }
       card.appendChild(yardHeading);
     }
 
@@ -1016,10 +1129,10 @@ function renderGardenSpotlights() {
 
         if (isVideo) {
           const vid = document.createElement("video");
-          vid.src = imgPath(file);
-          vid.controls = true;
-          vid.playsInline = true;
-          vid.preload = "metadata";
+          vid.setAttribute("src", imgPath(file));
+          vid.setAttribute("controls", "");
+          vid.setAttribute("playsinline", "");
+          vid.setAttribute("preload", "metadata");
           vid.setAttribute(
             "aria-label",
             fillTemplate(
@@ -1042,7 +1155,7 @@ function renderGardenSpotlights() {
               "",
             vars
           );
-          im.loading = "lazy";
+          im.setAttribute("loading", "lazy");
           fig.appendChild(im);
         }
 
@@ -1121,6 +1234,8 @@ function renderAjankohtasetYearBlocks() {
   const bundle = STRINGS[lang] || STRINGS.fi;
   const items = getAjankohtasetByYear();
 
+  // Already rendered into the HTML at build time (scripts/seo-build.mjs) for this language.
+  if (root.dataset.prerendered === lang) return;
   root.innerHTML = "";
 
   for (const entry of items) {
@@ -1135,7 +1250,7 @@ function renderAjankohtasetYearBlocks() {
       bim.className = "year-event-banner-img";
       bim.src = imgPath(entry.yearBanner);
       bim.alt = bundle["hero.bannerAlt"] || "";
-      bim.loading = "lazy";
+      bim.setAttribute("loading", "lazy");
       bw.appendChild(bim);
       block.appendChild(bw);
     }
@@ -1162,7 +1277,7 @@ function renderAjankohtasetYearBlocks() {
       const im = document.createElement("img");
       im.src = imgPath(file);
       im.alt = yearImageAlt(imgEntry, year, lang, bundle);
-      im.loading = "lazy";
+      im.setAttribute("loading", "lazy");
 
       fig.appendChild(im);
 
@@ -1393,32 +1508,21 @@ function currentLangKey() {
 
 function applySubpageChrome() {
   const pageId = document.body?.getAttribute("data-page");
-  if (pageId !== "home" && pageId !== "ajankohtaset" && pageId !== "joulukodit") return;
+  // Garden pages get their title at build time; nothing to swap here.
+  if (!pageId || pageId === "garden" || pageId === "404") return;
   const lang = currentLangKey();
   const b = STRINGS[lang] || STRINGS.fi;
   const meta = document.getElementById("meta-description");
+  let title = b[`${pageId}.documentTitle`];
+  let desc = b[`${pageId}.metaDescription`];
   if (pageId === "home") {
     // Finnish title/description stay editable in site-content.json → "site".
     const site = lastSiteContentData?.site;
-    const title = lang === "fi" && site?.title ? site.title : b["home.documentTitle"];
-    const desc = lang === "fi" && site?.description ? site.description : b["home.metaDescription"];
-    if (title) document.title = title;
-    if (meta && desc) meta.setAttribute("content", desc);
-  } else if (pageId === "ajankohtaset") {
-    if (b["ajankohtaset.documentTitle"]) {
-      document.title = b["ajankohtaset.documentTitle"];
-    }
-    if (meta && b["ajankohtaset.metaDescription"]) {
-      meta.setAttribute("content", b["ajankohtaset.metaDescription"]);
-    }
-  } else if (pageId === "joulukodit") {
-    if (b["joulukodit.documentTitle"]) {
-      document.title = b["joulukodit.documentTitle"];
-    }
-    if (meta && b["joulukodit.metaDescription"]) {
-      meta.setAttribute("content", b["joulukodit.metaDescription"]);
-    }
+    if (lang === "fi" && site?.title) title = site.title;
+    if (lang === "fi" && site?.description) desc = site.description;
   }
+  if (title) document.title = title;
+  if (meta && desc) meta.setAttribute("content", desc);
 }
 
 function updateMapPopups() {
@@ -1432,12 +1536,49 @@ function updateMapPopups() {
   }
 }
 
+/** Loads Leaflet (CSS + JS) only when the map is about to scroll into view — keeps first load fast. */
 function initMap() {
   const el = document.getElementById("map");
-  if (!el || typeof L === "undefined") return;
+  if (!el) return;
+  if (typeof L !== "undefined") {
+    createMap(el);
+    return;
+  }
+  let started = false;
+  const load = () => {
+    if (started) return;
+    started = true;
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = new URL("vendor/leaflet/leaflet.css", document.baseURI).href;
+    document.head.appendChild(css);
+    const script = document.createElement("script");
+    script.src = new URL("vendor/leaflet/leaflet.js", document.baseURI).href;
+    script.onload = () => createMap(el);
+    document.body.appendChild(script);
+  };
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          load();
+        }
+      },
+      { rootMargin: "600px 0px" }
+    );
+    io.observe(el);
+  } else {
+    load();
+  }
+}
+
+function createMap(el) {
+  if (mapInstance || typeof L === "undefined") return;
 
   mapInstance = L.map(el, { scrollWheelZoom: false });
   // Standard OpenStreetMap tiles (free, no key). CARTO basemaps now need an API key.
+  // OSM policy needs a Referer header: the site's referrer-policy (strict-origin-when-cross-origin) sends one.
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -1712,7 +1853,8 @@ function initJoulukoditLightbox() {
 
   function show(i) {
     index = (i + thumbs.length) % thumbs.length;
-    view.src = thumbs[index].currentSrc || thumbs[index].src;
+    // .src is the full-size original (currentSrc may be a smaller responsive version)
+    view.src = thumbs[index].src;
     view.alt = thumbs[index].alt;
   }
 
