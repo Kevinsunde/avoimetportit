@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "leaflet": "^1.9.4",
+    "linkedom": "^0.18.5",
+    "sharp": "^0.33.5",
     "vite": "^6.3.5"
   }
 }

@@ -38,6 +38,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         ajankohtaset: resolve(__dirname, "ajankohtaset.html"),
         joulukodit: resolve(__dirname, "merikaupungin-joulukodit.html"),
+        info: resolve(__dirname, "kaytannon-tiedot.html"),
         notFound: resolve(__dirname, "404.html"),
       },
     },
