@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "node scripts/sync-leaflet.mjs",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/seo-build.mjs",
     "preview": "vite preview",
     "content:export": "node scripts/export-site-content.mjs"
   },

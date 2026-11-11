@@ -16,6 +16,9 @@ const DEFAULT_STRINGS = {
     "hero.lead":
       "Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.",
     "hero.photoCap": "Kesäinen puutarhapolku ja Kaptenskans Café — Avoimet portit -tunnelmaa.",
+    "home.documentTitle": "Avoimet portit 2026 – pihat ja puutarhat | Kristiinankaupunki",
+    "home.metaDescription": "Avoimet portit Kristiinankaupungissa 13.–14.6.2026: vanhan puutalokaupungin yksityiset pihat ja puutarhat avautuvat. Taidetta, musiikkia ja kahviloita.",
+    "hero.photoAlt": "Kesäinen puutarhapolku Kaptenskans Cafén pihalla Kristiinankaupungissa",
     "meta.when": "Ajankohta",
     "meta.dates": "13.-14.6.2026 klo 10–18",
     "meta.where": "Paikka",
@@ -97,7 +100,8 @@ const DEFAULT_STRINGS = {
     "joulukodit.h2": "Merikaupungin Joulukodit Kristiinankaupungissa",
     "joulukodit.backHome": "← Etusivulle",
     "joulukodit.documentTitle": "Merikaupungin joulukodit – Avoimet portit | Kristiinankaupunki",
-    "joulukodit.metaDescription": "Merikaupungin joulukodit Kristiinankaupungissa.",
+    "joulukodit.metaDescription":
+      "Merikaupungin joulukodit 5.12.2026 klo 12–18: kurkista jouluisiin koteihin Kristiinankaupungin puutalokaupungissa. Kirkkokadun joulu, Lucia ja jouluarpajaiset.",
     "joulukodit.info.opening": "Avoinna 5.12.2026 klo 12–18.",
     "joulukodit.lightbox.close": "Sulje",
     "joulukodit.lightbox.prev": "Edellinen kuva",
@@ -221,6 +225,9 @@ const DEFAULT_STRINGS = {
     "hero.lead":
       "Öppna portar är ett kulturarrangemang i hembygdsgårdarna: välkomnande gårdar som du vanligtvis inte ser i vardagen bjuder in till kulturlivet i den gamla trästaden och juni månads blomsterprakt.",
     "hero.photoCap": "Somrig trädgårdsgång mot Kaptenskans Café — stämningen kring Öppna portar.",
+    "home.documentTitle": "Öppna portar 2026 – gårdar och trädgårdar | Kristinestad",
+    "home.metaDescription": "Öppna portar i Kristinestad 13–14.6.2026: den gamla trästadens privata gårdar och trädgårdar öppnas för besökare. Konst, musik och caféer.",
+    "hero.photoAlt": "Somrig trädgårdsgång vid Kaptenskans Café i Kristinestad",
     "meta.when": "Tid",
     "meta.dates": "13.–14.6.2026 kl. 10–18",
     "meta.where": "Plats",
@@ -302,7 +309,8 @@ const DEFAULT_STRINGS = {
     "joulukodit.h2": "Sjöstadens Julhem i Kristinestad",
     "joulukodit.backHome": "← Till startsidan",
     "joulukodit.documentTitle": "Sjöstadens julhem – Öppna portar | Kristinestad",
-    "joulukodit.metaDescription": "Sjöstadens julhem i Kristinestad.",
+    "joulukodit.metaDescription":
+      "Sjöstadens julhem 5.12.2026 kl. 12–18: kika in i juldekorerade hem i Kristinestads gamla trästad. Kyrkogatans jul, Lucia och stort julotteri.",
     "joulukodit.info.opening": "Öppet 5.12.2026 kl. 12–18.",
     "joulukodit.lightbox.close": "Stäng",
     "joulukodit.lightbox.prev": "Föregående bild",
@@ -426,6 +434,9 @@ const DEFAULT_STRINGS = {
     "hero.lead":
       "Open Gates is a cultural event in home yards: welcoming yards you rarely see in everyday life invite you to explore the cultural life of the old wooden town and June in full bloom.",
     "hero.photoCap": "A summer garden path toward Kaptenskans Café — the Open Gates spirit.",
+    "home.documentTitle": "Open Gates 2026 – gardens and courtyards | Kristinestad, Finland",
+    "home.metaDescription": "Open Gates in Kristinestad, Finland, 13–14 June 2026: private gardens and courtyards in the old wooden town open to visitors. Art, music and cafés.",
+    "hero.photoAlt": "A summer garden path at Kaptenskans Café in Kristinestad",
     "meta.when": "When",
     "meta.dates": "13–14 June 2026, 10:00–18:00",
     "meta.where": "Where",
@@ -507,7 +518,8 @@ const DEFAULT_STRINGS = {
     "joulukodit.h2": "Christmas Homes in the Coastal Town of Kristinestad",
     "joulukodit.backHome": "← Home",
     "joulukodit.documentTitle": "Christmas homes – Open Gates | Kristinestad",
-    "joulukodit.metaDescription": "Christmas homes event in Kristinestad.",
+    "joulukodit.metaDescription":
+      "Christmas Homes in Kristinestad, 5 Dec 2026, 12–18: step inside festively decorated homes in the old wooden town. Christmas street, Lucia and a raffle.",
     "joulukodit.info.opening": "Open on 5 Dec 2026, 12:00-18:00.",
     "joulukodit.lightbox.close": "Close",
     "joulukodit.lightbox.prev": "Previous image",
@@ -653,10 +665,10 @@ const DEFAULT_AJANKOHTASET_BY_YEAR = [
       { file: "ap-aja-09.jpg" },
       { file: "ap-aja-10.jpg" },
       { file: "ap-aja-11.jpg" },
-      { file: "ap-aja-12.png" },
-      { file: "ap-aja-13.png" },
-      { file: "ap-aja-14.png" },
-      { file: "ap-aja-15.png" },
+      { file: "ap-aja-12.jpg" },
+      { file: "ap-aja-13.jpg" },
+      { file: "ap-aja-14.jpg" },
+      { file: "ap-aja-15.jpg" },
       { file: "ap-aja-16.jpg" },
       { file: "ap-aja-17.jpg" },
       { file: "ap-aja-18.jpg" },
@@ -668,15 +680,15 @@ const DEFAULT_AJANKOHTASET_BY_YEAR = [
       { file: "ap-aja-24.jpg" },
       { file: "ap-aja-25.jpg" },
       { file: "ap-aja-26.jpg" },
-      { file: "ap-aja-27.png" },
-      { file: "ap-aja-28.png" },
-      { file: "ap-aja-29.png" },
-      { file: "ap-aja-30.png" },
-      { file: "ap-aja-31.png" },
-      { file: "ap-aja-32.png" },
-      { file: "ap-aja-33.png" },
-      { file: "ap-aja-34.png" },
-      { file: "ap-aja-35.png" },
+      { file: "ap-aja-27.jpg" },
+      { file: "ap-aja-28.jpg" },
+      { file: "ap-aja-29.jpg" },
+      { file: "ap-aja-30.jpg" },
+      { file: "ap-aja-31.jpg" },
+      { file: "ap-aja-32.jpg" },
+      { file: "ap-aja-33.jpg" },
+      { file: "ap-aja-34.jpg" },
+      { file: "ap-aja-35.jpg" },
       { file: "ap-aja-36.jpg" },
       { file: "ap-aja-37.jpg" },
       { file: "ap-aja-38.jpg" },
@@ -837,7 +849,8 @@ function applyStructuredContent(data) {
     if (f3 && links.programSite) f3.href = links.programSite;
     if (f4 && links.cityCalendar) f4.href = links.cityCalendar;
     const joulukoditNav = document.getElementById("link-nav-joulukodit");
-    if (joulukoditNav && links.merikaupunginJoulukodit) {
+    // Local page links are set per language at build time; only override with an external URL.
+    if (joulukoditNav && /^https?:\/\//i.test(links.merikaupunginJoulukodit || "")) {
       joulukoditNav.href = links.merikaupunginJoulukodit;
     }
   }
@@ -1317,7 +1330,8 @@ function setupAnalytics(data) {
 }
 
 async function fetchSiteContentData() {
-  const bases = [baseHrefForSiteFiles(), `${window.location.origin}/`];
+  // document.baseURI respects <base href="/"> on the /sv/ and /en/ pages
+  const bases = [new URL(".", document.baseURI).href, baseHrefForSiteFiles(), `${window.location.origin}/`];
   const seen = new Set();
   for (const base of bases) {
     if (!base || seen.has(base)) continue;
@@ -1379,11 +1393,18 @@ function currentLangKey() {
 
 function applySubpageChrome() {
   const pageId = document.body?.getAttribute("data-page");
-  if (pageId !== "ajankohtaset" && pageId !== "joulukodit") return;
+  if (pageId !== "home" && pageId !== "ajankohtaset" && pageId !== "joulukodit") return;
   const lang = currentLangKey();
   const b = STRINGS[lang] || STRINGS.fi;
   const meta = document.getElementById("meta-description");
-  if (pageId === "ajankohtaset") {
+  if (pageId === "home") {
+    // Finnish title/description stay editable in site-content.json → "site".
+    const site = lastSiteContentData?.site;
+    const title = lang === "fi" && site?.title ? site.title : b["home.documentTitle"];
+    const desc = lang === "fi" && site?.description ? site.description : b["home.metaDescription"];
+    if (title) document.title = title;
+    if (meta && desc) meta.setAttribute("content", desc);
+  } else if (pageId === "ajankohtaset") {
     if (b["ajankohtaset.documentTitle"]) {
       document.title = b["ajankohtaset.documentTitle"];
     }
@@ -1480,12 +1501,54 @@ function setLanguage(lang) {
   applySubpageChrome();
   renderGardenSpotlights();
   renderAjankohtasetYearBlocks();
+}
 
+function saveLangPreference(lang) {
   try {
     localStorage.setItem("ap-lang", lang);
   } catch {
     /* ignore */
   }
+}
+
+function savedLangPreference() {
+  try {
+    return localStorage.getItem("ap-lang") || "";
+  } catch {
+    return "";
+  }
+}
+
+/** Built site has real /sv/ and /en/ pages, listed as hreflang links in <head>. */
+function langPagePath(lang) {
+  const link = document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`);
+  if (!link) return "";
+  try {
+    return new URL(link.getAttribute("href"), window.location.href).pathname;
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * Returning visitor who chose Swedish/English earlier lands on a Finnish page from outside the site:
+ * send them to their language version. Returns true when redirecting.
+ */
+function redirectToPreferredLanguage() {
+  if (currentLangKey() !== "fi") return false;
+  const saved = savedLangPreference();
+  if (saved !== "sv" && saved !== "en") return false;
+  let fromSite = false;
+  try {
+    fromSite = Boolean(document.referrer) && new URL(document.referrer).origin === window.location.origin;
+  } catch {
+    fromSite = false;
+  }
+  if (fromSite) return false;
+  const target = langPagePath(saved);
+  if (!target || target === window.location.pathname) return false;
+  window.location.replace(target + window.location.hash);
+  return true;
 }
 
 function initRegistrationForm() {
@@ -1615,19 +1678,28 @@ function initNav() {
 }
 
 function initLang() {
-  let saved = "fi";
-  try {
-    saved = localStorage.getItem("ap-lang") || "fi";
-  } catch {
-    saved = "fi";
+  const hasLangPages = Boolean(langPagePath("sv"));
+  if (hasLangPages) {
+    // The URL decides the language (/, /sv/, /en/).
+    setLanguage(currentLangKey());
+  } else {
+    // Dev server / single-language build: switch text in place.
+    let saved = savedLangPreference() || "fi";
+    if (!STRINGS[saved]) saved = "fi";
+    setLanguage(saved);
   }
-  if (!STRINGS[saved]) saved = "fi";
-  setLanguage(saved);
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.getAttribute("data-lang");
-      if (lang) setLanguage(lang);
+      if (!lang) return;
+      saveLangPreference(lang);
+      const target = hasLangPages ? langPagePath(lang) : "";
+      if (target && target !== window.location.pathname) {
+        window.location.href = target + window.location.hash;
+        return;
+      }
+      setLanguage(lang);
     });
   });
 }
@@ -1669,6 +1741,7 @@ function initJoulukoditLightbox() {
 }
 
 async function boot() {
+  if (redirectToPreferredLanguage()) return;
   initNav();
   initYear();
   await loadSiteContent();

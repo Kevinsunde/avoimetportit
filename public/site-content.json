@@ -9,18 +9,18 @@
         "wide": true
       },
       {
-        "file": "ap-gallery-2023-tapahtuma.png",
+        "file": "ap-gallery-2023-tapahtuma.jpg",
         "wide": false
       },
       {
-        "file": "ap-gallery-puutalo-2021.png",
+        "file": "ap-gallery-puutalo-2021.jpg",
         "wide": false
       }
     ]
   },
   "site": {
-    "title": "Avoimet portit – Kristiinankaupunki",
-    "description": "Vuosittainen kulttuuritapahtuma, jossa vanhan puutalokaupungin pihat ja puutarhat avautuvat vierailijoille Kristiinankaupungissa."
+    "title": "Avoimet portit 2026 – pihat ja puutarhat | Kristiinankaupunki",
+    "description": "Avoimet portit Kristiinankaupungissa 13.–14.6.2026: vanhan puutalokaupungin yksityiset pihat ja puutarhat avautuvat. Taidetta, musiikkia ja kahviloita."
   },
   "logo": {
     "title": "Avoimet portit",
@@ -306,10 +306,10 @@
         { "file": "ap-aja-09.jpg" },
         { "file": "ap-aja-10.jpg" },
         { "file": "ap-aja-11.jpg" },
-        { "file": "ap-aja-12.png" },
-        { "file": "ap-aja-13.png" },
-        { "file": "ap-aja-14.png" },
-        { "file": "ap-aja-15.png" },
+        { "file": "ap-aja-12.jpg" },
+        { "file": "ap-aja-13.jpg" },
+        { "file": "ap-aja-14.jpg" },
+        { "file": "ap-aja-15.jpg" },
         { "file": "ap-aja-16.jpg" },
         { "file": "ap-aja-17.jpg" },
         { "file": "ap-aja-18.jpg" },
@@ -321,15 +321,15 @@
         { "file": "ap-aja-24.jpg" },
         { "file": "ap-aja-25.jpg" },
         { "file": "ap-aja-26.jpg" },
-        { "file": "ap-aja-27.png" },
-        { "file": "ap-aja-28.png" },
-        { "file": "ap-aja-29.png" },
-        { "file": "ap-aja-30.png" },
-        { "file": "ap-aja-31.png" },
-        { "file": "ap-aja-32.png" },
-        { "file": "ap-aja-33.png" },
-        { "file": "ap-aja-34.png" },
-        { "file": "ap-aja-35.png" },
+        { "file": "ap-aja-27.jpg" },
+        { "file": "ap-aja-28.jpg" },
+        { "file": "ap-aja-29.jpg" },
+        { "file": "ap-aja-30.jpg" },
+        { "file": "ap-aja-31.jpg" },
+        { "file": "ap-aja-32.jpg" },
+        { "file": "ap-aja-33.jpg" },
+        { "file": "ap-aja-34.jpg" },
+        { "file": "ap-aja-35.jpg" },
         { "file": "ap-aja-36.jpg" },
         { "file": "ap-aja-37.jpg" },
         { "file": "ap-aja-38.jpg" },
@@ -338,6 +338,56 @@
       ]
     }
   ],
+  "seo": {
+    "_info": "Hakukoneet: sivuston osoite, jakokuvat ja tapahtumien päivämäärät (Google-tapahtumatiedot). Päivitä päivämäärät joka vuosi. Aika muodossa VVVV-KK-PPTtt:mm:ss+03:00 (kesä) tai +02:00 (talvi).",
+    "siteUrl": "https://avoimetportit.com",
+    "shareImage": "og-avoimet-portit.jpg",
+    "facebook": "https://www.facebook.com/oppnaportar.avoimetportit",
+    "pages": {
+      "home": {
+        "shareImage": "og-avoimet-portit.jpg",
+        "events": [
+          {
+            "name": { "fi": "Avoimet portit 2026", "sv": "Öppna portar 2026", "en": "Open Gates 2026" },
+            "startDate": "2026-06-13T10:00:00+03:00",
+            "endDate": "2026-06-14T18:00:00+03:00",
+            "place": { "fi": "Kristiinankaupungin keskusta", "sv": "Kristinestads centrum", "en": "Kristinestad town centre" },
+            "streetAddress": "Kauppatori / Salutorget",
+            "latitude": 62.2733,
+            "longitude": 21.3785,
+            "offers": [
+              { "name": { "fi": "Päiväranneke", "sv": "Dagsarmband", "en": "Day wristband" }, "price": "15" },
+              { "name": { "fi": "Viikonloppuranneke", "sv": "Veckoslutsarmband", "en": "Weekend wristband" }, "price": "20" }
+            ]
+          }
+        ]
+      },
+      "joulukodit": {
+        "shareImage": "og-joulukodit.jpg",
+        "events": [
+          {
+            "name": { "fi": "Merikaupungin joulukodit 2026", "sv": "Sjöstadens julhem 2026", "en": "Christmas Homes in Kristinestad 2026" },
+            "startDate": "2026-12-05T12:00:00+02:00",
+            "endDate": "2026-12-05T18:00:00+02:00",
+            "place": { "fi": "Kristiinankaupungin keskusta", "sv": "Kristinestads centrum", "en": "Kristinestad town centre" },
+            "streetAddress": "",
+            "latitude": 62.2733,
+            "longitude": 21.3785
+          },
+          {
+            "name": { "fi": "Kirkkokadun joulu 2026", "sv": "Kyrkogatans jul 2026", "en": "Christmas on Kyrkogatan 2026" },
+            "startDate": "2026-12-05T16:30:00+02:00",
+            "endDate": "2026-12-05T19:00:00+02:00",
+            "place": { "fi": "Kirkkokatu", "sv": "Kyrkogatan", "en": "Kyrkogatan" },
+            "streetAddress": "Kirkkokatu / Kyrkogatan",
+            "latitude": 62.2733,
+            "longitude": 21.3785
+          }
+        ]
+      },
+      "ajankohtaset": {}
+    }
+  },
   "languages": {
     "fi": {
       "nav.event": "Tapahtuma",
@@ -353,6 +403,9 @@
       "hero.title": "Porttien takana avautuu salainen maailma",
       "hero.lead": "Avoimet portit ovat kulttuuritapahtuma kotipihoissa: vieraanvaraiset pihat, joita ei arjessa näe, kutsuvat tutustumaan vanhan puutalokaupungin kulttuurielämään ja kesäkuun kukkaloistoon.",
       "hero.photoCap": "Kesäinen puutarhapolku ja Kaptenskans Café — Avoimet portit -tunnelmaa.",
+      "home.documentTitle": "Avoimet portit 2026 – pihat ja puutarhat | Kristiinankaupunki",
+      "home.metaDescription": "Avoimet portit Kristiinankaupungissa 13.–14.6.2026: vanhan puutalokaupungin yksityiset pihat ja puutarhat avautuvat. Taidetta, musiikkia ja kahviloita.",
+      "hero.photoAlt": "Kesäinen puutarhapolku Kaptenskans Cafén pihalla Kristiinankaupungissa",
       "meta.when": "Ajankohta",
       "meta.dates": "13.-14.6.2026 klo 10–18",
       "meta.where": "Paikka",
@@ -406,7 +459,7 @@
       "joulukodit.h2": "Merikaupungin Joulukodit Kristiinankaupungissa",
       "joulukodit.backHome": "← Etusivulle",
       "joulukodit.documentTitle": "Merikaupungin joulukodit – Avoimet portit | Kristiinankaupunki",
-      "joulukodit.metaDescription": "Merikaupungin joulukodit Kristiinankaupungissa.",
+      "joulukodit.metaDescription": "Merikaupungin joulukodit 5.12.2026 klo 12–18: kurkista jouluisiin koteihin Kristiinankaupungin puutalokaupungissa. Kirkkokadun joulu, Lucia ja jouluarpajaiset.",
       "joulukodit.info.opening": "Avoinna 5.12.2026 klo 12–18.",
       "joulukodit.lightbox.close": "Sulje",
       "joulukodit.lightbox.prev": "Edellinen kuva",
@@ -495,6 +548,9 @@
       "hero.title": "En hemlig värld öppnar sig bakom grindarna",
       "hero.lead": "Öppna portar är ett kulturarrangemang i hembygdsgårdarna: välkomnande gårdar som du vanligtvis inte ser i vardagen bjuder in till kulturlivet i den gamla trästaden och juni månads blomsterprakt.",
       "hero.photoCap": "Somrig trädgårdsgång mot Kaptenskans Café — stämningen kring Öppna portar.",
+      "home.documentTitle": "Öppna portar 2026 – gårdar och trädgårdar | Kristinestad",
+      "home.metaDescription": "Öppna portar i Kristinestad 13–14.6.2026: den gamla trästadens privata gårdar och trädgårdar öppnas för besökare. Konst, musik och caféer.",
+      "hero.photoAlt": "Somrig trädgårdsgång vid Kaptenskans Café i Kristinestad",
       "meta.when": "Tid",
       "meta.dates": "13.–14.6.2026 kl. 10–18",
       "meta.where": "Plats",
@@ -548,7 +604,7 @@
       "joulukodit.h2": "Sjöstadens Julhem i Kristinestad",
       "joulukodit.backHome": "← Till startsidan",
       "joulukodit.documentTitle": "Sjöstadens julhem – Öppna portar | Kristinestad",
-      "joulukodit.metaDescription": "Sjöstadens julhem i Kristinestad.",
+      "joulukodit.metaDescription": "Sjöstadens julhem 5.12.2026 kl. 12–18: kika in i juldekorerade hem i Kristinestads gamla trästad. Kyrkogatans jul, Lucia och stort julotteri.",
       "joulukodit.info.opening": "Öppet 5.12.2026 kl. 12–18.",
       "joulukodit.lightbox.close": "Stäng",
       "joulukodit.lightbox.prev": "Föregående bild",
@@ -637,6 +693,9 @@
       "hero.title": "A secret world opens behind the gates",
       "hero.lead": "Open Gates is a cultural event in home yards: welcoming yards you rarely see in everyday life invite you to explore the cultural life of the old wooden town and June in full bloom.",
       "hero.photoCap": "A summer garden path toward Kaptenskans Café — the Open Gates spirit.",
+      "home.documentTitle": "Open Gates 2026 – gardens and courtyards | Kristinestad, Finland",
+      "home.metaDescription": "Open Gates in Kristinestad, Finland, 13–14 June 2026: private gardens and courtyards in the old wooden town open to visitors. Art, music and cafés.",
+      "hero.photoAlt": "A summer garden path at Kaptenskans Café in Kristinestad",
       "meta.when": "When",
       "meta.dates": "13–14 June 2026, 10:00–18:00",
       "meta.where": "Where",
@@ -690,7 +749,7 @@
       "joulukodit.h2": "Christmas Homes in the Coastal Town of Kristinestad",
       "joulukodit.backHome": "← Home",
       "joulukodit.documentTitle": "Christmas homes – Open Gates | Kristinestad",
-      "joulukodit.metaDescription": "Christmas homes event in Kristinestad.",
+      "joulukodit.metaDescription": "Christmas Homes in Kristinestad, 5 Dec 2026, 12–18: step inside festively decorated homes in the old wooden town. Christmas street, Lucia and a raffle.",
       "joulukodit.info.opening": "Open on 5 Dec 2026, 12:00-18:00.",
       "joulukodit.lightbox.close": "Close",
       "joulukodit.lightbox.prev": "Previous image",

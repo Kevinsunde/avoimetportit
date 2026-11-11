@@ -37,8 +37,8 @@ for (let j = i + needle.length; j < src.length; j++) {
           hero: "ap-hero-kaptenskans.jpg",
           gallery: [
             { file: "ap-gallery-drone-kristinestad.jpg", wide: true },
-            { file: "ap-gallery-2023-tapahtuma.png", wide: false },
-            { file: "ap-gallery-puutalo-2021.png", wide: false },
+            { file: "ap-gallery-2023-tapahtuma.jpg", wide: false },
+            { file: "ap-gallery-puutalo-2021.jpg", wide: false },
           ],
         },
         site: {
@@ -94,10 +94,10 @@ for (let j = i + needle.length; j < src.length; j++) {
               { file: "ap-aja-09.jpg" },
               { file: "ap-aja-10.jpg" },
               { file: "ap-aja-11.jpg" },
-              { file: "ap-aja-12.png" },
-              { file: "ap-aja-13.png" },
-              { file: "ap-aja-14.png" },
-              { file: "ap-aja-15.png" },
+              { file: "ap-aja-12.jpg" },
+              { file: "ap-aja-13.jpg" },
+              { file: "ap-aja-14.jpg" },
+              { file: "ap-aja-15.jpg" },
               { file: "ap-aja-16.jpg" },
               { file: "ap-aja-17.jpg" },
               { file: "ap-aja-18.jpg" },
@@ -109,15 +109,15 @@ for (let j = i + needle.length; j < src.length; j++) {
               { file: "ap-aja-24.jpg" },
               { file: "ap-aja-25.jpg" },
               { file: "ap-aja-26.jpg" },
-              { file: "ap-aja-27.png" },
-              { file: "ap-aja-28.png" },
-              { file: "ap-aja-29.png" },
-              { file: "ap-aja-30.png" },
-              { file: "ap-aja-31.png" },
-              { file: "ap-aja-32.png" },
-              { file: "ap-aja-33.png" },
-              { file: "ap-aja-34.png" },
-              { file: "ap-aja-35.png" },
+              { file: "ap-aja-27.jpg" },
+              { file: "ap-aja-28.jpg" },
+              { file: "ap-aja-29.jpg" },
+              { file: "ap-aja-30.jpg" },
+              { file: "ap-aja-31.jpg" },
+              { file: "ap-aja-32.jpg" },
+              { file: "ap-aja-33.jpg" },
+              { file: "ap-aja-34.jpg" },
+              { file: "ap-aja-35.jpg" },
               { file: "ap-aja-36.jpg" },
               { file: "ap-aja-37.jpg" },
               { file: "ap-aja-38.jpg" },
@@ -129,6 +129,18 @@ for (let j = i + needle.length; j < src.length; j++) {
         languages: DEFAULT_STRINGS,
       };
       const out = join(__dirname, "..", "public", "site-content.json");
+      // Keep the hand-edited "seo" block (event dates, share images) — it has no default in main.js.
+      try {
+        const existing = JSON.parse(readFileSync(out, "utf8"));
+        if (existing.seo) {
+          const { languages, ...rest } = payload;
+          // Rebuild so "seo" sits before "languages" like in the hand-edited file
+          for (const k of Object.keys(payload)) delete payload[k];
+          Object.assign(payload, rest, { seo: existing.seo, languages });
+        }
+      } catch {
+        /* no existing file */
+      }
       writeFileSync(out, JSON.stringify(payload, null, 2), "utf8");
       console.log("Wrote", out);
       process.exit(0);
