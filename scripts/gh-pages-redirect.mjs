@@ -7,6 +7,8 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SITE = "https://avoimetportit.com";
+// Search Console ownership of kevinsunde.github.io/avoimetportit/ (used for the Removals tool).
+const VERIFY = '<meta name="google-site-verification" content="iPNERqIYGWOxgq-uN6fEXucwUbl3ploymvYtJ8kafww">';
 const out = join(process.cwd(), "gh-pages-redirect");
 mkdirSync(out, { recursive: true });
 
@@ -14,6 +16,7 @@ const page = (target) => `<!DOCTYPE html>
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
+  ${VERIFY}
   <title>Avoimet portit – avoimetportit.com</title>
   <link rel="canonical" href="${target}">
   <meta http-equiv="refresh" content="0; url=${target}">
@@ -40,6 +43,7 @@ writeFileSync(
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
+  ${VERIFY}
   <meta name="robots" content="noindex">
   <title>Avoimet portit – avoimetportit.com</title>
   <script>
