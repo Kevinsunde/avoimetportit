@@ -1,5 +1,7 @@
-# Build static site and push to gh-pages branch (Settings → Pages → Deploy from branch → gh-pages / root)
-name: Deploy GitHub Pages
+# The real site is https://avoimetportit.com (Cloudflare Pages).
+# GitHub Pages (kevinsunde.github.io/avoimetportit) only holds redirect pages that forward there,
+# so Google shows the real website instead of the GitHub copy.
+name: Deploy GitHub Pages (redirects)
 
 on:
   push:
@@ -21,17 +23,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
 
-      - run: npm ci
-
-      - name: Build
-        run: npm run build
-        env:
-          GITHUB_PAGES_BASE: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) && '/' || format('/{0}/', github.event.repository.name) }}
+      - name: Build redirect pages
+        run: node scripts/gh-pages-redirect.mjs
 
       - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./gh-pages-redirect
