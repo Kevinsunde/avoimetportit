@@ -57,5 +57,7 @@ writeFileSync(
 </html>
 `,
 );
+// Search Console HTML-file verification for the same property.
+writeFileSync(join(out, "googlef2328acbf7a39e13.html"), "google-site-verification: googlef2328acbf7a39e13.html");
 writeFileSync(join(out, "robots.txt"), "User-agent: *\nAllow: /\n");
 console.log(`[gh-pages] redirect pages written to ${out}`);
