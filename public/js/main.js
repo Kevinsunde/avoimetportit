@@ -811,6 +811,15 @@ function imgPath(filename) {
   return `images/${clean}`;
 }
 
+/** Swaps a hero picture only if the file changed; drops the build's smaller copies so the new file shows. */
+function setHeroSrc(img, filename) {
+  const next = imgPath(filename);
+  const current = (img.getAttribute("src") || "").replace(/^(\.\.\/|\/)+/, "");
+  if (current === next) return;
+  img.removeAttribute("srcset");
+  img.src = next;
+}
+
 function registrationRecipientEmails() {
   const a =
     typeof registrationConfig.receiverEmail === "string"
@@ -942,9 +951,9 @@ function applyStructuredContent(data) {
   const images = data.images;
   if (images) {
     const heroBanner = document.getElementById("hero-banner-image");
-    if (heroBanner && images.heroBanner) heroBanner.src = imgPath(images.heroBanner);
+    if (heroBanner && images.heroBanner) setHeroSrc(heroBanner, images.heroBanner);
     const heroImg = document.getElementById("hero-image");
-    if (heroImg && images.hero) heroImg.src = imgPath(images.hero);
+    if (heroImg && images.hero) setHeroSrc(heroImg, images.hero);
     const items = images.gallery;
     const figures = document.querySelectorAll("#gallery-root figure.gallery-item");
     if (items && figures.length) {

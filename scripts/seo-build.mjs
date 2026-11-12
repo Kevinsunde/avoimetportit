@@ -434,7 +434,9 @@ const IMAGE_SIZES = new Map();
 async function makeResponsiveImages() {
   const dir = join(dist, "images");
   const out = join(dir, `w${SMALL_WIDTH}`);
+  const full = join(dir, "webp"); // full-size WebP copies
   mkdirSync(out, { recursive: true });
+  mkdirSync(full, { recursive: true });
   const made = new Map();
   for (const name of readdirSync(dir)) {
     if (!/\.(jpe?g|png|webp)$/i.test(name)) continue;
@@ -447,6 +449,9 @@ async function makeResponsiveImages() {
         .resize({ width: SMALL_WIDTH })
         .webp({ quality: 74 })
         .toFile(join(out, name.replace(/\.\w+$/, ".webp")));
+      await sharp(join(dir, name))
+        .webp({ quality: 80 })
+        .toFile(join(full, name.replace(/\.\w+$/, ".webp")));
       made.set(name, width);
     } catch (err) {
       console.warn(`[seo] could not resize ${name}: ${err.message}`);
@@ -455,7 +460,13 @@ async function makeResponsiveImages() {
   return made;
 }
 
-/** Lazy-loaded photos get a srcset, so phones and normal screens load the small copy. */
+/** How wide the top-of-page pictures are drawn, so the browser picks the right copy. */
+const HERO_SIZES = {
+  "hero-banner-image": "(max-width: 1240px) 100vw, 1200px",
+  "hero-image": "(min-width: 900px) min(52vw, 620px), 100vw",
+};
+
+/** Lazy photos and the hero pictures get a srcset, so browsers load a WebP copy of the right size. */
 function addSrcset(html, made) {
   return html.replace(/<img\b[^>]*>/g, (tag) => {
     const m = tag.match(/\ssrc="images\/([^"/]+)"/);
@@ -463,11 +474,13 @@ function addSrcset(html, made) {
     if (size && !/\swidth=/.test(tag)) {
       tag = tag.replace(/^<img/, `<img width="${size.width}" height="${size.height}"`);
     }
-    if (/\ssrcset=/.test(tag) || !/\sloading="lazy"/.test(tag)) return tag;
+    const id = (tag.match(/\sid="([^"]+)"/) || [])[1];
+    const sizes = /\sloading="lazy"/.test(tag) ? "(max-width: 700px) 100vw, 480px" : HERO_SIZES[id];
+    if (/\ssrcset=/.test(tag) || !sizes) return tag;
     if (!m || !made.has(m[1])) return tag;
-    const small = `images/w${SMALL_WIDTH}/${m[1].replace(/\.\w+$/, ".webp")}`;
-    const srcset = `${small} ${SMALL_WIDTH}w, images/${m[1]} ${made.get(m[1])}w`;
-    return tag.replace(/^<img/, `<img srcset="${srcset}" sizes="(max-width: 700px) 100vw, 480px"`);
+    const webp = m[1].replace(/\.\w+$/, ".webp");
+    const srcset = `images/w${SMALL_WIDTH}/${webp} ${SMALL_WIDTH}w, images/webp/${webp} ${made.get(m[1])}w`;
+    return tag.replace(/^<img/, `<img srcset="${srcset}" sizes="${sizes}"`);
   });
 }
 
