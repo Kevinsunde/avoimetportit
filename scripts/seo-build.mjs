@@ -209,16 +209,28 @@ function eventLd(ev, lang, page, description, image) {
         : {}),
     },
     organizer: { "@type": "Organization", name: BRAND[lang], url: SITE + "/" },
+    // Google wants a performer. Use the event's own list if given, else the organizer.
+    performer:
+      Array.isArray(ev.performers) && ev.performers.length
+        ? ev.performers.map((p) => ({ "@type": "PerformingGroup", name: pick(p, lang) }))
+        : { "@type": "Organization", name: BRAND[lang], url: SITE + "/" },
   };
+  // Tickets are sold on site, so sales open when the event starts unless told otherwise.
+  const validFrom = ev.ticketsOnSaleFrom || ev.startDate;
+  const offer = (name, price) => ({
+    "@type": "Offer",
+    ...(name ? { name } : {}),
+    price: String(price),
+    priceCurrency: "EUR",
+    availability: "https://schema.org/InStock",
+    validFrom,
+    url: pageUrl(lang, page),
+  });
   if (Array.isArray(ev.offers) && ev.offers.length) {
-    node.offers = ev.offers.map((o) => ({
-      "@type": "Offer",
-      name: pick(o.name, lang),
-      price: String(o.price),
-      priceCurrency: "EUR",
-      availability: "https://schema.org/InStock",
-      url: pageUrl(lang, page),
-    }));
+    node.offers = ev.offers.map((o) => offer(pick(o.name, lang), o.price));
+  } else if (ev.free) {
+    node.isAccessibleForFree = true;
+    node.offers = offer(null, 0);
   }
   return node;
 }
